@@ -1,0 +1,3588 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_added": {
+            "root['spec']['disableLogVolumes']": {
+                  "prev": "NotPresent",
+                  "curr": true,
+                  "path": [
+                        "spec",
+                        "disableLogVolumes"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {
+            "type_changes": {
+                  "root['test-cluster'][0]['spec']['volumes'][1]['host_path'][path]": {
+                        "prev": "/containers",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['host_path'][type]": {
+                        "prev": "",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][default_mode]": {
+                        "prev": null,
+                        "curr": 420,
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": null,
+                        "curr": 3607,
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][0][service_account_token][path]": {
+                        "prev": null,
+                        "curr": "token",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][key]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][path]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][1][config_map][name]": {
+                        "prev": null,
+                        "curr": "kube-root-ca.crt",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": null,
+                        "curr": "v1",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": null,
+                        "curr": "metadata.namespace",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][path]": {
+                        "prev": null,
+                        "curr": "namespace",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['host_path'][path]": {
+                        "prev": "/containers",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['host_path'][type]": {
+                        "prev": "",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][default_mode]": {
+                        "prev": null,
+                        "curr": 420,
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": null,
+                        "curr": 3607,
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][0][service_account_token][path]": {
+                        "prev": null,
+                        "curr": "token",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][key]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][path]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][1][config_map][name]": {
+                        "prev": null,
+                        "curr": "kube-root-ca.crt",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": null,
+                        "curr": "v1",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": null,
+                        "curr": "metadata.namespace",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][path]": {
+                        "prev": null,
+                        "curr": "namespace",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['host_path'][path]": {
+                        "prev": "/containers",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['host_path'][type]": {
+                        "prev": "",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][default_mode]": {
+                        "prev": null,
+                        "curr": 420,
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": null,
+                        "curr": 3607,
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][0][service_account_token][path]": {
+                        "prev": null,
+                        "curr": "token",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][key]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][path]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][1][config_map][name]": {
+                        "prev": null,
+                        "curr": "kube-root-ca.crt",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": null,
+                        "curr": "v1",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": null,
+                        "curr": "metadata.namespace",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][path]": {
+                        "prev": null,
+                        "curr": "namespace",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['host_path'][path]": {
+                        "prev": "/containers",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['host_path'][type]": {
+                        "prev": "",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][default_mode]": {
+                        "prev": null,
+                        "curr": 420,
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": null,
+                        "curr": 3607,
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][0][service_account_token][path]": {
+                        "prev": null,
+                        "curr": "token",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][key]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][1][config_map][items][0][path]": {
+                        "prev": null,
+                        "curr": "ca.crt",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][1][config_map][name]": {
+                        "prev": null,
+                        "curr": "kube-root-ca.crt",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": null,
+                        "curr": "v1",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": null,
+                        "curr": "metadata.namespace",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['projected'][sources][2][downward_api][items][0][path]": {
+                        "prev": null,
+                        "curr": "namespace",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  }
+            },
+            "values_changed": {
+                  "root['test-cluster'][0]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:39+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][0]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "7cf57dc666",
+                        "curr": "cf8c96f98",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][0]['metadata']['name']": {
+                        "prev": "test-cluster-4dwkk",
+                        "curr": "test-cluster-6lnmj",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['metadata']['uid']": {
+                        "prev": "81cd08ee-d246-4cc0-9b8e-807b4ef23553",
+                        "curr": "f22a6203-dbc8-405a-b4fa-2c26850561d8",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['affinity']['node_affinity']['required_during_scheduling_ignored_during_execution']['node_selector_terms'][0]['match_fields'][0]['values'][0]": {
+                        "prev": "acto-0-cluster-7-worker3",
+                        "curr": "acto-0-cluster-7-worker2",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "affinity",
+                              "node_affinity",
+                              "required_during_scheduling_ignored_during_execution",
+                              "node_selector_terms",
+                              0,
+                              "match_fields",
+                              0,
+                              "values",
+                              0
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][1]['mount_path']": {
+                        "prev": "/containers",
+                        "curr": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-7mwmq",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['node_name']": {
+                        "prev": "acto-0-cluster-7-worker3",
+                        "curr": "acto-0-cluster-7-worker2",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-7mwmq",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:39+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:34+00:00",
+                        "curr": "2023-12-01T22:55:40+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:34+00:00",
+                        "curr": "2023-12-01T22:55:40+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:39+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://97085ebe7540cb3bf5123a60c5a886ed2a8cac8effe7aded9c84f0f6a85709ce",
+                        "curr": "containerd://bd4d16326445cfc2ef96aca6085ce4a864973f5694a657ea82bf2d1d79f872fb",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:53:33+00:00",
+                        "curr": "2023-12-01T22:55:40+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['host_ip']": {
+                        "prev": "172.18.0.2",
+                        "curr": "172.18.0.10",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "host_ip"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['pod_ip']": {
+                        "prev": "10.244.2.2",
+                        "curr": "10.244.1.4",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.2.2",
+                        "curr": "10.244.1.4",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['start_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:39+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "start_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:37+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "7cf57dc666",
+                        "curr": "cf8c96f98",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['name']": {
+                        "prev": "test-cluster-6hz6v",
+                        "curr": "test-cluster-72jnf",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['uid']": {
+                        "prev": "5ce90c88-ab2d-4b28-8286-d0cc92933bdf",
+                        "curr": "5be44a80-eed2-447f-ad8c-68b5d8d2acb5",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['affinity']['node_affinity']['required_during_scheduling_ignored_during_execution']['node_selector_terms'][0]['match_fields'][0]['values'][0]": {
+                        "prev": "acto-0-cluster-7-control-plane",
+                        "curr": "acto-0-cluster-7-worker3",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "affinity",
+                              "node_affinity",
+                              "required_during_scheduling_ignored_during_execution",
+                              "node_selector_terms",
+                              0,
+                              "match_fields",
+                              0,
+                              "values",
+                              0
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][1]['mount_path']": {
+                        "prev": "/containers",
+                        "curr": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-hk4c2",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['node_name']": {
+                        "prev": "acto-0-cluster-7-control-plane",
+                        "curr": "acto-0-cluster-7-worker3",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-hk4c2",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:37+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:33+00:00",
+                        "curr": "2023-12-01T22:55:38+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:33+00:00",
+                        "curr": "2023-12-01T22:55:38+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:37+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://4965c1127c774c700974aded058b01ad5ff5258de7aa2accff84f6426f4193cf",
+                        "curr": "containerd://8475111d9421cc00a1966d8aa15289934520df8a5dd4e85f1df94f1f6f39b11d",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['image_id']": {
+                        "prev": "docker.io/library/import-2023-12-01@sha256:15aea984ee867bc285f044c3b28e33f9d9c0b49e937597f6eb561c3aa988c4a9",
+                        "curr": "docker.io/library/import-2023-12-01@sha256:dc4a45c55f7fed7d8d002b7c6f9102af38520438bb2df075781bb9c1873626e4",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "image_id"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:53:33+00:00",
+                        "curr": "2023-12-01T22:55:38+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['host_ip']": {
+                        "prev": "172.18.0.12",
+                        "curr": "172.18.0.2",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "host_ip"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['pod_ip']": {
+                        "prev": "10.244.0.5",
+                        "curr": "10.244.2.3",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.0.5",
+                        "curr": "10.244.2.3",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['start_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:37+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "start_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:41+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "7cf57dc666",
+                        "curr": "cf8c96f98",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['name']": {
+                        "prev": "test-cluster-w5pq6",
+                        "curr": "test-cluster-bq9lt",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['uid']": {
+                        "prev": "9ce9cae8-3393-4aee-9708-5632d67f1ac7",
+                        "curr": "ff9a397d-0c37-441d-ad14-5546db7523e6",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['affinity']['node_affinity']['required_during_scheduling_ignored_during_execution']['node_selector_terms'][0]['match_fields'][0]['values'][0]": {
+                        "prev": "acto-0-cluster-7-worker2",
+                        "curr": "acto-0-cluster-7-worker",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "affinity",
+                              "node_affinity",
+                              "required_during_scheduling_ignored_during_execution",
+                              "node_selector_terms",
+                              0,
+                              "match_fields",
+                              0,
+                              "values",
+                              0
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][1]['mount_path']": {
+                        "prev": "/containers",
+                        "curr": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-9knlr",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['node_name']": {
+                        "prev": "acto-0-cluster-7-worker2",
+                        "curr": "acto-0-cluster-7-worker",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-9knlr",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:41+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:34+00:00",
+                        "curr": "2023-12-01T22:55:42+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:34+00:00",
+                        "curr": "2023-12-01T22:55:42+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:41+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://210f812eeb24c5961eb6a84dd7df95636fd250720afd60d99863d9c44e9889d8",
+                        "curr": "containerd://cf1c69a49f3cebcda91b640b032a1e70f0ba09734745c1d1d6bfd1e58dfd8930",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:53:33+00:00",
+                        "curr": "2023-12-01T22:55:42+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['host_ip']": {
+                        "prev": "172.18.0.10",
+                        "curr": "172.18.0.7",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "host_ip"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['pod_ip']": {
+                        "prev": "10.244.1.3",
+                        "curr": "10.244.3.4",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.1.3",
+                        "curr": "10.244.3.4",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['start_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:41+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "start_time"
+                        ]
+                  },
+                  "root['test-cluster'][3]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:43+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][3]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "7cf57dc666",
+                        "curr": "cf8c96f98",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][3]['metadata']['name']": {
+                        "prev": "test-cluster-z7dhq",
+                        "curr": "test-cluster-v7tk9",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['metadata']['uid']": {
+                        "prev": "9daa4f3e-6ef9-4ef5-b741-274d96dd4147",
+                        "curr": "00f831e8-e98c-4ed7-923f-323fdcffa476",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['affinity']['node_affinity']['required_during_scheduling_ignored_during_execution']['node_selector_terms'][0]['match_fields'][0]['values'][0]": {
+                        "prev": "acto-0-cluster-7-worker",
+                        "curr": "acto-0-cluster-7-control-plane",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "affinity",
+                              "node_affinity",
+                              "required_during_scheduling_ignored_during_execution",
+                              "node_selector_terms",
+                              0,
+                              "match_fields",
+                              0,
+                              "values",
+                              0
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][1]['mount_path']": {
+                        "prev": "/containers",
+                        "curr": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-hwkjk",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['node_name']": {
+                        "prev": "acto-0-cluster-7-worker",
+                        "curr": "acto-0-cluster-7-control-plane",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][1]['name']": {
+                        "prev": "varlibcontainers",
+                        "curr": "kube-api-access-hwkjk",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:43+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:34+00:00",
+                        "curr": "2023-12-01T22:55:45+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:34+00:00",
+                        "curr": "2023-12-01T22:55:45+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:43+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://7c25168e4d1b2993a8db42e85f2c5229c8d6aea6b3aa0b3dcba1bcc8e2bf663e",
+                        "curr": "containerd://2f945c54598006c9383a23c42b15ed6ecd598780d3c01f20f5ab3904ff647c4c",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['container_statuses'][0]['image_id']": {
+                        "prev": "docker.io/library/import-2023-12-01@sha256:dc4a45c55f7fed7d8d002b7c6f9102af38520438bb2df075781bb9c1873626e4",
+                        "curr": "docker.io/library/import-2023-12-01@sha256:15aea984ee867bc285f044c3b28e33f9d9c0b49e937597f6eb561c3aa988c4a9",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "image_id"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:53:33+00:00",
+                        "curr": "2023-12-01T22:55:44+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['host_ip']": {
+                        "prev": "172.18.0.7",
+                        "curr": "172.18.0.12",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "host_ip"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['pod_ip']": {
+                        "prev": "10.244.3.3",
+                        "curr": "10.244.0.6",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.3.3",
+                        "curr": "10.244.0.6",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][3]['status']['start_time']": {
+                        "prev": "2023-12-01T22:53:32+00:00",
+                        "curr": "2023-12-01T22:55:43+00:00",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "status",
+                              "start_time"
+                        ]
+                  }
+            },
+            "iterable_item_removed": {
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][2][mount_path]": {
+                        "prev": "/var/log/",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][2][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][3][mount_path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][3][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][4][mount_path]": {
+                        "prev": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][4][name]": {
+                        "prev": "kube-api-access-r7g6l",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][4][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][2][host_path][path]": {
+                        "prev": "/var/log",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][2][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][3][host_path][path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][3][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][name]": {
+                        "prev": "kube-api-access-r7g6l",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][default_mode]": {
+                        "prev": 420,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": 3607,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][0][service_account_token][path]": {
+                        "prev": "token",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][1][config_map][items][0][key]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][1][config_map][items][0][path]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][1][config_map][name]": {
+                        "prev": "kube-root-ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": "v1",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": "metadata.namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][path]": {
+                        "prev": "namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][2][mount_path]": {
+                        "prev": "/var/log/",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][2][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][3][mount_path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][3][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][4][mount_path]": {
+                        "prev": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][4][name]": {
+                        "prev": "kube-api-access-wtk69",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][4][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][2][host_path][path]": {
+                        "prev": "/var/log",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][2][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][3][host_path][path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][3][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][name]": {
+                        "prev": "kube-api-access-wtk69",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][default_mode]": {
+                        "prev": 420,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": 3607,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][0][service_account_token][path]": {
+                        "prev": "token",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][1][config_map][items][0][key]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][1][config_map][items][0][path]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][1][config_map][name]": {
+                        "prev": "kube-root-ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": "v1",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": "metadata.namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][path]": {
+                        "prev": "namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][2][mount_path]": {
+                        "prev": "/var/log/",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][2][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][3][mount_path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][3][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][4][mount_path]": {
+                        "prev": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][4][name]": {
+                        "prev": "kube-api-access-t7pf5",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][4][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][2][host_path][path]": {
+                        "prev": "/var/log",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][2][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][3][host_path][path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][3][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][name]": {
+                        "prev": "kube-api-access-t7pf5",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][default_mode]": {
+                        "prev": 420,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": 3607,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][0][service_account_token][path]": {
+                        "prev": "token",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][1][config_map][items][0][key]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][1][config_map][items][0][path]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][1][config_map][name]": {
+                        "prev": "kube-root-ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": "v1",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": "metadata.namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][path]": {
+                        "prev": "namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][2][mount_path]": {
+                        "prev": "/var/log/",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][2][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][3][mount_path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][3][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][4][mount_path]": {
+                        "prev": "/var/run/secrets/kubernetes.io/serviceaccount",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][4][name]": {
+                        "prev": "kube-api-access-rfpwj",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['containers'][0]['volume_mounts'][4][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][2][host_path][path]": {
+                        "prev": "/var/log",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][2][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][3][host_path][path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][3][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][name]": {
+                        "prev": "kube-api-access-rfpwj",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][default_mode]": {
+                        "prev": 420,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "default_mode"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][0][service_account_token][expiration_seconds]": {
+                        "prev": 3607,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "expiration_seconds"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][0][service_account_token][path]": {
+                        "prev": "token",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              0,
+                              "service_account_token",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][1][config_map][items][0][key]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][1][config_map][items][0][path]": {
+                        "prev": "ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][1][config_map][name]": {
+                        "prev": "kube-root-ca.crt",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              1,
+                              "config_map",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][api_version]": {
+                        "prev": "v1",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "api_version"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][field_ref][field_path]": {
+                        "prev": "metadata.namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "field_ref",
+                              "field_path"
+                        ]
+                  },
+                  "root['test-cluster'][3]['spec']['volumes'][4][projected][sources][2][downward_api][items][0][path]": {
+                        "prev": "namespace",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              3,
+                              "spec",
+                              "volumes",
+                              4,
+                              "projected",
+                              "sources",
+                              2,
+                              "downward_api",
+                              "items",
+                              0,
+                              "path"
+                        ]
+                  }
+            }
+      },
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {
+            "iterable_item_removed": {
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][1][mount_path]": {
+                        "prev": "/containers",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][1][name]": {
+                        "prev": "varlibcontainers",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][1][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              1,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][2][mount_path]": {
+                        "prev": "/var/log/",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][2][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              2,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][3][mount_path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "mount_path"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['containers'][0]['volume_mounts'][3][read_only]": {
+                        "prev": true,
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              3,
+                              "read_only"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][1][host_path][path]": {
+                        "prev": "/containers",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][1][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              1,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][1][name]": {
+                        "prev": "varlibcontainers",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              1,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][2][host_path][path]": {
+                        "prev": "/var/log",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][2][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              2,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][2][name]": {
+                        "prev": "varlogs",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              2,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][3][host_path][path]": {
+                        "prev": "/var/log/journal",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "path"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][3][host_path][type]": {
+                        "prev": "",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              3,
+                              "host_path",
+                              "type"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['volumes'][3][name]": {
+                        "prev": "systemd",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "volumes",
+                              3,
+                              "name"
+                        ]
+                  }
+            }
+      },
+      "config_map": {},
+      "service": {},
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "values_changed": {
+                  "root['test-cluster']['metadata']['annotations']['endpoints.kubernetes.io/last-change-trigger-time']": {
+                        "prev": "2023-12-01T22:53:34Z",
+                        "curr": "2023-12-01T22:55:45Z",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "annotations",
+                              "endpoints.kubernetes.io/last-change-trigger-time"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][0]['ip']": {
+                        "prev": "10.244.0.5",
+                        "curr": "10.244.0.6",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][0]['target_ref']['name']": {
+                        "prev": "test-cluster-6hz6v",
+                        "curr": "test-cluster-v7tk9",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][0]['target_ref']['uid']": {
+                        "prev": "5ce90c88-ab2d-4b28-8286-d0cc92933bdf",
+                        "curr": "00f831e8-e98c-4ed7-923f-323fdcffa476",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][1]['ip']": {
+                        "prev": "10.244.1.3",
+                        "curr": "10.244.1.4",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][1]['target_ref']['name']": {
+                        "prev": "test-cluster-w5pq6",
+                        "curr": "test-cluster-6lnmj",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][1]['target_ref']['uid']": {
+                        "prev": "9ce9cae8-3393-4aee-9708-5632d67f1ac7",
+                        "curr": "f22a6203-dbc8-405a-b4fa-2c26850561d8",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][2]['ip']": {
+                        "prev": "10.244.2.2",
+                        "curr": "10.244.2.3",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][2]['target_ref']['name']": {
+                        "prev": "test-cluster-4dwkk",
+                        "curr": "test-cluster-72jnf",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][2]['target_ref']['uid']": {
+                        "prev": "81cd08ee-d246-4cc0-9b8e-807b4ef23553",
+                        "curr": "5be44a80-eed2-447f-ad8c-68b5d8d2acb5",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][3]['ip']": {
+                        "prev": "10.244.3.3",
+                        "curr": "10.244.3.4",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][3]['target_ref']['name']": {
+                        "prev": "test-cluster-z7dhq",
+                        "curr": "test-cluster-bq9lt",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][3]['target_ref']['uid']": {
+                        "prev": "9daa4f3e-6ef9-4ef5-b741-274d96dd4147",
+                        "curr": "ff9a397d-0c37-441d-ad14-5546db7523e6",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "target_ref",
+                              "uid"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "values_changed": {
+                  "root['disableLogVolumes']": {
+                        "prev": false,
+                        "curr": true,
+                        "path": [
+                              "disableLogVolumes"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

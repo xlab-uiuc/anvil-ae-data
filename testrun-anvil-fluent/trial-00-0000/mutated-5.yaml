@@ -1,0 +1,11 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: ''
+  resources:
+    claims: []
+  tolerations:
+  - operator: Exists

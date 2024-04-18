@@ -1,0 +1,427 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_added": {
+            "root['spec']['serviceSelector'][ACTOKEY]": {
+                  "prev": "NotPresent",
+                  "curr": "ACTOKEY",
+                  "path": [
+                        "spec",
+                        "serviceSelector",
+                        "ACTOKEY"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {
+            "dictionary_item_added": {
+                  "root['test-cluster']['spec']['selector']['ACTOKEY']": {
+                        "prev": "NotPresent",
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "selector",
+                              "ACTOKEY"
+                        ]
+                  }
+            },
+            "dictionary_item_removed": {
+                  "root['test-cluster']['spec']['selector']['app']": {
+                        "prev": "test-cluster",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "selector",
+                              "app"
+                        ]
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "type_changes": {
+                  "root['test-cluster']['metadata']['annotations'][endpoints.kubernetes.io/last-change-trigger-time]": {
+                        "prev": "2023-12-01T22:48:35Z",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "annotations",
+                              "endpoints.kubernetes.io/last-change-trigger-time"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][0][ip]": {
+                        "prev": "10.244.0.5",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][0][node_name]": {
+                        "prev": "acto-0-cluster-2-control-plane",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][0][target_ref][kind]": {
+                        "prev": "Pod",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "kind"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][0][target_ref][name]": {
+                        "prev": "test-cluster-2xh6s",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][0][target_ref][namespace]": {
+                        "prev": "fluent",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "namespace"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][0][target_ref][uid]": {
+                        "prev": "f3b3e5b0-e18c-49a2-a48a-d829bb998081",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][1][ip]": {
+                        "prev": "10.244.1.3",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][1][node_name]": {
+                        "prev": "acto-0-cluster-2-worker3",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][1][target_ref][kind]": {
+                        "prev": "Pod",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "kind"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][1][target_ref][name]": {
+                        "prev": "test-cluster-xsv44",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][1][target_ref][namespace]": {
+                        "prev": "fluent",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "namespace"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][1][target_ref][uid]": {
+                        "prev": "bb1e0e65-7ce4-43f3-a14b-87a62d7010b4",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][2][ip]": {
+                        "prev": "10.244.2.2",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][2][node_name]": {
+                        "prev": "acto-0-cluster-2-worker",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][2][target_ref][kind]": {
+                        "prev": "Pod",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "kind"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][2][target_ref][name]": {
+                        "prev": "test-cluster-s65l6",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][2][target_ref][namespace]": {
+                        "prev": "fluent",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "namespace"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][2][target_ref][uid]": {
+                        "prev": "2fe5fb95-b1fa-4103-b661-389105c8f667",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][3][ip]": {
+                        "prev": "10.244.3.3",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][3][node_name]": {
+                        "prev": "acto-0-cluster-2-worker2",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][3][target_ref][kind]": {
+                        "prev": "Pod",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "target_ref",
+                              "kind"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][3][target_ref][name]": {
+                        "prev": "test-cluster-2k76d",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][3][target_ref][namespace]": {
+                        "prev": "fluent",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "target_ref",
+                              "namespace"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][addresses][3][target_ref][uid]": {
+                        "prev": "a8b1d5ec-d704-4f1f-90e7-9d02ed9c5f99",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              3,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][ports][0][name]": {
+                        "prev": "metrics",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "ports",
+                              0,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][ports][0][port]": {
+                        "prev": 2020,
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "ports",
+                              0,
+                              "port"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0][ports][0][protocol]": {
+                        "prev": "TCP",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "ports",
+                              0,
+                              "protocol"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "dictionary_item_added": {
+                  "root['serviceSelector'][ACTOKEY]": {
+                        "prev": "NotPresent",
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "serviceSelector",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

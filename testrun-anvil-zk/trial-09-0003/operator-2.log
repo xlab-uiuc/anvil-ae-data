@@ -1,0 +1,44 @@
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 5
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 5 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1121"), uid: Some("527c80e7-ca43-4332-99d3-650335c3b0f7") } }, Action { requeue_after: Some(60s) })
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"ZookeeperCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"ZookeeperCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"zookeeper\"},\"spec\":{\"conf\":{\"autoPurgePurgeInterval\":1,\"autoPurgeSnapRetainCount\":3,\"commitLogCount\":500,\"globalOutstandingLimit\":1000,\"initLimit\":10,\"maxClientCnxns\":60,\"maxCnxns\":0,\"maxSessionTimeout\":40000,\"minSessionTimeout\":4000,\"preAllocSize\":65536,\"quorumListenOnAllIps\":false,\"snapCount\":10000,\"snapSizeLimitInKb\":4194304,\"syncLimit\":2,\"tickTime\":2000},\"image\":\"pravega/zookeeper:0.2.14\",\"persistence\":{\"enabled\":true,\"storageClassName\":\"standard\",\"storageSize\":\"20Gi\"},\"ports\":{\"adminServer\":8080,\"client\":2181,\"leaderElection\":3888,\"metrics\":7000,\"quorum\":2888},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-02T15:13:29Z","generation":1,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:conf":{".":{},"f:autoPurgePurgeInterval":{},"f:autoPurgeSnapRetainCount":{},"f:commitLogCount":{},"f:globalOutstandingLimit":{},"f:initLimit":{},"f:maxClientCnxns":{},"f:maxCnxns":{},"f:maxSessionTimeout":{},"f:minSessionTimeout":{},"f:preAllocSize":{},"f:quorumListenOnAllIps":{},"f:snapCount":{},"f:snapSizeLimitInKb":{},"f:syncLimit":{},"f:tickTime":{}},"f:image":{},"f:labels":{},"f:nodeSelector":{},"f:persistence":{".":{},"f:enabled":{},"f:storageClassName":{},"f:storageSize":{}},"f:ports":{".":{},"f:adminServer":{},"f:client":{},"f:leaderElection":{},"f:metrics":{},"f:quorum":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-02T15:13:29Z"},{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:status":{".":{},"f:ready_replicas":{}}},"manager":"unknown","operation":"Update","subresource":"status","time":"2023-11-02T15:16:06Z"}],"name":"test-cluster","namespace":"zookeeper","resourceVersion":"1227","uid":"527c80e7-ca43-4332-99d3-650335c3b0f7"},"spec":{"replicas":3,"image":"pravega/zookeeper:0.2.14","ports":{"client":2181,"quorum":2888,"leaderElection":3888,"metrics":7000,"adminServer":8080},"conf":{"initLimit":10,"tickTime":2000,"syncLimit":2,"globalOutstandingLimit":1000,"preAllocSize":65536,"snapCount":10000,"commitLogCount":500,"snapSizeLimitInKb":4194304,"maxCnxns":0,"maxClientCnxns":60,"minSessionTimeout":4000,"maxSessionTimeout":40000,"autoPurgeSnapRetainCount":3,"autoPurgePurgeInterval":1,"quorumListenOnAllIps":false},"persistence":{"enabled":true,"storageSize":"20Gi","storageClassName":"standard"},"resources":null,"affinity":null,"tolerations":null,"node_selector":{},"labels":{},"annotations":{}},"status":{"ready_replicas":3}}
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 6
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 6 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1121"), uid: Some("527c80e7-ca43-4332-99d3-650335c3b0f7") } }, Action { requeue_after: Some(60s) })
+

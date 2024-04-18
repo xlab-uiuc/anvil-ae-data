@@ -1,0 +1,2082 @@
+{
+      "pod": {},
+      "deployment_pods": {
+            "zookeeper-controller": [
+                  {
+                        "api_version": null,
+                        "kind": null,
+                        "metadata": {
+                              "annotations": null,
+                              "creation_timestamp": "2023-11-02T18:05:14+00:00",
+                              "deletion_grace_period_seconds": null,
+                              "deletion_timestamp": null,
+                              "finalizers": null,
+                              "generate_name": "zookeeper-controller-5d866c5454-",
+                              "generation": null,
+                              "labels": {
+                                    "acto/tag": "operator-pod",
+                                    "app.kubernetes.io/name": "zookeeper-controller",
+                                    "pod-template-hash": "5d866c5454"
+                              },
+                              "managed_fields": [
+                                    {
+                                          "api_version": "v1",
+                                          "fields_type": "FieldsV1",
+                                          "fields_v1": {
+                                                "f:metadata": {
+                                                      "f:generateName": {},
+                                                      "f:labels": {
+                                                            ".": {},
+                                                            "f:acto/tag": {},
+                                                            "f:app.kubernetes.io/name": {},
+                                                            "f:pod-template-hash": {}
+                                                      },
+                                                      "f:ownerReferences": {
+                                                            ".": {},
+                                                            "k:{\"uid\":\"2b75e7a6-ffa7-4ac6-836c-32bdb35c0705\"}": {}
+                                                      }
+                                                },
+                                                "f:spec": {
+                                                      "f:containers": {
+                                                            "k:{\"name\":\"controller\"}": {
+                                                                  ".": {},
+                                                                  "f:command": {},
+                                                                  "f:image": {},
+                                                                  "f:imagePullPolicy": {},
+                                                                  "f:name": {},
+                                                                  "f:resources": {},
+                                                                  "f:terminationMessagePath": {},
+                                                                  "f:terminationMessagePolicy": {}
+                                                            }
+                                                      },
+                                                      "f:dnsPolicy": {},
+                                                      "f:enableServiceLinks": {},
+                                                      "f:restartPolicy": {},
+                                                      "f:schedulerName": {},
+                                                      "f:securityContext": {},
+                                                      "f:serviceAccount": {},
+                                                      "f:serviceAccountName": {},
+                                                      "f:terminationGracePeriodSeconds": {}
+                                                }
+                                          },
+                                          "manager": "kube-controller-manager",
+                                          "operation": "Update",
+                                          "subresource": null,
+                                          "time": "2023-11-02T18:05:14+00:00"
+                                    },
+                                    {
+                                          "api_version": "v1",
+                                          "fields_type": "FieldsV1",
+                                          "fields_v1": {
+                                                "f:status": {
+                                                      "f:conditions": {
+                                                            "k:{\"type\":\"ContainersReady\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            },
+                                                            "k:{\"type\":\"Initialized\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            },
+                                                            "k:{\"type\":\"Ready\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            }
+                                                      },
+                                                      "f:containerStatuses": {},
+                                                      "f:hostIP": {},
+                                                      "f:phase": {},
+                                                      "f:podIP": {},
+                                                      "f:podIPs": {
+                                                            ".": {},
+                                                            "k:{\"ip\":\"10.244.3.2\"}": {
+                                                                  ".": {},
+                                                                  "f:ip": {}
+                                                            }
+                                                      },
+                                                      "f:startTime": {}
+                                                }
+                                          },
+                                          "manager": "kubelet",
+                                          "operation": "Update",
+                                          "subresource": "status",
+                                          "time": "2023-11-02T18:05:50+00:00"
+                                    }
+                              ],
+                              "name": "zookeeper-controller-5d866c5454-7vctg",
+                              "namespace": "zookeeper",
+                              "owner_references": [
+                                    {
+                                          "api_version": "apps/v1",
+                                          "block_owner_deletion": true,
+                                          "controller": true,
+                                          "kind": "ReplicaSet",
+                                          "name": "zookeeper-controller-5d866c5454",
+                                          "uid": "2b75e7a6-ffa7-4ac6-836c-32bdb35c0705"
+                                    }
+                              ],
+                              "resource_version": "805",
+                              "self_link": null,
+                              "uid": "5cb87b84-e661-405f-98e9-816afd45c46a"
+                        },
+                        "spec": {
+                              "active_deadline_seconds": null,
+                              "affinity": null,
+                              "automount_service_account_token": null,
+                              "containers": [
+                                    {
+                                          "args": null,
+                                          "command": [
+                                                "/usr/local/bin/controller",
+                                                "crash"
+                                          ],
+                                          "env": null,
+                                          "env_from": null,
+                                          "image": "ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest",
+                                          "image_pull_policy": "Always",
+                                          "lifecycle": null,
+                                          "liveness_probe": null,
+                                          "name": "controller",
+                                          "ports": null,
+                                          "readiness_probe": null,
+                                          "resources": {
+                                                "claims": null,
+                                                "limits": null,
+                                                "requests": null
+                                          },
+                                          "security_context": null,
+                                          "startup_probe": null,
+                                          "stdin": null,
+                                          "stdin_once": null,
+                                          "termination_message_path": "/dev/termination-log",
+                                          "termination_message_policy": "File",
+                                          "tty": null,
+                                          "volume_devices": null,
+                                          "volume_mounts": [
+                                                {
+                                                      "mount_path": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                                      "mount_propagation": null,
+                                                      "name": "kube-api-access-cllsj",
+                                                      "read_only": true,
+                                                      "sub_path": null,
+                                                      "sub_path_expr": null
+                                                }
+                                          ],
+                                          "working_dir": null
+                                    }
+                              ],
+                              "dns_config": null,
+                              "dns_policy": "ClusterFirst",
+                              "enable_service_links": true,
+                              "ephemeral_containers": null,
+                              "host_aliases": null,
+                              "host_ipc": null,
+                              "host_network": null,
+                              "host_pid": null,
+                              "host_users": null,
+                              "hostname": null,
+                              "image_pull_secrets": null,
+                              "init_containers": null,
+                              "node_name": "acto-0-cluster-1-worker",
+                              "node_selector": null,
+                              "os": null,
+                              "overhead": null,
+                              "preemption_policy": "PreemptLowerPriority",
+                              "priority": 0,
+                              "priority_class_name": null,
+                              "readiness_gates": null,
+                              "resource_claims": null,
+                              "restart_policy": "Always",
+                              "runtime_class_name": null,
+                              "scheduler_name": "default-scheduler",
+                              "scheduling_gates": null,
+                              "security_context": {
+                                    "fs_group": null,
+                                    "fs_group_change_policy": null,
+                                    "run_as_group": null,
+                                    "run_as_non_root": null,
+                                    "run_as_user": null,
+                                    "se_linux_options": null,
+                                    "seccomp_profile": null,
+                                    "supplemental_groups": null,
+                                    "sysctls": null,
+                                    "windows_options": null
+                              },
+                              "service_account": "zookeeper-controller",
+                              "service_account_name": "zookeeper-controller",
+                              "set_hostname_as_fqdn": null,
+                              "share_process_namespace": null,
+                              "subdomain": null,
+                              "termination_grace_period_seconds": 30,
+                              "tolerations": [
+                                    {
+                                          "effect": "NoExecute",
+                                          "key": "node.kubernetes.io/not-ready",
+                                          "operator": "Exists",
+                                          "toleration_seconds": 300,
+                                          "value": null
+                                    },
+                                    {
+                                          "effect": "NoExecute",
+                                          "key": "node.kubernetes.io/unreachable",
+                                          "operator": "Exists",
+                                          "toleration_seconds": 300,
+                                          "value": null
+                                    }
+                              ],
+                              "topology_spread_constraints": null,
+                              "volumes": [
+                                    {
+                                          "aws_elastic_block_store": null,
+                                          "azure_disk": null,
+                                          "azure_file": null,
+                                          "cephfs": null,
+                                          "cinder": null,
+                                          "config_map": null,
+                                          "csi": null,
+                                          "downward_api": null,
+                                          "empty_dir": null,
+                                          "ephemeral": null,
+                                          "fc": null,
+                                          "flex_volume": null,
+                                          "flocker": null,
+                                          "gce_persistent_disk": null,
+                                          "git_repo": null,
+                                          "glusterfs": null,
+                                          "host_path": null,
+                                          "iscsi": null,
+                                          "name": "kube-api-access-cllsj",
+                                          "nfs": null,
+                                          "persistent_volume_claim": null,
+                                          "photon_persistent_disk": null,
+                                          "portworx_volume": null,
+                                          "projected": {
+                                                "default_mode": 420,
+                                                "sources": [
+                                                      {
+                                                            "config_map": null,
+                                                            "downward_api": null,
+                                                            "secret": null,
+                                                            "service_account_token": {
+                                                                  "audience": null,
+                                                                  "expiration_seconds": 3607,
+                                                                  "path": "token"
+                                                            }
+                                                      },
+                                                      {
+                                                            "config_map": {
+                                                                  "items": [
+                                                                        {
+                                                                              "key": "ca.crt",
+                                                                              "mode": null,
+                                                                              "path": "ca.crt"
+                                                                        }
+                                                                  ],
+                                                                  "name": "kube-root-ca.crt",
+                                                                  "optional": null
+                                                            },
+                                                            "downward_api": null,
+                                                            "secret": null,
+                                                            "service_account_token": null
+                                                      },
+                                                      {
+                                                            "config_map": null,
+                                                            "downward_api": {
+                                                                  "items": [
+                                                                        {
+                                                                              "field_ref": {
+                                                                                    "api_version": "v1",
+                                                                                    "field_path": "metadata.namespace"
+                                                                              },
+                                                                              "mode": null,
+                                                                              "path": "namespace",
+                                                                              "resource_field_ref": null
+                                                                        }
+                                                                  ]
+                                                            },
+                                                            "secret": null,
+                                                            "service_account_token": null
+                                                      }
+                                                ]
+                                          },
+                                          "quobyte": null,
+                                          "rbd": null,
+                                          "scale_io": null,
+                                          "secret": null,
+                                          "storageos": null,
+                                          "vsphere_volume": null
+                                    }
+                              ]
+                        },
+                        "status": {
+                              "conditions": [
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-02T18:05:14+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "Initialized"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-02T18:05:50+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "Ready"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-02T18:05:50+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "ContainersReady"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-02T18:05:14+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "PodScheduled"
+                                    }
+                              ],
+                              "container_statuses": [
+                                    {
+                                          "container_id": "containerd://bae82eae8a9f0aaba0e2cac04384251f4b52efa299caa52258abb0d3dea3af22",
+                                          "image": "ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest",
+                                          "image_id": "docker.io/library/import-2023-11-02@sha256:ed3fb68e81422f9f37013bcfef57be6bb726973ef134f87edce3e02c42357826",
+                                          "last_state": {
+                                                "running": null,
+                                                "terminated": {
+                                                      "container_id": "containerd://da0c1c0a6484267cc648431e70f21ebf3de042852eb3c1997df292592241c64f",
+                                                      "exit_code": 101,
+                                                      "finished_at": "2023-11-02T18:05:48+00:00",
+                                                      "message": null,
+                                                      "reason": "Error",
+                                                      "signal": null,
+                                                      "started_at": "2023-11-02T18:05:15+00:00"
+                                                },
+                                                "waiting": null
+                                          },
+                                          "name": "controller",
+                                          "ready": true,
+                                          "restart_count": 1,
+                                          "started": true,
+                                          "state": {
+                                                "running": {
+                                                      "started_at": "2023-11-02T18:05:49+00:00"
+                                                },
+                                                "terminated": null,
+                                                "waiting": null
+                                          }
+                                    }
+                              ],
+                              "ephemeral_container_statuses": null,
+                              "host_ip": "172.18.0.9",
+                              "init_container_statuses": null,
+                              "message": null,
+                              "nominated_node_name": null,
+                              "phase": "Running",
+                              "pod_ip": "10.244.3.2",
+                              "pod_i_ps": [
+                                    {
+                                          "ip": "10.244.3.2"
+                                    }
+                              ],
+                              "qos_class": "BestEffort",
+                              "reason": null,
+                              "start_time": "2023-11-02T18:05:14+00:00"
+                        }
+                  }
+            ]
+      },
+      "stateful_set": {
+            "test-cluster": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:49+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": 1,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:status": {
+                                                "f:collisionCount": {},
+                                                "f:currentRevision": {},
+                                                "f:observedGeneration": {},
+                                                "f:updateRevision": {}
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2023-11-02T18:05:49+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"efeabaee-6777-4ead-8bb5-ec837184423e\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:persistentVolumeClaimRetentionPolicy": {
+                                                      ".": {},
+                                                      "f:whenDeleted": {},
+                                                      "f:whenScaled": {}
+                                                },
+                                                "f:podManagementPolicy": {},
+                                                "f:replicas": {},
+                                                "f:revisionHistoryLimit": {},
+                                                "f:selector": {},
+                                                "f:serviceName": {},
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:annotations": {
+                                                                  ".": {},
+                                                                  "f:anvil.dev/lastRestartAt": {}
+                                                            },
+                                                            "f:labels": {
+                                                                  ".": {},
+                                                                  "f:app": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:containers": {
+                                                                  "k:{\"name\":\"zookeeper\"}": {
+                                                                        ".": {},
+                                                                        "f:command": {},
+                                                                        "f:imagePullPolicy": {},
+                                                                        "f:lifecycle": {
+                                                                              ".": {},
+                                                                              "f:preStop": {
+                                                                                    ".": {},
+                                                                                    "f:exec": {
+                                                                                          ".": {},
+                                                                                          "f:command": {}
+                                                                                    }
+                                                                              }
+                                                                        },
+                                                                        "f:livenessProbe": {
+                                                                              ".": {},
+                                                                              "f:exec": {
+                                                                                    ".": {},
+                                                                                    "f:command": {}
+                                                                              },
+                                                                              "f:failureThreshold": {},
+                                                                              "f:initialDelaySeconds": {},
+                                                                              "f:periodSeconds": {},
+                                                                              "f:successThreshold": {},
+                                                                              "f:timeoutSeconds": {}
+                                                                        },
+                                                                        "f:name": {},
+                                                                        "f:ports": {
+                                                                              ".": {},
+                                                                              "k:{\"containerPort\":2181,\"protocol\":\"TCP\"}": {
+                                                                                    ".": {},
+                                                                                    "f:containerPort": {},
+                                                                                    "f:name": {},
+                                                                                    "f:protocol": {}
+                                                                              },
+                                                                              "k:{\"containerPort\":2888,\"protocol\":\"TCP\"}": {
+                                                                                    ".": {},
+                                                                                    "f:containerPort": {},
+                                                                                    "f:name": {},
+                                                                                    "f:protocol": {}
+                                                                              },
+                                                                              "k:{\"containerPort\":3888,\"protocol\":\"TCP\"}": {
+                                                                                    ".": {},
+                                                                                    "f:containerPort": {},
+                                                                                    "f:name": {},
+                                                                                    "f:protocol": {}
+                                                                              },
+                                                                              "k:{\"containerPort\":7000,\"protocol\":\"TCP\"}": {
+                                                                                    ".": {},
+                                                                                    "f:containerPort": {},
+                                                                                    "f:name": {},
+                                                                                    "f:protocol": {}
+                                                                              },
+                                                                              "k:{\"containerPort\":8080,\"protocol\":\"TCP\"}": {
+                                                                                    ".": {},
+                                                                                    "f:containerPort": {},
+                                                                                    "f:name": {},
+                                                                                    "f:protocol": {}
+                                                                              }
+                                                                        },
+                                                                        "f:readinessProbe": {
+                                                                              ".": {},
+                                                                              "f:exec": {
+                                                                                    ".": {},
+                                                                                    "f:command": {}
+                                                                              },
+                                                                              "f:failureThreshold": {},
+                                                                              "f:initialDelaySeconds": {},
+                                                                              "f:periodSeconds": {},
+                                                                              "f:successThreshold": {},
+                                                                              "f:timeoutSeconds": {}
+                                                                        },
+                                                                        "f:resources": {},
+                                                                        "f:terminationMessagePath": {},
+                                                                        "f:terminationMessagePolicy": {},
+                                                                        "f:volumeMounts": {
+                                                                              ".": {},
+                                                                              "k:{\"mountPath\":\"/conf\"}": {
+                                                                                    ".": {},
+                                                                                    "f:mountPath": {},
+                                                                                    "f:name": {}
+                                                                              },
+                                                                              "k:{\"mountPath\":\"/data\"}": {
+                                                                                    ".": {},
+                                                                                    "f:mountPath": {},
+                                                                                    "f:name": {}
+                                                                              }
+                                                                        }
+                                                                  }
+                                                            },
+                                                            "f:dnsPolicy": {},
+                                                            "f:restartPolicy": {},
+                                                            "f:schedulerName": {},
+                                                            "f:securityContext": {},
+                                                            "f:terminationGracePeriodSeconds": {},
+                                                            "f:volumes": {
+                                                                  ".": {},
+                                                                  "k:{\"name\":\"conf\"}": {
+                                                                        ".": {},
+                                                                        "f:configMap": {
+                                                                              ".": {},
+                                                                              "f:defaultMode": {},
+                                                                              "f:name": {}
+                                                                        },
+                                                                        "f:name": {}
+                                                                  }
+                                                            }
+                                                      }
+                                                },
+                                                "f:updateStrategy": {
+                                                      "f:rollingUpdate": {
+                                                            ".": {},
+                                                            "f:partition": {}
+                                                      },
+                                                      "f:type": {}
+                                                },
+                                                "f:volumeClaimTemplates": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:49+00:00"
+                              }
+                        ],
+                        "name": "test-cluster",
+                        "namespace": "zookeeper",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "ZookeeperCluster",
+                                    "name": "test-cluster",
+                                    "uid": "efeabaee-6777-4ead-8bb5-ec837184423e"
+                              }
+                        ],
+                        "resource_version": "792",
+                        "self_link": null,
+                        "uid": "70b1c940-d47c-40b9-9ea8-a233a4130f44"
+                  },
+                  "spec": {
+                        "min_ready_seconds": null,
+                        "ordinals": null,
+                        "persistent_volume_claim_retention_policy": {
+                              "when_deleted": "Delete",
+                              "when_scaled": "Delete"
+                        },
+                        "pod_management_policy": "OrderedReady",
+                        "replicas": 3,
+                        "revision_history_limit": 10,
+                        "selector": {
+                              "match_expressions": null,
+                              "match_labels": {
+                                    "app": "test-cluster"
+                              }
+                        },
+                        "service_name": "test-cluster-headless",
+                        "template": {
+                              "metadata": {
+                                    "annotations": {
+                                          "anvil.dev/lastRestartAt": "781"
+                                    },
+                                    "creation_timestamp": null,
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app": "test-cluster"
+                                    },
+                                    "managed_fields": null,
+                                    "name": null,
+                                    "namespace": null,
+                                    "owner_references": null,
+                                    "resource_version": null,
+                                    "self_link": null,
+                                    "uid": null
+                              },
+                              "spec": {
+                                    "active_deadline_seconds": null,
+                                    "affinity": null,
+                                    "automount_service_account_token": null,
+                                    "containers": [
+                                          {
+                                                "args": null,
+                                                "command": [
+                                                      "/usr/local/bin/zookeeperStart.sh"
+                                                ],
+                                                "env": null,
+                                                "env_from": null,
+                                                "image": null,
+                                                "image_pull_policy": "Always",
+                                                "lifecycle": {
+                                                      "post_start": null,
+                                                      "pre_stop": {
+                                                            "_exec": {
+                                                                  "command": [
+                                                                        "zookeeperTeardown.sh"
+                                                                  ]
+                                                            },
+                                                            "http_get": null,
+                                                            "tcp_socket": null
+                                                      }
+                                                },
+                                                "liveness_probe": {
+                                                      "_exec": {
+                                                            "command": [
+                                                                  "zookeeperLive.sh"
+                                                            ]
+                                                      },
+                                                      "failure_threshold": 3,
+                                                      "grpc": null,
+                                                      "http_get": null,
+                                                      "initial_delay_seconds": 10,
+                                                      "period_seconds": 10,
+                                                      "success_threshold": 1,
+                                                      "tcp_socket": null,
+                                                      "termination_grace_period_seconds": null,
+                                                      "timeout_seconds": 10
+                                                },
+                                                "name": "zookeeper",
+                                                "ports": [
+                                                      {
+                                                            "container_port": 2181,
+                                                            "host_ip": null,
+                                                            "host_port": null,
+                                                            "name": "client",
+                                                            "protocol": "TCP"
+                                                      },
+                                                      {
+                                                            "container_port": 2888,
+                                                            "host_ip": null,
+                                                            "host_port": null,
+                                                            "name": "quorum",
+                                                            "protocol": "TCP"
+                                                      },
+                                                      {
+                                                            "container_port": 3888,
+                                                            "host_ip": null,
+                                                            "host_port": null,
+                                                            "name": "leader-election",
+                                                            "protocol": "TCP"
+                                                      },
+                                                      {
+                                                            "container_port": 7000,
+                                                            "host_ip": null,
+                                                            "host_port": null,
+                                                            "name": "metrics",
+                                                            "protocol": "TCP"
+                                                      },
+                                                      {
+                                                            "container_port": 8080,
+                                                            "host_ip": null,
+                                                            "host_port": null,
+                                                            "name": "admin-server",
+                                                            "protocol": "TCP"
+                                                      }
+                                                ],
+                                                "readiness_probe": {
+                                                      "_exec": {
+                                                            "command": [
+                                                                  "zookeeperReady.sh"
+                                                            ]
+                                                      },
+                                                      "failure_threshold": 3,
+                                                      "grpc": null,
+                                                      "http_get": null,
+                                                      "initial_delay_seconds": 10,
+                                                      "period_seconds": 10,
+                                                      "success_threshold": 1,
+                                                      "tcp_socket": null,
+                                                      "termination_grace_period_seconds": null,
+                                                      "timeout_seconds": 10
+                                                },
+                                                "resources": {
+                                                      "claims": null,
+                                                      "limits": null,
+                                                      "requests": null
+                                                },
+                                                "security_context": null,
+                                                "startup_probe": null,
+                                                "stdin": null,
+                                                "stdin_once": null,
+                                                "termination_message_path": "/dev/termination-log",
+                                                "termination_message_policy": "File",
+                                                "tty": null,
+                                                "volume_devices": null,
+                                                "volume_mounts": [
+                                                      {
+                                                            "mount_path": "/data",
+                                                            "mount_propagation": null,
+                                                            "name": "data",
+                                                            "read_only": null,
+                                                            "sub_path": null,
+                                                            "sub_path_expr": null
+                                                      },
+                                                      {
+                                                            "mount_path": "/conf",
+                                                            "mount_propagation": null,
+                                                            "name": "conf",
+                                                            "read_only": null,
+                                                            "sub_path": null,
+                                                            "sub_path_expr": null
+                                                      }
+                                                ],
+                                                "working_dir": null
+                                          }
+                                    ],
+                                    "dns_config": null,
+                                    "dns_policy": "ClusterFirst",
+                                    "enable_service_links": null,
+                                    "ephemeral_containers": null,
+                                    "host_aliases": null,
+                                    "host_ipc": null,
+                                    "host_network": null,
+                                    "host_pid": null,
+                                    "host_users": null,
+                                    "hostname": null,
+                                    "image_pull_secrets": null,
+                                    "init_containers": null,
+                                    "node_name": null,
+                                    "node_selector": null,
+                                    "os": null,
+                                    "overhead": null,
+                                    "preemption_policy": null,
+                                    "priority": null,
+                                    "priority_class_name": null,
+                                    "readiness_gates": null,
+                                    "resource_claims": null,
+                                    "restart_policy": "Always",
+                                    "runtime_class_name": null,
+                                    "scheduler_name": "default-scheduler",
+                                    "scheduling_gates": null,
+                                    "security_context": {
+                                          "fs_group": null,
+                                          "fs_group_change_policy": null,
+                                          "run_as_group": null,
+                                          "run_as_non_root": null,
+                                          "run_as_user": null,
+                                          "se_linux_options": null,
+                                          "seccomp_profile": null,
+                                          "supplemental_groups": null,
+                                          "sysctls": null,
+                                          "windows_options": null
+                                    },
+                                    "service_account": null,
+                                    "service_account_name": null,
+                                    "set_hostname_as_fqdn": null,
+                                    "share_process_namespace": null,
+                                    "subdomain": null,
+                                    "termination_grace_period_seconds": 30,
+                                    "tolerations": null,
+                                    "topology_spread_constraints": null,
+                                    "volumes": [
+                                          {
+                                                "aws_elastic_block_store": null,
+                                                "azure_disk": null,
+                                                "azure_file": null,
+                                                "cephfs": null,
+                                                "cinder": null,
+                                                "config_map": {
+                                                      "default_mode": 420,
+                                                      "items": null,
+                                                      "name": "test-cluster-configmap",
+                                                      "optional": null
+                                                },
+                                                "csi": null,
+                                                "downward_api": null,
+                                                "empty_dir": null,
+                                                "ephemeral": null,
+                                                "fc": null,
+                                                "flex_volume": null,
+                                                "flocker": null,
+                                                "gce_persistent_disk": null,
+                                                "git_repo": null,
+                                                "glusterfs": null,
+                                                "host_path": null,
+                                                "iscsi": null,
+                                                "name": "conf",
+                                                "nfs": null,
+                                                "persistent_volume_claim": null,
+                                                "photon_persistent_disk": null,
+                                                "portworx_volume": null,
+                                                "projected": null,
+                                                "quobyte": null,
+                                                "rbd": null,
+                                                "scale_io": null,
+                                                "secret": null,
+                                                "storageos": null,
+                                                "vsphere_volume": null
+                                          }
+                                    ]
+                              }
+                        },
+                        "update_strategy": {
+                              "rolling_update": {
+                                    "max_unavailable": null,
+                                    "partition": 0
+                              },
+                              "type": "RollingUpdate"
+                        },
+                        "volume_claim_templates": [
+                              {
+                                    "api_version": "v1",
+                                    "kind": "PersistentVolumeClaim",
+                                    "metadata": {
+                                          "annotations": null,
+                                          "creation_timestamp": null,
+                                          "deletion_grace_period_seconds": null,
+                                          "deletion_timestamp": null,
+                                          "finalizers": null,
+                                          "generate_name": null,
+                                          "generation": null,
+                                          "labels": {
+                                                "app": "test-cluster"
+                                          },
+                                          "managed_fields": null,
+                                          "name": "data",
+                                          "namespace": null,
+                                          "owner_references": null,
+                                          "resource_version": null,
+                                          "self_link": null,
+                                          "uid": null
+                                    },
+                                    "spec": {
+                                          "access_modes": [
+                                                "ReadWriteOnce"
+                                          ],
+                                          "data_source": null,
+                                          "data_source_ref": null,
+                                          "resources": {
+                                                "claims": null,
+                                                "limits": null,
+                                                "requests": {
+                                                      "storage": "20Gi"
+                                                }
+                                          },
+                                          "selector": null,
+                                          "storage_class_name": "standard",
+                                          "volume_mode": "Filesystem",
+                                          "volume_name": null
+                                    },
+                                    "status": {
+                                          "access_modes": null,
+                                          "allocated_resources": null,
+                                          "capacity": null,
+                                          "conditions": null,
+                                          "phase": "Pending",
+                                          "resize_status": null
+                                    }
+                              }
+                        ]
+                  },
+                  "status": {
+                        "available_replicas": 0,
+                        "collision_count": 0,
+                        "conditions": null,
+                        "current_replicas": null,
+                        "current_revision": "test-cluster-f66f947b9",
+                        "observed_generation": 1,
+                        "ready_replicas": null,
+                        "replicas": 0,
+                        "update_revision": "test-cluster-f66f947b9",
+                        "updated_replicas": null
+                  }
+            }
+      },
+      "deployment": {
+            "zookeeper-controller": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "deployment.kubernetes.io/revision": "2"
+                        },
+                        "creation_timestamp": "2023-11-02T18:05:03+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": 2,
+                        "labels": {
+                              "acto/tag": "operator-deployment",
+                              "app.kubernetes.io/name": "zookeeper-controller"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:app.kubernetes.io/name": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:replicas": {},
+                                                "f:selector": {},
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:app.kubernetes.io/name": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:containers": {
+                                                                  "k:{\"name\":\"controller\"}": {
+                                                                        ".": {},
+                                                                        "f:command": {},
+                                                                        "f:image": {},
+                                                                        "f:name": {}
+                                                                  }
+                                                            },
+                                                            "f:serviceAccountName": {}
+                                                      }
+                                                }
+                                          }
+                                    },
+                                    "manager": "kubectl",
+                                    "operation": "Apply",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:03+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:acto/tag": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:acto/tag": {}
+                                                            }
+                                                      }
+                                                }
+                                          }
+                                    },
+                                    "manager": "OpenAPI-Generator",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:14+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:deployment.kubernetes.io/revision": {}
+                                                }
+                                          },
+                                          "f:status": {
+                                                "f:availableReplicas": {},
+                                                "f:conditions": {
+                                                      ".": {},
+                                                      "k:{\"type\":\"Available\"}": {
+                                                            ".": {},
+                                                            "f:lastTransitionTime": {},
+                                                            "f:lastUpdateTime": {},
+                                                            "f:message": {},
+                                                            "f:reason": {},
+                                                            "f:status": {},
+                                                            "f:type": {}
+                                                      },
+                                                      "k:{\"type\":\"Progressing\"}": {
+                                                            ".": {},
+                                                            "f:lastTransitionTime": {},
+                                                            "f:lastUpdateTime": {},
+                                                            "f:message": {},
+                                                            "f:reason": {},
+                                                            "f:status": {},
+                                                            "f:type": {}
+                                                      }
+                                                },
+                                                "f:observedGeneration": {},
+                                                "f:readyReplicas": {},
+                                                "f:replicas": {},
+                                                "f:updatedReplicas": {}
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2023-11-02T18:05:50+00:00"
+                              }
+                        ],
+                        "name": "zookeeper-controller",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "807",
+                        "self_link": null,
+                        "uid": "65b154e1-3cd9-4027-b31a-e2f577dac8e4"
+                  },
+                  "spec": {
+                        "min_ready_seconds": null,
+                        "paused": null,
+                        "progress_deadline_seconds": 600,
+                        "replicas": 1,
+                        "revision_history_limit": 10,
+                        "selector": {
+                              "match_expressions": null,
+                              "match_labels": {
+                                    "app.kubernetes.io/name": "zookeeper-controller"
+                              }
+                        },
+                        "strategy": {
+                              "rolling_update": {
+                                    "max_surge": "25%",
+                                    "max_unavailable": "25%"
+                              },
+                              "type": "RollingUpdate"
+                        },
+                        "template": {
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": null,
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "acto/tag": "operator-pod",
+                                          "app.kubernetes.io/name": "zookeeper-controller"
+                                    },
+                                    "managed_fields": null,
+                                    "name": null,
+                                    "namespace": null,
+                                    "owner_references": null,
+                                    "resource_version": null,
+                                    "self_link": null,
+                                    "uid": null
+                              },
+                              "spec": {
+                                    "active_deadline_seconds": null,
+                                    "affinity": null,
+                                    "automount_service_account_token": null,
+                                    "containers": [
+                                          {
+                                                "args": null,
+                                                "command": [
+                                                      "/usr/local/bin/controller",
+                                                      "crash"
+                                                ],
+                                                "env": null,
+                                                "env_from": null,
+                                                "image": "ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest",
+                                                "image_pull_policy": "Always",
+                                                "lifecycle": null,
+                                                "liveness_probe": null,
+                                                "name": "controller",
+                                                "ports": null,
+                                                "readiness_probe": null,
+                                                "resources": {
+                                                      "claims": null,
+                                                      "limits": null,
+                                                      "requests": null
+                                                },
+                                                "security_context": null,
+                                                "startup_probe": null,
+                                                "stdin": null,
+                                                "stdin_once": null,
+                                                "termination_message_path": "/dev/termination-log",
+                                                "termination_message_policy": "File",
+                                                "tty": null,
+                                                "volume_devices": null,
+                                                "volume_mounts": null,
+                                                "working_dir": null
+                                          }
+                                    ],
+                                    "dns_config": null,
+                                    "dns_policy": "ClusterFirst",
+                                    "enable_service_links": null,
+                                    "ephemeral_containers": null,
+                                    "host_aliases": null,
+                                    "host_ipc": null,
+                                    "host_network": null,
+                                    "host_pid": null,
+                                    "host_users": null,
+                                    "hostname": null,
+                                    "image_pull_secrets": null,
+                                    "init_containers": null,
+                                    "node_name": null,
+                                    "node_selector": null,
+                                    "os": null,
+                                    "overhead": null,
+                                    "preemption_policy": null,
+                                    "priority": null,
+                                    "priority_class_name": null,
+                                    "readiness_gates": null,
+                                    "resource_claims": null,
+                                    "restart_policy": "Always",
+                                    "runtime_class_name": null,
+                                    "scheduler_name": "default-scheduler",
+                                    "scheduling_gates": null,
+                                    "security_context": {
+                                          "fs_group": null,
+                                          "fs_group_change_policy": null,
+                                          "run_as_group": null,
+                                          "run_as_non_root": null,
+                                          "run_as_user": null,
+                                          "se_linux_options": null,
+                                          "seccomp_profile": null,
+                                          "supplemental_groups": null,
+                                          "sysctls": null,
+                                          "windows_options": null
+                                    },
+                                    "service_account": "zookeeper-controller",
+                                    "service_account_name": "zookeeper-controller",
+                                    "set_hostname_as_fqdn": null,
+                                    "share_process_namespace": null,
+                                    "subdomain": null,
+                                    "termination_grace_period_seconds": 30,
+                                    "tolerations": null,
+                                    "topology_spread_constraints": null,
+                                    "volumes": null
+                              }
+                        }
+                  },
+                  "status": {
+                        "available_replicas": 1,
+                        "collision_count": null,
+                        "conditions": [
+                              {
+                                    "last_transition_time": "2023-11-02T18:05:03+00:00",
+                                    "last_update_time": "2023-11-02T18:05:16+00:00",
+                                    "message": "ReplicaSet \"zookeeper-controller-5d866c5454\" has successfully progressed.",
+                                    "reason": "NewReplicaSetAvailable",
+                                    "status": "True",
+                                    "type": "Progressing"
+                              },
+                              {
+                                    "last_transition_time": "2023-11-02T18:05:50+00:00",
+                                    "last_update_time": "2023-11-02T18:05:50+00:00",
+                                    "message": "Deployment has minimum availability.",
+                                    "reason": "MinimumReplicasAvailable",
+                                    "status": "True",
+                                    "type": "Available"
+                              }
+                        ],
+                        "observed_generation": 2,
+                        "ready_replicas": 1,
+                        "replicas": 1,
+                        "unavailable_replicas": null,
+                        "updated_replicas": 1
+                  }
+            }
+      },
+      "config_map": {
+            "kube-root-ca.crt": {
+                  "api_version": null,
+                  "binary_data": null,
+                  "data": {
+                        "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIC/jCCAeagAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl\ncm5ldGVzMB4XDTIzMTEwMjE4MDQwNVoXDTMzMTAzMDE4MDQwNVowFTETMBEGA1UE\nAxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANHU\nPA86Crdk0rwF/IXXsEoJLtQKF4CJfGasDEIzqTp+hQpAwxNUiC9aoqTpRNsJJxM2\nYBp7QWwXA2n0AXfVl/5FLG8lsOYOMDDJDohcPTRYQADaUCPLMKAGwW94lhSfd07Y\nuyq1FPwjGcWmN4Xr0w7Ab8E0/Pah48a/JJMWlyEn1kUFTEoPED+MKNP6IlgFidmz\n8eCc4bjwu49EzExHOZjuUPgrIjLgG2WgGijQ8jr1eC5s3isHVuJPEOI50ruEL1Lu\n5RCsbWbxGLDHhy44YhHK9NiMvUshwpvOKyn3ylXpFDRI27RZp9eYXJWHXjCURQ2V\nDLqovb6kite1a0dXV8UCAwEAAaNZMFcwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB\n/wQFMAMBAf8wHQYDVR0OBBYEFIr1A4N8cEwbkoNBpN3tSiXvCjaMMBUGA1UdEQQO\nMAyCCmt1YmVybmV0ZXMwDQYJKoZIhvcNAQELBQADggEBABxpZfr4PsLwu+RkMtGa\ngzWQbKyC7gdtIdHU/SAmPjrGAgW1THZ4Q+nd202RfivXexbjHUNr/nU0hSpxG0TD\n0i9mTL0G976cLEtc8Sctwb8aCGNCw6rkkuHOeePx9hMsD+qPvgsAJNqeMBQ40LHo\ngB5OKizBL8UfJ/lgbXydpBD/tNOM3BkjZwQY4hjC069Jqcc4qPin1rVe1XFfhSjm\nLoC/eSU6nZ0F+dkjdP46PtnXLn8eT44PK4QIst9+8Etw1Fn39ogv3fGQUMFBwOGd\nB4xCPdksMPxZwk/pk0hW5Wj2lpC0oTWfiP+JwYlfZAr6OmhHg+G5h+auhYQk7Xzf\nx0w=\n-----END CERTIFICATE-----\n"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "kubernetes.io/description": "Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters."
+                        },
+                        "creation_timestamp": "2023-11-02T18:04:50+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:ca.crt": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:kubernetes.io/description": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:04:50+00:00"
+                              }
+                        ],
+                        "name": "kube-root-ca.crt",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "599",
+                        "self_link": null,
+                        "uid": "c5c271f4-4596-4158-8bc1-7078bb063a54"
+                  }
+            },
+            "test-cluster-configmap": {
+                  "api_version": null,
+                  "binary_data": null,
+                  "data": {
+                        "env.sh": "#!/usr/bin/env bash\n\nDOMAIN=test-cluster-headless.zookeeper.svc.cluster.local\nQUORUM_PORT=2888\nLEADER_PORT=3888\nCLIENT_HOST=test-cluster-client\nCLIENT_PORT=2181\nADMIN_SERVER_HOST=test-cluster-admin-server\nADMIN_SERVER_PORT=8080\nCLUSTER_NAME=test-cluster\n",
+                        "log4j-quiet.properties": "log4j.rootLogger=ERROR, CONSOLE\nlog4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender\nlog4j.appender.CONSOLE.Threshold=ERROR\nlog4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout\nlog4j.appender.CONSOLE.layout.ConversionPattern=%d{ISO8601} [myid:%X{myid}] - %-5p [%t:%C{1}@%L] - %m%n\n",
+                        "log4j.properties": "zookeeper.root.logger=CONSOLE\nzookeeper.console.threshold=INFO\nlog4j.rootLogger=${zookeeper.root.logger}\nlog4j.appender.CONSOLE=org.apache.log4j.ConsoleAppender\nlog4j.appender.CONSOLE.Threshold=${zookeeper.console.threshold}\nlog4j.appender.CONSOLE.layout=org.apache.log4j.PatternLayout\nlog4j.appender.CONSOLE.layout.ConversionPattern=%d{ISO8601} [myid:%X{myid}] - %-5p [%t:%C{1}@%L] - %m%n\n",
+                        "zoo.cfg": "4lw.commands.whitelist=cons, envi, conf, crst, srvr, stat, mntr, ruok\ndataDir=/data\nstandaloneEnabled=false\nreconfigEnabled=true\nskipACL=yes\nmetricsProvider.className=org.apache.zookeeper.metrics.prometheus.PrometheusMetricsProvider\nmetricsProvider.httpPort=7000\nmetricsProvider.exportJvmInfo=true\ninitLimit=10\nsyncLimit=2\ntickTime=2000\nglobalOutstandingLimit=1000\npreAllocSize=65536\nsnapCount=10000\ncommitLogCount=500\nsnapSizeLimitInKb=4194304\nmaxCnxns=0\nmaxClientCnxns=60\nminSessionTimeout=4000\nmaxSessionTimeout=40000\nautopurge.snapRetainCount=3\nautopurge.purgeInterval=1\nquorumListenOnAllIPs=false\nadmin.serverPort=8080\ndynamicConfigFile=/data/zoo.cfg.dynamic\n"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:49+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:env.sh": {},
+                                                "f:log4j-quiet.properties": {},
+                                                "f:log4j.properties": {},
+                                                "f:zoo.cfg": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"efeabaee-6777-4ead-8bb5-ec837184423e\"}": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:49+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-configmap",
+                        "namespace": "zookeeper",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "ZookeeperCluster",
+                                    "name": "test-cluster",
+                                    "uid": "efeabaee-6777-4ead-8bb5-ec837184423e"
+                              }
+                        ],
+                        "resource_version": "781",
+                        "self_link": null,
+                        "uid": "1940adb1-6937-4bf4-8fdf-d6650592fd91"
+                  }
+            }
+      },
+      "service": {
+            "test-cluster-admin-server": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:49+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"efeabaee-6777-4ead-8bb5-ec837184423e\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:internalTrafficPolicy": {},
+                                                "f:ports": {
+                                                      ".": {},
+                                                      "k:{\"port\":8080,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      }
+                                                },
+                                                "f:selector": {},
+                                                "f:sessionAffinity": {},
+                                                "f:type": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:49+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-admin-server",
+                        "namespace": "zookeeper",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "ZookeeperCluster",
+                                    "name": "test-cluster",
+                                    "uid": "efeabaee-6777-4ead-8bb5-ec837184423e"
+                              }
+                        ],
+                        "resource_version": "777",
+                        "self_link": null,
+                        "uid": "3bfc09cc-6ad1-4ce9-a449-7f5a2e34fd46"
+                  },
+                  "spec": {
+                        "allocate_load_balancer_node_ports": null,
+                        "cluster_ip": "10.96.156.18",
+                        "cluster_i_ps": [
+                              "10.96.156.18"
+                        ],
+                        "external_i_ps": null,
+                        "external_name": null,
+                        "external_traffic_policy": null,
+                        "health_check_node_port": null,
+                        "internal_traffic_policy": "Cluster",
+                        "ip_families": [
+                              "IPv4"
+                        ],
+                        "ip_family_policy": "SingleStack",
+                        "load_balancer_class": null,
+                        "load_balancer_ip": null,
+                        "load_balancer_source_ranges": null,
+                        "ports": [
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-admin-server",
+                                    "node_port": null,
+                                    "port": 8080,
+                                    "protocol": "TCP",
+                                    "target_port": 8080
+                              }
+                        ],
+                        "publish_not_ready_addresses": null,
+                        "selector": {
+                              "app": "test-cluster"
+                        },
+                        "session_affinity": "None",
+                        "session_affinity_config": null,
+                        "type": "ClusterIP"
+                  },
+                  "status": {
+                        "conditions": null,
+                        "load_balancer": {
+                              "ingress": null
+                        }
+                  }
+            },
+            "test-cluster-client": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:48+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"efeabaee-6777-4ead-8bb5-ec837184423e\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:internalTrafficPolicy": {},
+                                                "f:ports": {
+                                                      ".": {},
+                                                      "k:{\"port\":2181,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      }
+                                                },
+                                                "f:selector": {},
+                                                "f:sessionAffinity": {},
+                                                "f:type": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:48+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-client",
+                        "namespace": "zookeeper",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "ZookeeperCluster",
+                                    "name": "test-cluster",
+                                    "uid": "efeabaee-6777-4ead-8bb5-ec837184423e"
+                              }
+                        ],
+                        "resource_version": "763",
+                        "self_link": null,
+                        "uid": "19df3800-c511-46df-bdb0-4bbecdc897fb"
+                  },
+                  "spec": {
+                        "allocate_load_balancer_node_ports": null,
+                        "cluster_ip": "10.96.197.15",
+                        "cluster_i_ps": [
+                              "10.96.197.15"
+                        ],
+                        "external_i_ps": null,
+                        "external_name": null,
+                        "external_traffic_policy": null,
+                        "health_check_node_port": null,
+                        "internal_traffic_policy": "Cluster",
+                        "ip_families": [
+                              "IPv4"
+                        ],
+                        "ip_family_policy": "SingleStack",
+                        "load_balancer_class": null,
+                        "load_balancer_ip": null,
+                        "load_balancer_source_ranges": null,
+                        "ports": [
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-client",
+                                    "node_port": null,
+                                    "port": 2181,
+                                    "protocol": "TCP",
+                                    "target_port": 2181
+                              }
+                        ],
+                        "publish_not_ready_addresses": null,
+                        "selector": {
+                              "app": "test-cluster"
+                        },
+                        "session_affinity": "None",
+                        "session_affinity_config": null,
+                        "type": "ClusterIP"
+                  },
+                  "status": {
+                        "conditions": null,
+                        "load_balancer": {
+                              "ingress": null
+                        }
+                  }
+            },
+            "test-cluster-headless": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:48+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"efeabaee-6777-4ead-8bb5-ec837184423e\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:clusterIP": {},
+                                                "f:internalTrafficPolicy": {},
+                                                "f:ports": {
+                                                      ".": {},
+                                                      "k:{\"port\":2181,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":2888,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":3888,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":7000,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":8080,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      }
+                                                },
+                                                "f:selector": {},
+                                                "f:sessionAffinity": {},
+                                                "f:type": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:48+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-headless",
+                        "namespace": "zookeeper",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "ZookeeperCluster",
+                                    "name": "test-cluster",
+                                    "uid": "efeabaee-6777-4ead-8bb5-ec837184423e"
+                              }
+                        ],
+                        "resource_version": "758",
+                        "self_link": null,
+                        "uid": "503b973d-8a0b-4446-b32a-1a6f335ad915"
+                  },
+                  "spec": {
+                        "allocate_load_balancer_node_ports": null,
+                        "cluster_ip": "None",
+                        "cluster_i_ps": [
+                              "None"
+                        ],
+                        "external_i_ps": null,
+                        "external_name": null,
+                        "external_traffic_policy": null,
+                        "health_check_node_port": null,
+                        "internal_traffic_policy": "Cluster",
+                        "ip_families": [
+                              "IPv4"
+                        ],
+                        "ip_family_policy": "SingleStack",
+                        "load_balancer_class": null,
+                        "load_balancer_ip": null,
+                        "load_balancer_source_ranges": null,
+                        "ports": [
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-client",
+                                    "node_port": null,
+                                    "port": 2181,
+                                    "protocol": "TCP",
+                                    "target_port": 2181
+                              },
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-quorum",
+                                    "node_port": null,
+                                    "port": 2888,
+                                    "protocol": "TCP",
+                                    "target_port": 2888
+                              },
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-leader-election",
+                                    "node_port": null,
+                                    "port": 3888,
+                                    "protocol": "TCP",
+                                    "target_port": 3888
+                              },
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-metrics",
+                                    "node_port": null,
+                                    "port": 7000,
+                                    "protocol": "TCP",
+                                    "target_port": 7000
+                              },
+                              {
+                                    "app_protocol": null,
+                                    "name": "tcp-admin-server",
+                                    "node_port": null,
+                                    "port": 8080,
+                                    "protocol": "TCP",
+                                    "target_port": 8080
+                              }
+                        ],
+                        "publish_not_ready_addresses": null,
+                        "selector": {
+                              "app": "test-cluster"
+                        },
+                        "session_affinity": "None",
+                        "session_affinity_config": null,
+                        "type": "ClusterIP"
+                  },
+                  "status": {
+                        "conditions": null,
+                        "load_balancer": {
+                              "ingress": null
+                        }
+                  }
+            }
+      },
+      "pvc": {
+            "data-test-cluster-0": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:49+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": [
+                              "kubernetes.io/pvc-protection"
+                        ],
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"70b1c940-d47c-40b9-9ea8-a233a4130f44\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:accessModes": {},
+                                                "f:resources": {
+                                                      "f:requests": {
+                                                            ".": {},
+                                                            "f:storage": {}
+                                                      }
+                                                },
+                                                "f:storageClassName": {},
+                                                "f:volumeMode": {}
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:49+00:00"
+                              }
+                        ],
+                        "name": "data-test-cluster-0",
+                        "namespace": "zookeeper",
+                        "owner_references": [
+                              {
+                                    "api_version": "apps/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": null,
+                                    "kind": "StatefulSet",
+                                    "name": "test-cluster",
+                                    "uid": "70b1c940-d47c-40b9-9ea8-a233a4130f44"
+                              }
+                        ],
+                        "resource_version": "789",
+                        "self_link": null,
+                        "uid": "2c63878e-bbd6-434f-8bc0-de9dcfb764bc"
+                  },
+                  "spec": {
+                        "access_modes": [
+                              "ReadWriteOnce"
+                        ],
+                        "data_source": null,
+                        "data_source_ref": null,
+                        "resources": {
+                              "claims": null,
+                              "limits": null,
+                              "requests": {
+                                    "storage": "20Gi"
+                              }
+                        },
+                        "selector": null,
+                        "storage_class_name": "standard",
+                        "volume_mode": "Filesystem",
+                        "volume_name": null
+                  },
+                  "status": {
+                        "access_modes": null,
+                        "allocated_resources": null,
+                        "capacity": null,
+                        "conditions": null,
+                        "phase": "Pending",
+                        "resize_status": null
+                  }
+            }
+      },
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "test-cluster-admin-server": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "endpoints.kubernetes.io/last-change-trigger-time": "2023-11-02T18:05:49Z"
+                        },
+                        "creation_timestamp": "2023-11-02T18:05:49+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                },
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:49+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-admin-server",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "778",
+                        "self_link": null,
+                        "uid": "adf74bc8-1102-4f3f-9b78-2e2317d4d517"
+                  },
+                  "subsets": null
+            },
+            "test-cluster-client": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "endpoints.kubernetes.io/last-change-trigger-time": "2023-11-02T18:05:48Z"
+                        },
+                        "creation_timestamp": "2023-11-02T18:05:48+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                },
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:48+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-client",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "764",
+                        "self_link": null,
+                        "uid": "fb97180e-fd64-430b-922c-be408ea59088"
+                  },
+                  "subsets": null
+            },
+            "test-cluster-headless": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "endpoints.kubernetes.io/last-change-trigger-time": "2023-11-02T18:05:48Z"
+                        },
+                        "creation_timestamp": "2023-11-02T18:05:48+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster",
+                              "service.kubernetes.io/headless": ""
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                },
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {},
+                                                      "f:service.kubernetes.io/headless": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-02T18:05:48+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-headless",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "759",
+                        "self_link": null,
+                        "uid": "d5dd08bb-6e69-4ca6-bd1d-89cedb56d6bc"
+                  },
+                  "subsets": null
+            }
+      },
+      "service_account": {
+            "default": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:04:50+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": null,
+                        "name": "default",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "598",
+                        "self_link": null,
+                        "uid": "bfabe54e-7cea-47a7-a9cd-89f0f65f8dcd"
+                  },
+                  "secrets": null
+            },
+            "zookeeper-controller": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-02T18:05:03+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": null,
+                        "name": "zookeeper-controller",
+                        "namespace": "zookeeper",
+                        "owner_references": null,
+                        "resource_version": "621",
+                        "self_link": null,
+                        "uid": "146d17dd-74bc-4e8e-833f-bed392b677da"
+                  },
+                  "secrets": null
+            }
+      },
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "annotations": {},
+            "conf": {
+                  "autoPurgePurgeInterval": 1,
+                  "autoPurgeSnapRetainCount": 3,
+                  "commitLogCount": 500,
+                  "globalOutstandingLimit": 1000,
+                  "initLimit": 10,
+                  "maxClientCnxns": 60,
+                  "maxCnxns": 0,
+                  "maxSessionTimeout": 40000,
+                  "minSessionTimeout": 4000,
+                  "preAllocSize": 65536,
+                  "quorumListenOnAllIps": false,
+                  "snapCount": 10000,
+                  "snapSizeLimitInKb": 4194304,
+                  "syncLimit": 2,
+                  "tickTime": 2000
+            },
+            "image": "",
+            "labels": {},
+            "nodeSelector": {},
+            "persistence": {
+                  "enabled": true,
+                  "storageClassName": "standard",
+                  "storageSize": "20Gi"
+            },
+            "ports": {
+                  "adminServer": 8080,
+                  "client": 2181,
+                  "leaderElection": 3888,
+                  "metrics": 7000,
+                  "quorum": 2888
+            },
+            "replicas": 3
+      },
+      "custom_resource_status": {
+            "ready_replicas": 0
+      }
+}

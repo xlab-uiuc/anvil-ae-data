@@ -1,0 +1,1419 @@
+{
+      "input_digest": "9af6306b5c7ec09055f5518efdf1d317",
+      "snapshot": {
+            "input": {
+                  "apiVersion": "anvil.dev/v1",
+                  "kind": "FluentBit",
+                  "metadata": {
+                        "name": "test-cluster"
+                  },
+                  "spec": {
+                        "envVars": [
+                              {
+                                    "name": "ACTOKEY",
+                                    "value": "ACTOKEY",
+                                    "valueFrom": {
+                                          "configMapKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": false
+                                          },
+                                          "fieldRef": {
+                                                "apiVersion": "ACTOKEY",
+                                                "fieldPath": "ACTOKEY"
+                                          },
+                                          "resourceFieldRef": {
+                                                "containerName": "ACTOKEY",
+                                                "divisor": "ACTOKEY",
+                                                "resource": "ACTOKEY"
+                                          },
+                                          "secretKeyRef": null
+                                    }
+                              }
+                        ],
+                        "fluentBitConfigName": "fluent-bit-config",
+                        "image": "kubesphere/fluent-bit:v2.1.7",
+                        "ports": [],
+                        "tolerations": [
+                              {
+                                    "operator": "Exists"
+                              }
+                        ]
+                  }
+            },
+            "cli_result": {
+                  "stdout": "fluentbit.anvil.dev/test-cluster created",
+                  "stderr": ""
+            },
+            "system_state": {
+                  "pod": {},
+                  "deployment_pods": {
+                        "fluent-controller": [
+                              {
+                                    "api_version": null,
+                                    "kind": null,
+                                    "metadata": {
+                                          "annotations": null,
+                                          "creation_timestamp": "2023-12-02T00:22:38+00:00",
+                                          "deletion_grace_period_seconds": null,
+                                          "deletion_timestamp": null,
+                                          "finalizers": null,
+                                          "generate_name": "fluent-controller-8557f6b8d4-",
+                                          "generation": null,
+                                          "labels": {
+                                                "acto/tag": "operator-pod",
+                                                "app.kubernetes.io/name": "fluent-controller",
+                                                "pod-template-hash": "8557f6b8d4"
+                                          },
+                                          "managed_fields": [
+                                                {
+                                                      "api_version": "v1",
+                                                      "fields_type": "FieldsV1",
+                                                      "fields_v1": {
+                                                            "f:metadata": {
+                                                                  "f:generateName": {},
+                                                                  "f:labels": {
+                                                                        ".": {},
+                                                                        "f:acto/tag": {},
+                                                                        "f:app.kubernetes.io/name": {},
+                                                                        "f:pod-template-hash": {}
+                                                                  },
+                                                                  "f:ownerReferences": {
+                                                                        ".": {},
+                                                                        "k:{\"uid\":\"57c75404-915d-4230-a435-8931eb2db821\"}": {}
+                                                                  }
+                                                            },
+                                                            "f:spec": {
+                                                                  "f:containers": {
+                                                                        "k:{\"name\":\"controller\"}": {
+                                                                              ".": {},
+                                                                              "f:image": {},
+                                                                              "f:imagePullPolicy": {},
+                                                                              "f:name": {},
+                                                                              "f:resources": {},
+                                                                              "f:terminationMessagePath": {},
+                                                                              "f:terminationMessagePolicy": {}
+                                                                        }
+                                                                  },
+                                                                  "f:dnsPolicy": {},
+                                                                  "f:enableServiceLinks": {},
+                                                                  "f:restartPolicy": {},
+                                                                  "f:schedulerName": {},
+                                                                  "f:securityContext": {},
+                                                                  "f:serviceAccount": {},
+                                                                  "f:serviceAccountName": {},
+                                                                  "f:terminationGracePeriodSeconds": {}
+                                                            }
+                                                      },
+                                                      "manager": "kube-controller-manager",
+                                                      "operation": "Update",
+                                                      "subresource": null,
+                                                      "time": "2023-12-02T00:22:38+00:00"
+                                                },
+                                                {
+                                                      "api_version": "v1",
+                                                      "fields_type": "FieldsV1",
+                                                      "fields_v1": {
+                                                            "f:status": {
+                                                                  "f:conditions": {
+                                                                        "k:{\"type\":\"ContainersReady\"}": {
+                                                                              ".": {},
+                                                                              "f:lastProbeTime": {},
+                                                                              "f:lastTransitionTime": {},
+                                                                              "f:status": {},
+                                                                              "f:type": {}
+                                                                        },
+                                                                        "k:{\"type\":\"Initialized\"}": {
+                                                                              ".": {},
+                                                                              "f:lastProbeTime": {},
+                                                                              "f:lastTransitionTime": {},
+                                                                              "f:status": {},
+                                                                              "f:type": {}
+                                                                        },
+                                                                        "k:{\"type\":\"Ready\"}": {
+                                                                              ".": {},
+                                                                              "f:lastProbeTime": {},
+                                                                              "f:lastTransitionTime": {},
+                                                                              "f:status": {},
+                                                                              "f:type": {}
+                                                                        }
+                                                                  },
+                                                                  "f:containerStatuses": {},
+                                                                  "f:hostIP": {},
+                                                                  "f:phase": {},
+                                                                  "f:podIP": {},
+                                                                  "f:podIPs": {
+                                                                        ".": {},
+                                                                        "k:{\"ip\":\"10.244.3.2\"}": {
+                                                                              ".": {},
+                                                                              "f:ip": {}
+                                                                        }
+                                                                  },
+                                                                  "f:startTime": {}
+                                                            }
+                                                      },
+                                                      "manager": "kubelet",
+                                                      "operation": "Update",
+                                                      "subresource": "status",
+                                                      "time": "2023-12-02T00:22:39+00:00"
+                                                }
+                                          ],
+                                          "name": "fluent-controller-8557f6b8d4-wt92n",
+                                          "namespace": "fluent",
+                                          "owner_references": [
+                                                {
+                                                      "api_version": "apps/v1",
+                                                      "block_owner_deletion": true,
+                                                      "controller": true,
+                                                      "kind": "ReplicaSet",
+                                                      "name": "fluent-controller-8557f6b8d4",
+                                                      "uid": "57c75404-915d-4230-a435-8931eb2db821"
+                                                }
+                                          ],
+                                          "resource_version": "672",
+                                          "self_link": null,
+                                          "uid": "6bc5ad5d-af17-4819-a9d9-ab9033f99926"
+                                    },
+                                    "spec": {
+                                          "active_deadline_seconds": null,
+                                          "affinity": null,
+                                          "automount_service_account_token": null,
+                                          "containers": [
+                                                {
+                                                      "args": null,
+                                                      "command": null,
+                                                      "env": null,
+                                                      "env_from": null,
+                                                      "image": "ghcr.io/vmware-research/verifiable-controllers/fluent-controller:f077082763518a4c2ec87dcc362f063184ec6647",
+                                                      "image_pull_policy": "IfNotPresent",
+                                                      "lifecycle": null,
+                                                      "liveness_probe": null,
+                                                      "name": "controller",
+                                                      "ports": null,
+                                                      "readiness_probe": null,
+                                                      "resources": {
+                                                            "claims": null,
+                                                            "limits": null,
+                                                            "requests": null
+                                                      },
+                                                      "security_context": null,
+                                                      "startup_probe": null,
+                                                      "stdin": null,
+                                                      "stdin_once": null,
+                                                      "termination_message_path": "/dev/termination-log",
+                                                      "termination_message_policy": "File",
+                                                      "tty": null,
+                                                      "volume_devices": null,
+                                                      "volume_mounts": [
+                                                            {
+                                                                  "mount_path": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                                                  "mount_propagation": null,
+                                                                  "name": "kube-api-access-tzzfz",
+                                                                  "read_only": true,
+                                                                  "sub_path": null,
+                                                                  "sub_path_expr": null
+                                                            }
+                                                      ],
+                                                      "working_dir": null
+                                                }
+                                          ],
+                                          "dns_config": null,
+                                          "dns_policy": "ClusterFirst",
+                                          "enable_service_links": true,
+                                          "ephemeral_containers": null,
+                                          "host_aliases": null,
+                                          "host_ipc": null,
+                                          "host_network": null,
+                                          "host_pid": null,
+                                          "host_users": null,
+                                          "hostname": null,
+                                          "image_pull_secrets": null,
+                                          "init_containers": null,
+                                          "node_name": "acto-0-cluster-3-worker2",
+                                          "node_selector": null,
+                                          "os": null,
+                                          "overhead": null,
+                                          "preemption_policy": "PreemptLowerPriority",
+                                          "priority": 0,
+                                          "priority_class_name": null,
+                                          "readiness_gates": null,
+                                          "resource_claims": null,
+                                          "restart_policy": "Always",
+                                          "runtime_class_name": null,
+                                          "scheduler_name": "default-scheduler",
+                                          "scheduling_gates": null,
+                                          "security_context": {
+                                                "fs_group": null,
+                                                "fs_group_change_policy": null,
+                                                "run_as_group": null,
+                                                "run_as_non_root": null,
+                                                "run_as_user": null,
+                                                "se_linux_options": null,
+                                                "seccomp_profile": null,
+                                                "supplemental_groups": null,
+                                                "sysctls": null,
+                                                "windows_options": null
+                                          },
+                                          "service_account": "fluent-controller",
+                                          "service_account_name": "fluent-controller",
+                                          "set_hostname_as_fqdn": null,
+                                          "share_process_namespace": null,
+                                          "subdomain": null,
+                                          "termination_grace_period_seconds": 30,
+                                          "tolerations": [
+                                                {
+                                                      "effect": "NoExecute",
+                                                      "key": "node.kubernetes.io/not-ready",
+                                                      "operator": "Exists",
+                                                      "toleration_seconds": 300,
+                                                      "value": null
+                                                },
+                                                {
+                                                      "effect": "NoExecute",
+                                                      "key": "node.kubernetes.io/unreachable",
+                                                      "operator": "Exists",
+                                                      "toleration_seconds": 300,
+                                                      "value": null
+                                                }
+                                          ],
+                                          "topology_spread_constraints": null,
+                                          "volumes": [
+                                                {
+                                                      "aws_elastic_block_store": null,
+                                                      "azure_disk": null,
+                                                      "azure_file": null,
+                                                      "cephfs": null,
+                                                      "cinder": null,
+                                                      "config_map": null,
+                                                      "csi": null,
+                                                      "downward_api": null,
+                                                      "empty_dir": null,
+                                                      "ephemeral": null,
+                                                      "fc": null,
+                                                      "flex_volume": null,
+                                                      "flocker": null,
+                                                      "gce_persistent_disk": null,
+                                                      "git_repo": null,
+                                                      "glusterfs": null,
+                                                      "host_path": null,
+                                                      "iscsi": null,
+                                                      "name": "kube-api-access-tzzfz",
+                                                      "nfs": null,
+                                                      "persistent_volume_claim": null,
+                                                      "photon_persistent_disk": null,
+                                                      "portworx_volume": null,
+                                                      "projected": {
+                                                            "default_mode": 420,
+                                                            "sources": [
+                                                                  {
+                                                                        "config_map": null,
+                                                                        "downward_api": null,
+                                                                        "secret": null,
+                                                                        "service_account_token": {
+                                                                              "audience": null,
+                                                                              "expiration_seconds": 3607,
+                                                                              "path": "token"
+                                                                        }
+                                                                  },
+                                                                  {
+                                                                        "config_map": {
+                                                                              "items": [
+                                                                                    {
+                                                                                          "key": "ca.crt",
+                                                                                          "mode": null,
+                                                                                          "path": "ca.crt"
+                                                                                    }
+                                                                              ],
+                                                                              "name": "kube-root-ca.crt",
+                                                                              "optional": null
+                                                                        },
+                                                                        "downward_api": null,
+                                                                        "secret": null,
+                                                                        "service_account_token": null
+                                                                  },
+                                                                  {
+                                                                        "config_map": null,
+                                                                        "downward_api": {
+                                                                              "items": [
+                                                                                    {
+                                                                                          "field_ref": {
+                                                                                                "api_version": "v1",
+                                                                                                "field_path": "metadata.namespace"
+                                                                                          },
+                                                                                          "mode": null,
+                                                                                          "path": "namespace",
+                                                                                          "resource_field_ref": null
+                                                                                    }
+                                                                              ]
+                                                                        },
+                                                                        "secret": null,
+                                                                        "service_account_token": null
+                                                                  }
+                                                            ]
+                                                      },
+                                                      "quobyte": null,
+                                                      "rbd": null,
+                                                      "scale_io": null,
+                                                      "secret": null,
+                                                      "storageos": null,
+                                                      "vsphere_volume": null
+                                                }
+                                          ]
+                                    },
+                                    "status": {
+                                          "conditions": [
+                                                {
+                                                      "last_probe_time": null,
+                                                      "last_transition_time": "2023-12-02T00:22:38+00:00",
+                                                      "message": null,
+                                                      "reason": null,
+                                                      "status": "True",
+                                                      "type": "Initialized"
+                                                },
+                                                {
+                                                      "last_probe_time": null,
+                                                      "last_transition_time": "2023-12-02T00:22:39+00:00",
+                                                      "message": null,
+                                                      "reason": null,
+                                                      "status": "True",
+                                                      "type": "Ready"
+                                                },
+                                                {
+                                                      "last_probe_time": null,
+                                                      "last_transition_time": "2023-12-02T00:22:39+00:00",
+                                                      "message": null,
+                                                      "reason": null,
+                                                      "status": "True",
+                                                      "type": "ContainersReady"
+                                                },
+                                                {
+                                                      "last_probe_time": null,
+                                                      "last_transition_time": "2023-12-02T00:22:38+00:00",
+                                                      "message": null,
+                                                      "reason": null,
+                                                      "status": "True",
+                                                      "type": "PodScheduled"
+                                                }
+                                          ],
+                                          "container_statuses": [
+                                                {
+                                                      "container_id": "containerd://09b87f697f621a3074c26110b596c39cde2ae873886ed9772f9f5e85ef21b084",
+                                                      "image": "ghcr.io/vmware-research/verifiable-controllers/fluent-controller:f077082763518a4c2ec87dcc362f063184ec6647",
+                                                      "image_id": "docker.io/library/import-2023-12-02@sha256:d2ba323b913baa126445ab208ff91f95205b850df660024ee1faa17b8b633c0a",
+                                                      "last_state": {
+                                                            "running": null,
+                                                            "terminated": null,
+                                                            "waiting": null
+                                                      },
+                                                      "name": "controller",
+                                                      "ready": true,
+                                                      "restart_count": 0,
+                                                      "started": true,
+                                                      "state": {
+                                                            "running": {
+                                                                  "started_at": "2023-12-02T00:22:39+00:00"
+                                                            },
+                                                            "terminated": null,
+                                                            "waiting": null
+                                                      }
+                                                }
+                                          ],
+                                          "ephemeral_container_statuses": null,
+                                          "host_ip": "172.18.0.23",
+                                          "init_container_statuses": null,
+                                          "message": null,
+                                          "nominated_node_name": null,
+                                          "phase": "Running",
+                                          "pod_ip": "10.244.3.2",
+                                          "pod_i_ps": [
+                                                {
+                                                      "ip": "10.244.3.2"
+                                                }
+                                          ],
+                                          "qos_class": "BestEffort",
+                                          "reason": null,
+                                          "start_time": "2023-12-02T00:22:38+00:00"
+                                    }
+                              }
+                        ]
+                  },
+                  "daemonset_pods": {},
+                  "stateful_set": {},
+                  "deployment": {
+                        "fluent-controller": {
+                              "api_version": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": {
+                                          "deployment.kubernetes.io/revision": "2"
+                                    },
+                                    "creation_timestamp": "2023-12-02T00:22:25+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": 2,
+                                    "labels": {
+                                          "acto/tag": "operator-deployment",
+                                          "app.kubernetes.io/name": "fluent-controller"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "apps/v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:app.kubernetes.io/name": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:replicas": {},
+                                                            "f:selector": {},
+                                                            "f:template": {
+                                                                  "f:metadata": {
+                                                                        "f:labels": {
+                                                                              "f:app.kubernetes.io/name": {}
+                                                                        }
+                                                                  },
+                                                                  "f:spec": {
+                                                                        "f:containers": {
+                                                                              "k:{\"name\":\"controller\"}": {
+                                                                                    ".": {},
+                                                                                    "f:image": {},
+                                                                                    "f:name": {}
+                                                                              }
+                                                                        },
+                                                                        "f:serviceAccountName": {}
+                                                                  }
+                                                            }
+                                                      }
+                                                },
+                                                "manager": "kubectl",
+                                                "operation": "Apply",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:22:25+00:00"
+                                          },
+                                          {
+                                                "api_version": "apps/v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:acto/tag": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:template": {
+                                                                  "f:metadata": {
+                                                                        "f:labels": {
+                                                                              "f:acto/tag": {}
+                                                                        }
+                                                                  }
+                                                            }
+                                                      }
+                                                },
+                                                "manager": "OpenAPI-Generator",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:22:38+00:00"
+                                          },
+                                          {
+                                                "api_version": "apps/v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:annotations": {
+                                                                  ".": {},
+                                                                  "f:deployment.kubernetes.io/revision": {}
+                                                            }
+                                                      },
+                                                      "f:status": {
+                                                            "f:availableReplicas": {},
+                                                            "f:conditions": {
+                                                                  ".": {},
+                                                                  "k:{\"type\":\"Available\"}": {
+                                                                        ".": {},
+                                                                        "f:lastTransitionTime": {},
+                                                                        "f:lastUpdateTime": {},
+                                                                        "f:message": {},
+                                                                        "f:reason": {},
+                                                                        "f:status": {},
+                                                                        "f:type": {}
+                                                                  },
+                                                                  "k:{\"type\":\"Progressing\"}": {
+                                                                        ".": {},
+                                                                        "f:lastTransitionTime": {},
+                                                                        "f:lastUpdateTime": {},
+                                                                        "f:message": {},
+                                                                        "f:reason": {},
+                                                                        "f:status": {},
+                                                                        "f:type": {}
+                                                                  }
+                                                            },
+                                                            "f:observedGeneration": {},
+                                                            "f:readyReplicas": {},
+                                                            "f:replicas": {},
+                                                            "f:updatedReplicas": {}
+                                                      }
+                                                },
+                                                "manager": "kube-controller-manager",
+                                                "operation": "Update",
+                                                "subresource": "status",
+                                                "time": "2023-12-02T00:22:39+00:00"
+                                          }
+                                    ],
+                                    "name": "fluent-controller",
+                                    "namespace": "fluent",
+                                    "owner_references": null,
+                                    "resource_version": "682",
+                                    "self_link": null,
+                                    "uid": "4f082e4c-534d-4ba5-9209-e54102616e7b"
+                              },
+                              "spec": {
+                                    "min_ready_seconds": null,
+                                    "paused": null,
+                                    "progress_deadline_seconds": 600,
+                                    "replicas": 1,
+                                    "revision_history_limit": 10,
+                                    "selector": {
+                                          "match_expressions": null,
+                                          "match_labels": {
+                                                "app.kubernetes.io/name": "fluent-controller"
+                                          }
+                                    },
+                                    "strategy": {
+                                          "rolling_update": {
+                                                "max_surge": "25%",
+                                                "max_unavailable": "25%"
+                                          },
+                                          "type": "RollingUpdate"
+                                    },
+                                    "template": {
+                                          "metadata": {
+                                                "annotations": null,
+                                                "creation_timestamp": null,
+                                                "deletion_grace_period_seconds": null,
+                                                "deletion_timestamp": null,
+                                                "finalizers": null,
+                                                "generate_name": null,
+                                                "generation": null,
+                                                "labels": {
+                                                      "acto/tag": "operator-pod",
+                                                      "app.kubernetes.io/name": "fluent-controller"
+                                                },
+                                                "managed_fields": null,
+                                                "name": null,
+                                                "namespace": null,
+                                                "owner_references": null,
+                                                "resource_version": null,
+                                                "self_link": null,
+                                                "uid": null
+                                          },
+                                          "spec": {
+                                                "active_deadline_seconds": null,
+                                                "affinity": null,
+                                                "automount_service_account_token": null,
+                                                "containers": [
+                                                      {
+                                                            "args": null,
+                                                            "command": null,
+                                                            "env": null,
+                                                            "env_from": null,
+                                                            "image": "ghcr.io/vmware-research/verifiable-controllers/fluent-controller:f077082763518a4c2ec87dcc362f063184ec6647",
+                                                            "image_pull_policy": "IfNotPresent",
+                                                            "lifecycle": null,
+                                                            "liveness_probe": null,
+                                                            "name": "controller",
+                                                            "ports": null,
+                                                            "readiness_probe": null,
+                                                            "resources": {
+                                                                  "claims": null,
+                                                                  "limits": null,
+                                                                  "requests": null
+                                                            },
+                                                            "security_context": null,
+                                                            "startup_probe": null,
+                                                            "stdin": null,
+                                                            "stdin_once": null,
+                                                            "termination_message_path": "/dev/termination-log",
+                                                            "termination_message_policy": "File",
+                                                            "tty": null,
+                                                            "volume_devices": null,
+                                                            "volume_mounts": null,
+                                                            "working_dir": null
+                                                      }
+                                                ],
+                                                "dns_config": null,
+                                                "dns_policy": "ClusterFirst",
+                                                "enable_service_links": null,
+                                                "ephemeral_containers": null,
+                                                "host_aliases": null,
+                                                "host_ipc": null,
+                                                "host_network": null,
+                                                "host_pid": null,
+                                                "host_users": null,
+                                                "hostname": null,
+                                                "image_pull_secrets": null,
+                                                "init_containers": null,
+                                                "node_name": null,
+                                                "node_selector": null,
+                                                "os": null,
+                                                "overhead": null,
+                                                "preemption_policy": null,
+                                                "priority": null,
+                                                "priority_class_name": null,
+                                                "readiness_gates": null,
+                                                "resource_claims": null,
+                                                "restart_policy": "Always",
+                                                "runtime_class_name": null,
+                                                "scheduler_name": "default-scheduler",
+                                                "scheduling_gates": null,
+                                                "security_context": {
+                                                      "fs_group": null,
+                                                      "fs_group_change_policy": null,
+                                                      "run_as_group": null,
+                                                      "run_as_non_root": null,
+                                                      "run_as_user": null,
+                                                      "se_linux_options": null,
+                                                      "seccomp_profile": null,
+                                                      "supplemental_groups": null,
+                                                      "sysctls": null,
+                                                      "windows_options": null
+                                                },
+                                                "service_account": "fluent-controller",
+                                                "service_account_name": "fluent-controller",
+                                                "set_hostname_as_fqdn": null,
+                                                "share_process_namespace": null,
+                                                "subdomain": null,
+                                                "termination_grace_period_seconds": 30,
+                                                "tolerations": null,
+                                                "topology_spread_constraints": null,
+                                                "volumes": null
+                                          }
+                                    }
+                              },
+                              "status": {
+                                    "available_replicas": 1,
+                                    "collision_count": null,
+                                    "conditions": [
+                                          {
+                                                "last_transition_time": "2023-12-02T00:22:27+00:00",
+                                                "last_update_time": "2023-12-02T00:22:27+00:00",
+                                                "message": "Deployment has minimum availability.",
+                                                "reason": "MinimumReplicasAvailable",
+                                                "status": "True",
+                                                "type": "Available"
+                                          },
+                                          {
+                                                "last_transition_time": "2023-12-02T00:22:25+00:00",
+                                                "last_update_time": "2023-12-02T00:22:39+00:00",
+                                                "message": "ReplicaSet \"fluent-controller-8557f6b8d4\" has successfully progressed.",
+                                                "reason": "NewReplicaSetAvailable",
+                                                "status": "True",
+                                                "type": "Progressing"
+                                          }
+                                    ],
+                                    "observed_generation": 2,
+                                    "ready_replicas": 1,
+                                    "replicas": 1,
+                                    "unavailable_replicas": null,
+                                    "updated_replicas": 1
+                              }
+                        }
+                  },
+                  "daemon_set": {},
+                  "config_map": {
+                        "kube-root-ca.crt": {
+                              "api_version": null,
+                              "binary_data": null,
+                              "data": {
+                                    "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIC/jCCAeagAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl\ncm5ldGVzMB4XDTIzMTIwMjAwMjE0NFoXDTMzMTEyOTAwMjE0NFowFTETMBEGA1UE\nAxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMGb\n78I4eQAdSilpItd3wL/NE/8XiwSGDcYqIDWDeiW+gCHmtMeHjYwJ6rNrxacfAqec\n8hQxGGcG67AUf3a+KmQwwdKvKqT40vk6WzEGxphmFli0sDeKDKRsCycafOiVvT+z\nt8B4DpxrxQYFrZ4/csiBJAkf5b95O2no9h9VYkiw7bPiZm+wwOCfY5xdrNT3k4xd\nU7aeAUR0JXlRCvTcvrx+ytAbu78AbPKbTKn5gjBYPNLfTjCdrs+2AZfwRccRB2AS\nxub+AyxIVu22iAh6eyVo+EduUBeyoeiaVGFKDHGoKaVjNYmNEg0E5sVoGtGxGCGe\n3FdcBqzRlNjor3cbq6cCAwEAAaNZMFcwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB\n/wQFMAMBAf8wHQYDVR0OBBYEFFGUch8HkI/x8bYmRwpTHcWSNVk8MBUGA1UdEQQO\nMAyCCmt1YmVybmV0ZXMwDQYJKoZIhvcNAQELBQADggEBAKoTaFwzsZ8G/4EwfGhJ\nnvA8ATOf54BwvFSM6MAoxl2LZ7G/OdFilm5yP8866EH833t2JVOmKlHEMe/R/9ru\n6RCG+8d/nkgw53P2sWbUHXEXKQaCPdcLUs6CaRs66d20fgSz3XwwoDToF6vJLhBQ\nUGTqAtM6UUdSeOEW9v4DwOYGViFjUK3wnh3l6fEikSikfTaKaniGBg7eSR8/ZBZL\n/usPIdFOYxW8ZqNy/osFiD+ATGU40yAHWW7Zcj4f+lsp9/YUOWLbPrK/3SBpDWFW\nupeb9KjWylbahrW89+7gH/GfjOGxcwXfFeJenenzwH16BpdjesKAXYrehRPgAVYW\n1/M=\n-----END CERTIFICATE-----\n"
+                              },
+                              "immutable": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": {
+                                          "kubernetes.io/description": "Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters."
+                                    },
+                                    "creation_timestamp": "2023-12-02T00:22:22+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": null,
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:data": {
+                                                            ".": {},
+                                                            "f:ca.crt": {}
+                                                      },
+                                                      "f:metadata": {
+                                                            "f:annotations": {
+                                                                  ".": {},
+                                                                  "f:kubernetes.io/description": {}
+                                                            }
+                                                      }
+                                                },
+                                                "manager": "kube-controller-manager",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:22:22+00:00"
+                                          }
+                                    ],
+                                    "name": "kube-root-ca.crt",
+                                    "namespace": "fluent",
+                                    "owner_references": null,
+                                    "resource_version": "592",
+                                    "self_link": null,
+                                    "uid": "c581358b-bc61-4a4f-a332-6ab59b776f51"
+                              }
+                        }
+                  },
+                  "service": {
+                        "test-cluster": {
+                              "api_version": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:23:03+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app": "test-cluster"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  ".": {},
+                                                                  "f:app": {}
+                                                            },
+                                                            "f:ownerReferences": {
+                                                                  ".": {},
+                                                                  "k:{\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"}": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:internalTrafficPolicy": {},
+                                                            "f:ports": {
+                                                                  ".": {},
+                                                                  "k:{\"port\":2020,\"protocol\":\"TCP\"}": {
+                                                                        ".": {},
+                                                                        "f:name": {},
+                                                                        "f:port": {},
+                                                                        "f:protocol": {},
+                                                                        "f:targetPort": {}
+                                                                  }
+                                                            },
+                                                            "f:selector": {},
+                                                            "f:sessionAffinity": {},
+                                                            "f:type": {}
+                                                      }
+                                                },
+                                                "manager": "unknown",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:23:03+00:00"
+                                          }
+                                    ],
+                                    "name": "test-cluster",
+                                    "namespace": "fluent",
+                                    "owner_references": [
+                                          {
+                                                "api_version": "anvil.dev/v1",
+                                                "block_owner_deletion": null,
+                                                "controller": true,
+                                                "kind": "FluentBit",
+                                                "name": "test-cluster",
+                                                "uid": "0198272d-c10f-44c9-bf52-f00a3299b561"
+                                          }
+                                    ],
+                                    "resource_version": "730",
+                                    "self_link": null,
+                                    "uid": "8e6c72ed-5c15-4404-89a0-dff69d3b127e"
+                              },
+                              "spec": {
+                                    "allocate_load_balancer_node_ports": null,
+                                    "cluster_ip": "10.96.85.55",
+                                    "cluster_i_ps": [
+                                          "10.96.85.55"
+                                    ],
+                                    "external_i_ps": null,
+                                    "external_name": null,
+                                    "external_traffic_policy": null,
+                                    "health_check_node_port": null,
+                                    "internal_traffic_policy": "Cluster",
+                                    "ip_families": [
+                                          "IPv4"
+                                    ],
+                                    "ip_family_policy": "SingleStack",
+                                    "load_balancer_class": null,
+                                    "load_balancer_ip": null,
+                                    "load_balancer_source_ranges": null,
+                                    "ports": [
+                                          {
+                                                "app_protocol": null,
+                                                "name": "metrics",
+                                                "node_port": null,
+                                                "port": 2020,
+                                                "protocol": "TCP",
+                                                "target_port": 2020
+                                          }
+                                    ],
+                                    "publish_not_ready_addresses": null,
+                                    "selector": {
+                                          "app": "test-cluster"
+                                    },
+                                    "session_affinity": "None",
+                                    "session_affinity_config": null,
+                                    "type": "ClusterIP"
+                              },
+                              "status": {
+                                    "conditions": null,
+                                    "load_balancer": {
+                                          "ingress": null
+                                    }
+                              }
+                        }
+                  },
+                  "pvc": {},
+                  "cronjob": {},
+                  "ingress": {},
+                  "network_policy": {},
+                  "pod_disruption_budget": {},
+                  "secret": {
+                        "fluent-bit-config": {
+                              "api_version": null,
+                              "data": {
+                                    "fluent-bit.conf": "[Service]\n    Parsers_File    parsers.conf\n[Input]\n    Name    tail\n    Path    /var/log/containers/*.log\n    Exclude_Path    /var/log/containers/utils_default_utils-*.log\n    Refresh_Interval    10\n    Skip_Long_Lines    true\n    DB    /fluent-bit/tail/pos.db\n    DB.Sync    Normal\n    Mem_Buf_Limit    5MB\n    Parser    docker\n    Tag    kube.*\n[Filter]\n    Name    kubernetes\n    Match    kube.*\n    Kube_URL    https://kubernetes.default.svc:443\n    Kube_CA_File    /var/run/secrets/kubernetes.io/serviceaccount/ca.crt\n    Kube_Token_File    /var/run/secrets/kubernetes.io/serviceaccount/token\n    Labels    false\n    Annotations    false\n[Filter]\n    Name    nest\n    Match    kube.*\n    Operation    lift\n    Nested_under    kubernetes\n    Add_prefix    kubernetes_\n[Filter]\n    Name    modify\n    Match    kube.*\n    Remove    stream\n    Remove    kubernetes_pod_id\n    Remove    kubernetes_host\n    Remove    kubernetes_container_hash\n[Filter]\n    Name    nest\n    Match    kube.*\n    Operation    nest\n    Wildcard    kubernetes_*\n    Nest_under    kubernetes\n    Remove_prefix    kubernetes_\n[Output]\n    Name    kafka\n    Match_Regex    (?:kube|service)\\.(.*)\n    Brokers    my-cluster-kafka-brokers.kafka.svc:9092\n    Topics    fluent-log\n",
+                                    "parsers.conf": ""
+                              },
+                              "immutable": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:22:33+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": null,
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:data": {
+                                                            ".": {},
+                                                            "f:fluent-bit.conf": {},
+                                                            "f:parsers.conf": {}
+                                                      },
+                                                      "f:metadata": {
+                                                            "f:ownerReferences": {
+                                                                  ".": {},
+                                                                  "k:{\"uid\":\"dcf39d2d-fa67-4a68-85f0-e668c6feaf2d\"}": {}
+                                                            }
+                                                      },
+                                                      "f:type": {}
+                                                },
+                                                "manager": "unknown",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:22:33+00:00"
+                                          }
+                                    ],
+                                    "name": "fluent-bit-config",
+                                    "namespace": "fluent",
+                                    "owner_references": [
+                                          {
+                                                "api_version": "anvil.dev/v1",
+                                                "block_owner_deletion": null,
+                                                "controller": true,
+                                                "kind": "FluentBitConfig",
+                                                "name": "fluent-bit-config",
+                                                "uid": "dcf39d2d-fa67-4a68-85f0-e668c6feaf2d"
+                                          }
+                                    ],
+                                    "resource_version": "642",
+                                    "self_link": null,
+                                    "uid": "2957c929-9926-4459-8c03-80f183f58022"
+                              },
+                              "string_data": null,
+                              "type": "Opaque"
+                        }
+                  },
+                  "endpoints": {
+                        "test-cluster": {
+                              "api_version": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": {
+                                          "endpoints.kubernetes.io/last-change-trigger-time": "2023-12-02T00:23:03Z"
+                                    },
+                                    "creation_timestamp": "2023-12-02T00:23:03+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app": "test-cluster"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:annotations": {
+                                                                  ".": {},
+                                                                  "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                            },
+                                                            "f:labels": {
+                                                                  ".": {},
+                                                                  "f:app": {}
+                                                            }
+                                                      }
+                                                },
+                                                "manager": "kube-controller-manager",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:23:03+00:00"
+                                          }
+                                    ],
+                                    "name": "test-cluster",
+                                    "namespace": "fluent",
+                                    "owner_references": null,
+                                    "resource_version": "731",
+                                    "self_link": null,
+                                    "uid": "f3f8fd98-debe-4f3f-a60d-67e7a35dca3f"
+                              },
+                              "subsets": null
+                        }
+                  },
+                  "service_account": {
+                        "default": {
+                              "api_version": null,
+                              "automount_service_account_token": null,
+                              "image_pull_secrets": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:22:22+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": null,
+                                    "managed_fields": null,
+                                    "name": "default",
+                                    "namespace": "fluent",
+                                    "owner_references": null,
+                                    "resource_version": "591",
+                                    "self_link": null,
+                                    "uid": "68c46535-b76b-4d3c-89cb-a7fcb211e596"
+                              },
+                              "secrets": null
+                        },
+                        "fluent-controller": {
+                              "api_version": null,
+                              "automount_service_account_token": null,
+                              "image_pull_secrets": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:22:25+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app.kubernetes.io/name": "fluent-controller"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:app.kubernetes.io/name": {}
+                                                            }
+                                                      }
+                                                },
+                                                "manager": "kubectl",
+                                                "operation": "Apply",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:22:25+00:00"
+                                          }
+                                    ],
+                                    "name": "fluent-controller",
+                                    "namespace": "fluent",
+                                    "owner_references": null,
+                                    "resource_version": "604",
+                                    "self_link": null,
+                                    "uid": "7e527209-2a7c-477d-bf30-5226faa60896"
+                              },
+                              "secrets": null
+                        },
+                        "test-cluster": {
+                              "api_version": null,
+                              "automount_service_account_token": null,
+                              "image_pull_secrets": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:23:03+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app": "test-cluster"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  ".": {},
+                                                                  "f:app": {}
+                                                            },
+                                                            "f:ownerReferences": {
+                                                                  ".": {},
+                                                                  "k:{\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"}": {}
+                                                            }
+                                                      }
+                                                },
+                                                "manager": "unknown",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:23:03+00:00"
+                                          }
+                                    ],
+                                    "name": "test-cluster",
+                                    "namespace": "fluent",
+                                    "owner_references": [
+                                          {
+                                                "api_version": "anvil.dev/v1",
+                                                "block_owner_deletion": null,
+                                                "controller": true,
+                                                "kind": "FluentBit",
+                                                "name": "test-cluster",
+                                                "uid": "0198272d-c10f-44c9-bf52-f00a3299b561"
+                                          }
+                                    ],
+                                    "resource_version": "726",
+                                    "self_link": null,
+                                    "uid": "7b036f28-df0a-4a9b-9f09-8d2e80b86a2a"
+                              },
+                              "secrets": null
+                        }
+                  },
+                  "job": {},
+                  "role": {
+                        "test-cluster-role": {
+                              "api_version": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:23:03+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app": "test-cluster"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "rbac.authorization.k8s.io/v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  ".": {},
+                                                                  "f:app": {}
+                                                            },
+                                                            "f:ownerReferences": {
+                                                                  ".": {},
+                                                                  "k:{\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"}": {}
+                                                            }
+                                                      },
+                                                      "f:rules": {}
+                                                },
+                                                "manager": "unknown",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:23:03+00:00"
+                                          }
+                                    ],
+                                    "name": "test-cluster-role",
+                                    "namespace": "fluent",
+                                    "owner_references": [
+                                          {
+                                                "api_version": "anvil.dev/v1",
+                                                "block_owner_deletion": null,
+                                                "controller": true,
+                                                "kind": "FluentBit",
+                                                "name": "test-cluster",
+                                                "uid": "0198272d-c10f-44c9-bf52-f00a3299b561"
+                                          }
+                                    ],
+                                    "resource_version": "727",
+                                    "self_link": null,
+                                    "uid": "6a115c9f-dbb4-4957-935b-c8e85ef73aab"
+                              },
+                              "rules": [
+                                    {
+                                          "api_groups": [
+                                                ""
+                                          ],
+                                          "non_resource_ur_ls": null,
+                                          "resource_names": null,
+                                          "resources": [
+                                                "pods"
+                                          ],
+                                          "verbs": [
+                                                "get"
+                                          ]
+                                    }
+                              ]
+                        }
+                  },
+                  "role_binding": {
+                        "test-cluster-role-binding": {
+                              "api_version": null,
+                              "kind": null,
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": "2023-12-02T00:23:03+00:00",
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "app": "test-cluster"
+                                    },
+                                    "managed_fields": [
+                                          {
+                                                "api_version": "rbac.authorization.k8s.io/v1",
+                                                "fields_type": "FieldsV1",
+                                                "fields_v1": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  ".": {},
+                                                                  "f:app": {}
+                                                            },
+                                                            "f:ownerReferences": {
+                                                                  ".": {},
+                                                                  "k:{\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"}": {}
+                                                            }
+                                                      },
+                                                      "f:roleRef": {},
+                                                      "f:subjects": {}
+                                                },
+                                                "manager": "unknown",
+                                                "operation": "Update",
+                                                "subresource": null,
+                                                "time": "2023-12-02T00:23:03+00:00"
+                                          }
+                                    ],
+                                    "name": "test-cluster-role-binding",
+                                    "namespace": "fluent",
+                                    "owner_references": [
+                                          {
+                                                "api_version": "anvil.dev/v1",
+                                                "block_owner_deletion": null,
+                                                "controller": true,
+                                                "kind": "FluentBit",
+                                                "name": "test-cluster",
+                                                "uid": "0198272d-c10f-44c9-bf52-f00a3299b561"
+                                          }
+                                    ],
+                                    "resource_version": "728",
+                                    "self_link": null,
+                                    "uid": "67aa3b45-4807-421b-ad95-14628788a805"
+                              },
+                              "role_ref": {
+                                    "api_group": "rbac.authorization.k8s.io",
+                                    "kind": "Role",
+                                    "name": "test-cluster-role"
+                              },
+                              "subjects": [
+                                    {
+                                          "api_group": null,
+                                          "kind": "ServiceAccount",
+                                          "name": "test-cluster",
+                                          "namespace": "fluent"
+                                    }
+                              ]
+                        }
+                  },
+                  "custom_resource_spec": {
+                        "annotations": {},
+                        "disableLogVolumes": false,
+                        "envVars": [
+                              {
+                                    "name": "ACTOKEY",
+                                    "value": "ACTOKEY",
+                                    "valueFrom": {
+                                          "configMapKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": false
+                                          },
+                                          "fieldRef": {
+                                                "apiVersion": "ACTOKEY",
+                                                "fieldPath": "ACTOKEY"
+                                          },
+                                          "resourceFieldRef": {
+                                                "containerName": "ACTOKEY",
+                                                "divisor": "ACTOKEY",
+                                                "resource": "ACTOKEY"
+                                          }
+                                    }
+                              }
+                        ],
+                        "fluentBitConfigName": "fluent-bit-config",
+                        "image": "kubesphere/fluent-bit:v2.1.7",
+                        "labels": {},
+                        "nodeSelector": {},
+                        "ports": [],
+                        "serviceAccountAnnotations": {},
+                        "serviceAnnotations": {},
+                        "serviceLabels": {},
+                        "tolerations": [
+                              {
+                                    "operator": "Exists"
+                              }
+                        ]
+                  },
+                  "custom_resource_status": null
+            },
+            "operator_log": [
+                  "running fluent-controller",
+                  "starting controller",
+                  "starting controller",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBitConfig\",\"metadata\":{\"creationTimestamp\":\"2023-12-02T00:22:33Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:spec\":{\"f:fluentBitConfig\":{},\"f:parsersConfig\":{}}},\"manager\":\"kubectl\",\"operation\":\"Apply\",\"time\":\"2023-12-02T00:22:33Z\"}],\"name\":\"fluent-bit-config\",\"namespace\":\"fluent\",\"resourceVersion\":\"641\",\"uid\":\"dcf39d2d-fa67-4a68-85f0-e668c6feaf2d\"},\"spec\":{\"fluentBitConfig\":\"[Service]\\n    Parsers_File    parsers.conf\\n[Input]\\n    Name    tail\\n    Path    /var/log/containers/*.log\\n    Exclude_Path    /var/log/containers/utils_default_utils-*.log\\n    Refresh_Interval    10\\n    Skip_Long_Lines    true\\n    DB    /fluent-bit/tail/pos.db\\n    DB.Sync    Normal\\n    Mem_Buf_Limit    5MB\\n    Parser    docker\\n    Tag    kube.*\\n[Filter]\\n    Name    kubernetes\\n    Match    kube.*\\n    Kube_URL    https://kubernetes.default.svc:443\\n    Kube_CA_File    /var/run/secrets/kubernetes.io/serviceaccount/ca.crt\\n    Kube_Token_File    /var/run/secrets/kubernetes.io/serviceaccount/token\\n    Labels    false\\n    Annotations    false\\n[Filter]\\n    Name    nest\\n    Match    kube.*\\n    Operation    lift\\n    Nested_under    kubernetes\\n    Add_prefix    kubernetes_\\n[Filter]\\n    Name    modify\\n    Match    kube.*\\n    Remove    stream\\n    Remove    kubernetes_pod_id\\n    Remove    kubernetes_host\\n    Remove    kubernetes_container_hash\\n[Filter]\\n    Name    nest\\n    Match    kube.*\\n    Operation    nest\\n    Wildcard    kubernetes_*\\n    Nest_under    kubernetes\\n    Remove_prefix    kubernetes_\\n[Output]\\n    Name    kafka\\n    Match_Regex    (?:kube|service)\\\\.(.*)\\n    Brokers    my-cluster-kafka-brokers.kafka.svc:9092\\n    Topics    fluent-log\\n\",\"parsersConfig\":\"\"}}",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: Update Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: done",
+                  "reconciled (ObjectRef { dyntype: (), name: \"fluent-bit-config\", namespace: Some(\"fluent\"), extra: Extra { resource_version: Some(\"641\"), uid: Some(\"dcf39d2d-fa67-4a68-85f0-e668c6feaf2d\") } }, Action { requeue_after: Some(60s) })",
+                  "Reconciling FluentBit/fluent/test-cluster: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBit\",\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/last-applied-configuration\":\"{\\\"apiVersion\\\":\\\"anvil.dev/v1\\\",\\\"kind\\\":\\\"FluentBit\\\",\\\"metadata\\\":{\\\"annotations\\\":{},\\\"name\\\":\\\"test-cluster\\\",\\\"namespace\\\":\\\"fluent\\\"},\\\"spec\\\":{\\\"envVars\\\":[{\\\"name\\\":\\\"ACTOKEY\\\",\\\"value\\\":\\\"ACTOKEY\\\",\\\"valueFrom\\\":{\\\"configMapKeyRef\\\":{\\\"key\\\":\\\"ACTOKEY\\\",\\\"name\\\":\\\"ACTOKEY\\\",\\\"optional\\\":false},\\\"fieldRef\\\":{\\\"apiVersion\\\":\\\"ACTOKEY\\\",\\\"fieldPath\\\":\\\"ACTOKEY\\\"},\\\"resourceFieldRef\\\":{\\\"containerName\\\":\\\"ACTOKEY\\\",\\\"divisor\\\":\\\"ACTOKEY\\\",\\\"resource\\\":\\\"ACTOKEY\\\"},\\\"secretKeyRef\\\":null}}],\\\"fluentBitConfigName\\\":\\\"fluent-bit-config\\\",\\\"image\\\":\\\"kubesphere/fluent-bit:v2.1.7\\\",\\\"ports\\\":[],\\\"tolerations\\\":[{\\\"operator\\\":\\\"Exists\\\"}]}}\\n\"},\"creationTimestamp\":\"2023-12-02T00:23:03Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:metadata\":{\"f:annotations\":{\".\":{},\"f:kubectl.kubernetes.io/last-applied-configuration\":{}}},\"f:spec\":{\".\":{},\"f:annotations\":{},\"f:disableLogVolumes\":{},\"f:envVars\":{},\"f:fluentBitConfigName\":{},\"f:image\":{},\"f:labels\":{},\"f:nodeSelector\":{},\"f:ports\":{},\"f:serviceAccountAnnotations\":{},\"f:serviceAnnotations\":{},\"f:serviceLabels\":{},\"f:tolerations\":{}}},\"manager\":\"kubectl-client-side-apply\",\"operation\":\"Update\",\"time\":\"2023-12-02T00:23:03Z\"}],\"name\":\"test-cluster\",\"namespace\":\"fluent\",\"resourceVersion\":\"725\",\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"},\"spec\":{\"fluentBitConfigName\":\"fluent-bit-config\",\"image\":\"kubesphere/fluent-bit:v2.1.7\",\"args\":null,\"command\":null,\"imagePullPolicy\":null,\"imagePullSecrets\":null,\"resources\":null,\"tolerations\":[{\"operator\":\"Exists\"}],\"labels\":{},\"annotations\":{},\"serviceAccountAnnotations\":{},\"serviceLabels\":{},\"serviceSelector\":null,\"serviceAnnotations\":{},\"affinity\":null,\"disableLogVolumes\":false,\"nodeSelector\":{},\"runtimeClassName\":null,\"dnsPolicy\":null,\"priorityClassName\":null,\"volumes\":null,\"volumeMounts\":null,\"schedulerName\":null,\"metricsPort\":null,\"internalMountPropagation\":null,\"positionDB\":null,\"containerLogRealPath\":null,\"securityContext\":null,\"containerSecurityContext\":null,\"hostNetwork\":null,\"envVars\":[{\"name\":\"ACTOKEY\",\"value\":\"ACTOKEY\",\"valueFrom\":{\"configMapKeyRef\":{\"key\":\"ACTOKEY\",\"name\":\"ACTOKEY\",\"optional\":false},\"fieldRef\":{\"apiVersion\":\"ACTOKEY\",\"fieldPath\":\"ACTOKEY\"},\"resourceFieldRef\":{\"containerName\":\"ACTOKEY\",\"divisor\":\"ACTOKEY\",\"resource\":\"ACTOKEY\"}}}],\"livenessProbe\":null,\"readinessProbe\":null,\"initContainers\":null,\"ports\":[]}}",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster failed with error: ApiError: serviceaccounts \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"serviceaccounts \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role failed with error: ApiError: roles.rbac.authorization.k8s.io \"test-cluster-role\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"roles.rbac.authorization.k8s.io \\\"test-cluster-role\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding failed with error: ApiError: rolebindings.rbac.authorization.k8s.io \"test-cluster-role-binding\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"rolebindings.rbac.authorization.k8s.io \\\"test-cluster-role-binding\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster failed with error: ApiError: services \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"services \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster failed with error: ApiError: daemonsets.apps \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"daemonsets.apps \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create DaemonSet/fluent/test-cluster failed with error: ApiError: DaemonSet in version \"v1\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$': BadRequest (ErrorResponse { status: \"Failure\", message: \"DaemonSet in version \\\"v1\\\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$'\", reason: \"BadRequest\", code: 400 })",
+                  "Reconciling FluentBit/fluent/test-cluster: error",
+                  "reconcile failed: reconciler for object FluentBit.v1.anvil.dev/test-cluster.fluent failed",
+                  "Reconciling FluentBit/fluent/test-cluster: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBit\",\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/last-applied-configuration\":\"{\\\"apiVersion\\\":\\\"anvil.dev/v1\\\",\\\"kind\\\":\\\"FluentBit\\\",\\\"metadata\\\":{\\\"annotations\\\":{},\\\"name\\\":\\\"test-cluster\\\",\\\"namespace\\\":\\\"fluent\\\"},\\\"spec\\\":{\\\"envVars\\\":[{\\\"name\\\":\\\"ACTOKEY\\\",\\\"value\\\":\\\"ACTOKEY\\\",\\\"valueFrom\\\":{\\\"configMapKeyRef\\\":{\\\"key\\\":\\\"ACTOKEY\\\",\\\"name\\\":\\\"ACTOKEY\\\",\\\"optional\\\":false},\\\"fieldRef\\\":{\\\"apiVersion\\\":\\\"ACTOKEY\\\",\\\"fieldPath\\\":\\\"ACTOKEY\\\"},\\\"resourceFieldRef\\\":{\\\"containerName\\\":\\\"ACTOKEY\\\",\\\"divisor\\\":\\\"ACTOKEY\\\",\\\"resource\\\":\\\"ACTOKEY\\\"},\\\"secretKeyRef\\\":null}}],\\\"fluentBitConfigName\\\":\\\"fluent-bit-config\\\",\\\"image\\\":\\\"kubesphere/fluent-bit:v2.1.7\\\",\\\"ports\\\":[],\\\"tolerations\\\":[{\\\"operator\\\":\\\"Exists\\\"}]}}\\n\"},\"creationTimestamp\":\"2023-12-02T00:23:03Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:metadata\":{\"f:annotations\":{\".\":{},\"f:kubectl.kubernetes.io/last-applied-configuration\":{}}},\"f:spec\":{\".\":{},\"f:annotations\":{},\"f:disableLogVolumes\":{},\"f:envVars\":{},\"f:fluentBitConfigName\":{},\"f:image\":{},\"f:labels\":{},\"f:nodeSelector\":{},\"f:ports\":{},\"f:serviceAccountAnnotations\":{},\"f:serviceAnnotations\":{},\"f:serviceLabels\":{},\"f:tolerations\":{}}},\"manager\":\"kubectl-client-side-apply\",\"operation\":\"Update\",\"time\":\"2023-12-02T00:23:03Z\"}],\"name\":\"test-cluster\",\"namespace\":\"fluent\",\"resourceVersion\":\"725\",\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"},\"spec\":{\"fluentBitConfigName\":\"fluent-bit-config\",\"image\":\"kubesphere/fluent-bit:v2.1.7\",\"args\":null,\"command\":null,\"imagePullPolicy\":null,\"imagePullSecrets\":null,\"resources\":null,\"tolerations\":[{\"operator\":\"Exists\"}],\"labels\":{},\"annotations\":{},\"serviceAccountAnnotations\":{},\"serviceLabels\":{},\"serviceSelector\":null,\"serviceAnnotations\":{},\"affinity\":null,\"disableLogVolumes\":false,\"nodeSelector\":{},\"runtimeClassName\":null,\"dnsPolicy\":null,\"priorityClassName\":null,\"volumes\":null,\"volumeMounts\":null,\"schedulerName\":null,\"metricsPort\":null,\"internalMountPropagation\":null,\"positionDB\":null,\"containerLogRealPath\":null,\"securityContext\":null,\"containerSecurityContext\":null,\"hostNetwork\":null,\"envVars\":[{\"name\":\"ACTOKEY\",\"value\":\"ACTOKEY\",\"valueFrom\":{\"configMapKeyRef\":{\"key\":\"ACTOKEY\",\"name\":\"ACTOKEY\",\"optional\":false},\"fieldRef\":{\"apiVersion\":\"ACTOKEY\",\"fieldPath\":\"ACTOKEY\"},\"resourceFieldRef\":{\"containerName\":\"ACTOKEY\",\"divisor\":\"ACTOKEY\",\"resource\":\"ACTOKEY\"}}}],\"livenessProbe\":null,\"readinessProbe\":null,\"initContainers\":null,\"ports\":[]}}",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster failed with error: ApiError: daemonsets.apps \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"daemonsets.apps \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create DaemonSet/fluent/test-cluster failed with error: ApiError: DaemonSet in version \"v1\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$': BadRequest (ErrorResponse { status: \"Failure\", message: \"DaemonSet in version \\\"v1\\\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$'\", reason: \"BadRequest\", code: 400 })",
+                  "Reconciling FluentBit/fluent/test-cluster: error",
+                  "reconcile failed: reconciler for object FluentBit.v1.anvil.dev/test-cluster.fluent failed",
+                  "Reconciling FluentBit/fluent/test-cluster: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBit\",\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/last-applied-configuration\":\"{\\\"apiVersion\\\":\\\"anvil.dev/v1\\\",\\\"kind\\\":\\\"FluentBit\\\",\\\"metadata\\\":{\\\"annotations\\\":{},\\\"name\\\":\\\"test-cluster\\\",\\\"namespace\\\":\\\"fluent\\\"},\\\"spec\\\":{\\\"envVars\\\":[{\\\"name\\\":\\\"ACTOKEY\\\",\\\"value\\\":\\\"ACTOKEY\\\",\\\"valueFrom\\\":{\\\"configMapKeyRef\\\":{\\\"key\\\":\\\"ACTOKEY\\\",\\\"name\\\":\\\"ACTOKEY\\\",\\\"optional\\\":false},\\\"fieldRef\\\":{\\\"apiVersion\\\":\\\"ACTOKEY\\\",\\\"fieldPath\\\":\\\"ACTOKEY\\\"},\\\"resourceFieldRef\\\":{\\\"containerName\\\":\\\"ACTOKEY\\\",\\\"divisor\\\":\\\"ACTOKEY\\\",\\\"resource\\\":\\\"ACTOKEY\\\"},\\\"secretKeyRef\\\":null}}],\\\"fluentBitConfigName\\\":\\\"fluent-bit-config\\\",\\\"image\\\":\\\"kubesphere/fluent-bit:v2.1.7\\\",\\\"ports\\\":[],\\\"tolerations\\\":[{\\\"operator\\\":\\\"Exists\\\"}]}}\\n\"},\"creationTimestamp\":\"2023-12-02T00:23:03Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:metadata\":{\"f:annotations\":{\".\":{},\"f:kubectl.kubernetes.io/last-applied-configuration\":{}}},\"f:spec\":{\".\":{},\"f:annotations\":{},\"f:disableLogVolumes\":{},\"f:envVars\":{},\"f:fluentBitConfigName\":{},\"f:image\":{},\"f:labels\":{},\"f:nodeSelector\":{},\"f:ports\":{},\"f:serviceAccountAnnotations\":{},\"f:serviceAnnotations\":{},\"f:serviceLabels\":{},\"f:tolerations\":{}}},\"manager\":\"kubectl-client-side-apply\",\"operation\":\"Update\",\"time\":\"2023-12-02T00:23:03Z\"}],\"name\":\"test-cluster\",\"namespace\":\"fluent\",\"resourceVersion\":\"725\",\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"},\"spec\":{\"fluentBitConfigName\":\"fluent-bit-config\",\"image\":\"kubesphere/fluent-bit:v2.1.7\",\"args\":null,\"command\":null,\"imagePullPolicy\":null,\"imagePullSecrets\":null,\"resources\":null,\"tolerations\":[{\"operator\":\"Exists\"}],\"labels\":{},\"annotations\":{},\"serviceAccountAnnotations\":{},\"serviceLabels\":{},\"serviceSelector\":null,\"serviceAnnotations\":{},\"affinity\":null,\"disableLogVolumes\":false,\"nodeSelector\":{},\"runtimeClassName\":null,\"dnsPolicy\":null,\"priorityClassName\":null,\"volumes\":null,\"volumeMounts\":null,\"schedulerName\":null,\"metricsPort\":null,\"internalMountPropagation\":null,\"positionDB\":null,\"containerLogRealPath\":null,\"securityContext\":null,\"containerSecurityContext\":null,\"hostNetwork\":null,\"envVars\":[{\"name\":\"ACTOKEY\",\"value\":\"ACTOKEY\",\"valueFrom\":{\"configMapKeyRef\":{\"key\":\"ACTOKEY\",\"name\":\"ACTOKEY\",\"optional\":false},\"fieldRef\":{\"apiVersion\":\"ACTOKEY\",\"fieldPath\":\"ACTOKEY\"},\"resourceFieldRef\":{\"containerName\":\"ACTOKEY\",\"divisor\":\"ACTOKEY\",\"resource\":\"ACTOKEY\"}}}],\"livenessProbe\":null,\"readinessProbe\":null,\"initContainers\":null,\"ports\":[]}}",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster failed with error: ApiError: daemonsets.apps \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"daemonsets.apps \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create DaemonSet/fluent/test-cluster failed with error: ApiError: DaemonSet in version \"v1\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$': BadRequest (ErrorResponse { status: \"Failure\", message: \"DaemonSet in version \\\"v1\\\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$'\", reason: \"BadRequest\", code: 400 })",
+                  "Reconciling FluentBit/fluent/test-cluster: error",
+                  "reconcile failed: reconciler for object FluentBit.v1.anvil.dev/test-cluster.fluent failed",
+                  "Reconciling FluentBit/fluent/test-cluster: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBit\",\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/last-applied-configuration\":\"{\\\"apiVersion\\\":\\\"anvil.dev/v1\\\",\\\"kind\\\":\\\"FluentBit\\\",\\\"metadata\\\":{\\\"annotations\\\":{},\\\"name\\\":\\\"test-cluster\\\",\\\"namespace\\\":\\\"fluent\\\"},\\\"spec\\\":{\\\"envVars\\\":[{\\\"name\\\":\\\"ACTOKEY\\\",\\\"value\\\":\\\"ACTOKEY\\\",\\\"valueFrom\\\":{\\\"configMapKeyRef\\\":{\\\"key\\\":\\\"ACTOKEY\\\",\\\"name\\\":\\\"ACTOKEY\\\",\\\"optional\\\":false},\\\"fieldRef\\\":{\\\"apiVersion\\\":\\\"ACTOKEY\\\",\\\"fieldPath\\\":\\\"ACTOKEY\\\"},\\\"resourceFieldRef\\\":{\\\"containerName\\\":\\\"ACTOKEY\\\",\\\"divisor\\\":\\\"ACTOKEY\\\",\\\"resource\\\":\\\"ACTOKEY\\\"},\\\"secretKeyRef\\\":null}}],\\\"fluentBitConfigName\\\":\\\"fluent-bit-config\\\",\\\"image\\\":\\\"kubesphere/fluent-bit:v2.1.7\\\",\\\"ports\\\":[],\\\"tolerations\\\":[{\\\"operator\\\":\\\"Exists\\\"}]}}\\n\"},\"creationTimestamp\":\"2023-12-02T00:23:03Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:metadata\":{\"f:annotations\":{\".\":{},\"f:kubectl.kubernetes.io/last-applied-configuration\":{}}},\"f:spec\":{\".\":{},\"f:annotations\":{},\"f:disableLogVolumes\":{},\"f:envVars\":{},\"f:fluentBitConfigName\":{},\"f:image\":{},\"f:labels\":{},\"f:nodeSelector\":{},\"f:ports\":{},\"f:serviceAccountAnnotations\":{},\"f:serviceAnnotations\":{},\"f:serviceLabels\":{},\"f:tolerations\":{}}},\"manager\":\"kubectl-client-side-apply\",\"operation\":\"Update\",\"time\":\"2023-12-02T00:23:03Z\"}],\"name\":\"test-cluster\",\"namespace\":\"fluent\",\"resourceVersion\":\"725\",\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"},\"spec\":{\"fluentBitConfigName\":\"fluent-bit-config\",\"image\":\"kubesphere/fluent-bit:v2.1.7\",\"args\":null,\"command\":null,\"imagePullPolicy\":null,\"imagePullSecrets\":null,\"resources\":null,\"tolerations\":[{\"operator\":\"Exists\"}],\"labels\":{},\"annotations\":{},\"serviceAccountAnnotations\":{},\"serviceLabels\":{},\"serviceSelector\":null,\"serviceAnnotations\":{},\"affinity\":null,\"disableLogVolumes\":false,\"nodeSelector\":{},\"runtimeClassName\":null,\"dnsPolicy\":null,\"priorityClassName\":null,\"volumes\":null,\"volumeMounts\":null,\"schedulerName\":null,\"metricsPort\":null,\"internalMountPropagation\":null,\"positionDB\":null,\"containerLogRealPath\":null,\"securityContext\":null,\"containerSecurityContext\":null,\"hostNetwork\":null,\"envVars\":[{\"name\":\"ACTOKEY\",\"value\":\"ACTOKEY\",\"valueFrom\":{\"configMapKeyRef\":{\"key\":\"ACTOKEY\",\"name\":\"ACTOKEY\",\"optional\":false},\"fieldRef\":{\"apiVersion\":\"ACTOKEY\",\"fieldPath\":\"ACTOKEY\"},\"resourceFieldRef\":{\"containerName\":\"ACTOKEY\",\"divisor\":\"ACTOKEY\",\"resource\":\"ACTOKEY\"}}}],\"livenessProbe\":null,\"readinessProbe\":null,\"initContainers\":null,\"ports\":[]}}",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster failed with error: ApiError: daemonsets.apps \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"daemonsets.apps \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create DaemonSet/fluent/test-cluster failed with error: ApiError: DaemonSet in version \"v1\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$': BadRequest (ErrorResponse { status: \"Failure\", message: \"DaemonSet in version \\\"v1\\\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$'\", reason: \"BadRequest\", code: 400 })",
+                  "Reconciling FluentBit/fluent/test-cluster: error",
+                  "reconcile failed: reconciler for object FluentBit.v1.anvil.dev/test-cluster.fluent failed",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBitConfig\",\"metadata\":{\"creationTimestamp\":\"2023-12-02T00:22:33Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:spec\":{\"f:fluentBitConfig\":{},\"f:parsersConfig\":{}}},\"manager\":\"kubectl\",\"operation\":\"Apply\",\"time\":\"2023-12-02T00:22:33Z\"}],\"name\":\"fluent-bit-config\",\"namespace\":\"fluent\",\"resourceVersion\":\"641\",\"uid\":\"dcf39d2d-fa67-4a68-85f0-e668c6feaf2d\"},\"spec\":{\"fluentBitConfig\":\"[Service]\\n    Parsers_File    parsers.conf\\n[Input]\\n    Name    tail\\n    Path    /var/log/containers/*.log\\n    Exclude_Path    /var/log/containers/utils_default_utils-*.log\\n    Refresh_Interval    10\\n    Skip_Long_Lines    true\\n    DB    /fluent-bit/tail/pos.db\\n    DB.Sync    Normal\\n    Mem_Buf_Limit    5MB\\n    Parser    docker\\n    Tag    kube.*\\n[Filter]\\n    Name    kubernetes\\n    Match    kube.*\\n    Kube_URL    https://kubernetes.default.svc:443\\n    Kube_CA_File    /var/run/secrets/kubernetes.io/serviceaccount/ca.crt\\n    Kube_Token_File    /var/run/secrets/kubernetes.io/serviceaccount/token\\n    Labels    false\\n    Annotations    false\\n[Filter]\\n    Name    nest\\n    Match    kube.*\\n    Operation    lift\\n    Nested_under    kubernetes\\n    Add_prefix    kubernetes_\\n[Filter]\\n    Name    modify\\n    Match    kube.*\\n    Remove    stream\\n    Remove    kubernetes_pod_id\\n    Remove    kubernetes_host\\n    Remove    kubernetes_container_hash\\n[Filter]\\n    Name    nest\\n    Match    kube.*\\n    Operation    nest\\n    Wildcard    kubernetes_*\\n    Nest_under    kubernetes\\n    Remove_prefix    kubernetes_\\n[Output]\\n    Name    kafka\\n    Match_Regex    (?:kube|service)\\\\.(.*)\\n    Brokers    my-cluster-kafka-brokers.kafka.svc:9092\\n    Topics    fluent-log\\n\",\"parsersConfig\":\"\"}}",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: Update Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBitConfig/fluent/fluent-bit-config: done",
+                  "reconciled (ObjectRef { dyntype: (), name: \"fluent-bit-config\", namespace: Some(\"fluent\"), extra: Extra { resource_version: Some(\"641\"), uid: Some(\"dcf39d2d-fa67-4a68-85f0-e668c6feaf2d\") } }, Action { requeue_after: Some(60s) })",
+                  "Reconciling FluentBit/fluent/test-cluster: Get cr {\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBit\",\"metadata\":{\"annotations\":{\"kubectl.kubernetes.io/last-applied-configuration\":\"{\\\"apiVersion\\\":\\\"anvil.dev/v1\\\",\\\"kind\\\":\\\"FluentBit\\\",\\\"metadata\\\":{\\\"annotations\\\":{},\\\"name\\\":\\\"test-cluster\\\",\\\"namespace\\\":\\\"fluent\\\"},\\\"spec\\\":{\\\"envVars\\\":[{\\\"name\\\":\\\"ACTOKEY\\\",\\\"value\\\":\\\"ACTOKEY\\\",\\\"valueFrom\\\":{\\\"configMapKeyRef\\\":{\\\"key\\\":\\\"ACTOKEY\\\",\\\"name\\\":\\\"ACTOKEY\\\",\\\"optional\\\":false},\\\"fieldRef\\\":{\\\"apiVersion\\\":\\\"ACTOKEY\\\",\\\"fieldPath\\\":\\\"ACTOKEY\\\"},\\\"resourceFieldRef\\\":{\\\"containerName\\\":\\\"ACTOKEY\\\",\\\"divisor\\\":\\\"ACTOKEY\\\",\\\"resource\\\":\\\"ACTOKEY\\\"},\\\"secretKeyRef\\\":null}}],\\\"fluentBitConfigName\\\":\\\"fluent-bit-config\\\",\\\"image\\\":\\\"kubesphere/fluent-bit:v2.1.7\\\",\\\"ports\\\":[],\\\"tolerations\\\":[{\\\"operator\\\":\\\"Exists\\\"}]}}\\n\"},\"creationTimestamp\":\"2023-12-02T00:23:03Z\",\"generation\":1,\"managedFields\":[{\"apiVersion\":\"anvil.dev/v1\",\"fieldsType\":\"FieldsV1\",\"fieldsV1\":{\"f:metadata\":{\"f:annotations\":{\".\":{},\"f:kubectl.kubernetes.io/last-applied-configuration\":{}}},\"f:spec\":{\".\":{},\"f:annotations\":{},\"f:disableLogVolumes\":{},\"f:envVars\":{},\"f:fluentBitConfigName\":{},\"f:image\":{},\"f:labels\":{},\"f:nodeSelector\":{},\"f:ports\":{},\"f:serviceAccountAnnotations\":{},\"f:serviceAnnotations\":{},\"f:serviceLabels\":{},\"f:tolerations\":{}}},\"manager\":\"kubectl-client-side-apply\",\"operation\":\"Update\",\"time\":\"2023-12-02T00:23:03Z\"}],\"name\":\"test-cluster\",\"namespace\":\"fluent\",\"resourceVersion\":\"725\",\"uid\":\"0198272d-c10f-44c9-bf52-f00a3299b561\"},\"spec\":{\"fluentBitConfigName\":\"fluent-bit-config\",\"image\":\"kubesphere/fluent-bit:v2.1.7\",\"args\":null,\"command\":null,\"imagePullPolicy\":null,\"imagePullSecrets\":null,\"resources\":null,\"tolerations\":[{\"operator\":\"Exists\"}],\"labels\":{},\"annotations\":{},\"serviceAccountAnnotations\":{},\"serviceLabels\":{},\"serviceSelector\":null,\"serviceAnnotations\":{},\"affinity\":null,\"disableLogVolumes\":false,\"nodeSelector\":{},\"runtimeClassName\":null,\"dnsPolicy\":null,\"priorityClassName\":null,\"volumes\":null,\"volumeMounts\":null,\"schedulerName\":null,\"metricsPort\":null,\"internalMountPropagation\":null,\"positionDB\":null,\"containerLogRealPath\":null,\"securityContext\":null,\"containerSecurityContext\":null,\"hostNetwork\":null,\"envVars\":[{\"name\":\"ACTOKEY\",\"value\":\"ACTOKEY\",\"valueFrom\":{\"configMapKeyRef\":{\"key\":\"ACTOKEY\",\"name\":\"ACTOKEY\",\"optional\":false},\"fieldRef\":{\"apiVersion\":\"ACTOKEY\",\"fieldPath\":\"ACTOKEY\"},\"resourceFieldRef\":{\"containerName\":\"ACTOKEY\",\"divisor\":\"ACTOKEY\",\"resource\":\"ACTOKEY\"}}}],\"livenessProbe\":null,\"readinessProbe\":null,\"initContainers\":null,\"ports\":[]}}",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update ServiceAccount/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Role/fluent/test-cluster-role done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update RoleBinding/fluent/test-cluster-role-binding done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Update Service/fluent/test-cluster done",
+                  "Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster failed with error: ApiError: daemonsets.apps \"test-cluster\" not found: NotFound (ErrorResponse { status: \"Failure\", message: \"daemonsets.apps \\\"test-cluster\\\" not found\", reason: \"NotFound\", code: 404 })",
+                  "Reconciling FluentBit/fluent/test-cluster: Create DaemonSet/fluent/test-cluster failed with error: ApiError: DaemonSet in version \"v1\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$': BadRequest (ErrorResponse { status: \"Failure\", message: \"DaemonSet in version \\\"v1\\\" cannot be handled as a DaemonSet: quantities must match the regular expression '^([+-]?[0-9.]+)([eEinumkKMGTP]*[-+]?[0-9]*)$'\", reason: \"BadRequest\", code: 400 })",
+                  "Reconciling FluentBit/fluent/test-cluster: error",
+                  "reconcile failed: reconciler for object FluentBit.v1.anvil.dev/test-cluster.fluent failed",
+                  ""
+            ]
+      },
+      "originals": [
+            {
+                  "trial": "trial-02-0004",
+                  "gen": 6
+            },
+            {
+                  "trial": "trial-02-0004",
+                  "gen": 8
+            },
+            {
+                  "trial": "trial-02-0004",
+                  "gen": 10
+            }
+      ],
+      "time": {
+            "k8s_bootstrap": 87.46846032142639,
+            "operator_deploy": -0.013524532318115234,
+            "run": 45.6594934463501
+      }
+}

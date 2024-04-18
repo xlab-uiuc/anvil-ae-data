@@ -1,0 +1,23 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: test-cluster
+  namespace: rabbitmq-system
+spec:
+  image: ghcr.io/xlab-uiuc/rabbitmq:3.11.10-management
+  persistence:
+    storage: 10Gi
+    storageClassName: null
+  rabbitmq:
+    additionalConfig: 'log.console.level = debug
+
+      '
+  replicas: 3
+  resources:
+    claims:
+    - name: ACTOKEY
+    limits:
+      cpu: '2'
+      memory: 2Gi
+    requests:
+      cpu: '1'

@@ -1,0 +1,22 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  affinity: {}
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  initContainers:
+  - name: i
+    resources:
+      limits:
+        cpu: 800m
+        memory: 1000m
+      requests:
+        cpu: 1000m
+        memory: 1000m
+  livenessProbe:
+    grpc:
+      port: 8500
+    initialDelaySeconds: 10
+  tolerations: []

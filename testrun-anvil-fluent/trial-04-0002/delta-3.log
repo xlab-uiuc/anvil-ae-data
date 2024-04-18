@@ -1,0 +1,75 @@
+---------- INPUT DELTA  ----------
+{
+      "values_changed": {
+            "root['spec']['serviceLabels']['ACTOKEY']": {
+                  "prev": "ACTOKEY",
+                  "curr": "",
+                  "path": [
+                        "spec",
+                        "serviceLabels",
+                        "ACTOKEY"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {
+            "values_changed": {
+                  "root['test-cluster']['metadata']['labels']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "values_changed": {
+                  "root['test-cluster']['metadata']['labels']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "values_changed": {
+                  "root['serviceLabels']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "",
+                        "path": [
+                              "serviceLabels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

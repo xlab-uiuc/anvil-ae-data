@@ -1,0 +1,197 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_added": {
+            "root['spec']['persistentVolumeClaimRetentionPolicy'][whenDeleted]": {
+                  "prev": "NotPresent",
+                  "curr": "Delete",
+                  "path": [
+                        "spec",
+                        "persistentVolumeClaimRetentionPolicy",
+                        "whenDeleted"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {
+            "values_changed": {
+                  "root['test-cluster-server']['spec']['persistent_volume_claim_retention_policy']['when_deleted']": {
+                        "prev": "Retain",
+                        "curr": "Delete",
+                        "path": [
+                              "test-cluster-server",
+                              "spec",
+                              "persistent_volume_claim_retention_policy",
+                              "when_deleted"
+                        ]
+                  }
+            }
+      },
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {},
+      "pvc": {
+            "type_changes": {
+                  "root['persistence-test-cluster-server-0']['metadata']['owner_references'][0][api_version]": {
+                        "prev": null,
+                        "curr": "apps/v1",
+                        "path": [
+                              "persistence-test-cluster-server-0",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "api_version"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-0']['metadata']['owner_references'][0][kind]": {
+                        "prev": null,
+                        "curr": "StatefulSet",
+                        "path": [
+                              "persistence-test-cluster-server-0",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "kind"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-0']['metadata']['owner_references'][0][name]": {
+                        "prev": null,
+                        "curr": "test-cluster-server",
+                        "path": [
+                              "persistence-test-cluster-server-0",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "name"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-0']['metadata']['owner_references'][0][uid]": {
+                        "prev": null,
+                        "curr": "3552e1eb-18e7-4f01-b119-03c86052e827",
+                        "path": [
+                              "persistence-test-cluster-server-0",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "uid"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-1']['metadata']['owner_references'][0][api_version]": {
+                        "prev": null,
+                        "curr": "apps/v1",
+                        "path": [
+                              "persistence-test-cluster-server-1",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "api_version"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-1']['metadata']['owner_references'][0][kind]": {
+                        "prev": null,
+                        "curr": "StatefulSet",
+                        "path": [
+                              "persistence-test-cluster-server-1",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "kind"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-1']['metadata']['owner_references'][0][name]": {
+                        "prev": null,
+                        "curr": "test-cluster-server",
+                        "path": [
+                              "persistence-test-cluster-server-1",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "name"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-1']['metadata']['owner_references'][0][uid]": {
+                        "prev": null,
+                        "curr": "3552e1eb-18e7-4f01-b119-03c86052e827",
+                        "path": [
+                              "persistence-test-cluster-server-1",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "uid"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-2']['metadata']['owner_references'][0][api_version]": {
+                        "prev": null,
+                        "curr": "apps/v1",
+                        "path": [
+                              "persistence-test-cluster-server-2",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "api_version"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-2']['metadata']['owner_references'][0][kind]": {
+                        "prev": null,
+                        "curr": "StatefulSet",
+                        "path": [
+                              "persistence-test-cluster-server-2",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "kind"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-2']['metadata']['owner_references'][0][name]": {
+                        "prev": null,
+                        "curr": "test-cluster-server",
+                        "path": [
+                              "persistence-test-cluster-server-2",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "name"
+                        ]
+                  },
+                  "root['persistence-test-cluster-server-2']['metadata']['owner_references'][0][uid]": {
+                        "prev": null,
+                        "curr": "3552e1eb-18e7-4f01-b119-03c86052e827",
+                        "path": [
+                              "persistence-test-cluster-server-2",
+                              "metadata",
+                              "owner_references",
+                              0,
+                              "uid"
+                        ]
+                  }
+            }
+      },
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {},
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "dictionary_item_added": {
+                  "root['persistentVolumeClaimRetentionPolicy'][whenDeleted]": {
+                        "prev": "NotPresent",
+                        "curr": "Delete",
+                        "path": [
+                              "persistentVolumeClaimRetentionPolicy",
+                              "whenDeleted"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

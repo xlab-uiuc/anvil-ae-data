@@ -1,0 +1,10 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  runtimeClassName: 41whrox.akyf8.c.g8v7ezg.kmwg91.c.2zer.s.kuq94l19l5
+  tolerations:
+  - operator: Exists

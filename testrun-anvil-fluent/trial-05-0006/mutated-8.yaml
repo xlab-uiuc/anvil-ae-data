@@ -1,0 +1,27 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  initContainers:
+  - name: g
+    resources:
+      limits:
+        cpu: 800m
+        memory: 1000m
+      requests:
+        cpu: 1000m
+        memory: 1000m
+  securityContext:
+    fsGroup: 1000
+    runAsGroup: 1000
+    runAsUser: 1000
+    supplementalGroups:
+    - 1000
+  tolerations:
+  - effect: NoExecute
+    key: node-role.kubernetes.io/control-plane
+    operator: Exists
+    tolerationSeconds: 3600

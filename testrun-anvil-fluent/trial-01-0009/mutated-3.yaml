@@ -1,0 +1,546 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  tolerations:
+  - operator: Exists
+  volumes:
+  - awsElasticBlockStore:
+      fsType: ACTOKEY
+      partition: null
+      readOnly: false
+      volumeID: ACTOKEY
+    azureDisk:
+      cachingMode: ACTOKEY
+      diskName: ACTOKEY
+      diskURI: ACTOKEY
+      fsType: null
+      kind: ACTOKEY
+      readOnly: null
+    azureFile:
+      readOnly: true
+      secretName: ACTOKEY
+      shareName: ACTOKEY
+    cephfs:
+      monitors:
+      - ACTOKEY
+      - ACTOKEY
+      - ACTOKEY
+      - ACTOKEY
+      - ACTOKEY
+      path: ACTOKEY
+      readOnly: false
+      secretFile: ACTOKEY
+      secretRef:
+        name: ACTOKEY
+      user: ACTOKEY
+    cinder:
+      fsType: ACTOKEY
+      readOnly: false
+      secretRef:
+        name: ACTOKEY
+      volumeID: ACTOKEY
+    configMap:
+      defaultMode: 2
+      items:
+      - key: ACTOKEY
+        mode: 2
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 2
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 4
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 3
+        path: ACTOKEY
+      name: ACTOKEY
+      optional: false
+    csi: null
+    downwardAPI:
+      defaultMode: 2
+      items: []
+    emptyDir: null
+    ephemeral:
+      volumeClaimTemplate:
+        metadata:
+          annotations:
+            ACTOKEY: ACTOKEY
+          creationTimestamp: ACTOKEY
+          deletionGracePeriodSeconds: 4
+          deletionTimestamp: ACTOKEY
+          finalizers:
+          - ACTOKEY
+          generateName: ACTOKEY
+          generation: null
+          labels:
+            ACTOKEY: ACTOKEY
+          managedFields:
+          - apiVersion: ACTOKEY
+            fieldsType: ACTOKEY
+            fieldsV1: null
+            manager: ACTOKEY
+            operation: ACTOKEY
+            subresource: ACTOKEY
+            time: ACTOKEY
+          - apiVersion: ACTOKEY
+            fieldsType: ACTOKEY
+            fieldsV1: null
+            manager: ACTOKEY
+            operation: ACTOKEY
+            subresource: ACTOKEY
+            time: ACTOKEY
+          - apiVersion: ACTOKEY
+            fieldsType: ACTOKEY
+            fieldsV1: null
+            manager: ACTOKEY
+            operation: ACTOKEY
+            subresource: ACTOKEY
+            time: ACTOKEY
+          - apiVersion: ACTOKEY
+            fieldsType: ACTOKEY
+            fieldsV1: null
+            manager: ACTOKEY
+            operation: ACTOKEY
+            subresource: ACTOKEY
+            time: ACTOKEY
+          name: ACTOKEY
+          namespace: ACTOKEY
+          ownerReferences:
+          - apiVersion: ACTOKEY
+            blockOwnerDeletion: false
+            controller: false
+            kind: ACTOKEY
+            name: ACTOKEY
+            uid: ACTOKEY
+          - apiVersion: ACTOKEY
+            blockOwnerDeletion: false
+            controller: false
+            kind: ACTOKEY
+            name: ACTOKEY
+            uid: ACTOKEY
+          resourceVersion: ACTOKEY
+          selfLink: ACTOKEY
+          uid: ACTOKEY
+        spec:
+          accessModes: []
+          dataSource: null
+          dataSourceRef:
+            apiGroup: null
+            kind: ACTOKEY
+            name: ACTOKEY
+            namespace: ACTOKEY
+          resources:
+            claims: []
+            limits:
+              ACTOKEY: ACTOKEY
+            requests:
+              ACTOKEY: ACTOKEY
+          selector:
+            matchExpressions:
+            - key: ACTOKEY
+              operator: ACTOKEY
+              values: []
+            - key: ACTOKEY
+              operator: ACTOKEY
+              values:
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+            - key: ACTOKEY
+              operator: ACTOKEY
+              values:
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+            - key: ACTOKEY
+              operator: ACTOKEY
+              values:
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+              - ACTOKEY
+            matchLabels:
+              ACTOKEY: ACTOKEY
+          storageClassName: null
+          volumeMode: ACTOKEY
+          volumeName: ACTOKEY
+    fc:
+      fsType: null
+      lun: 0
+      readOnly: true
+      targetWWNs:
+      - ACTOKEY
+      - ACTOKEY
+      wwids:
+      - ACTOKEY
+      - ACTOKEY
+      - ACTOKEY
+      - ACTOKEY
+    flexVolume:
+      driver: ACTOKEY
+      fsType: ACTOKEY
+      options:
+        ACTOKEY: ACTOKEY
+      readOnly: true
+      secretRef: null
+    flocker:
+      datasetName: ACTOKEY
+      datasetUUID: ACTOKEY
+    gcePersistentDisk:
+      fsType: null
+      partition: 0
+      pdName: ACTOKEY
+      readOnly: null
+    gitRepo:
+      directory: ACTOKEY
+      repository: ACTOKEY
+      revision: ACTOKEY
+    glusterfs:
+      endpoints: ACTOKEY
+      path: ACTOKEY
+      readOnly: true
+    hostPath: null
+    iscsi:
+      chapAuthDiscovery: false
+      chapAuthSession: true
+      fsType: ACTOKEY
+      initiatorName: ACTOKEY
+      iqn: ACTOKEY
+      iscsiInterface: ACTOKEY
+      lun: 3
+      portals:
+      - ACTOKEY
+      - ACTOKEY
+      readOnly: true
+      secretRef:
+        name: ACTOKEY
+      targetPortal: ACTOKEY
+    name: ACTOKEY
+    nfs:
+      path: ACTOKEY
+      readOnly: false
+      server: ACTOKEY
+    persistentVolumeClaim:
+      claimName: ACTOKEY
+      readOnly: false
+    photonPersistentDisk:
+      fsType: ACTOKEY
+      pdID: ACTOKEY
+    portworxVolume:
+      fsType: ACTOKEY
+      readOnly: false
+      volumeID: ACTOKEY
+    projected:
+      defaultMode: 0
+      sources:
+      - configMap:
+          items:
+          - key: ACTOKEY
+            mode: 0
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 1
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 4
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: false
+        downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: null
+            path: ACTOKEY
+            resourceFieldRef: null
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: null
+              fieldPath: ACTOKEY
+            mode: 4
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+            resourceFieldRef: null
+        secret:
+          items:
+          - key: ACTOKEY
+            mode: 4
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: null
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: null
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 1
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: null
+        serviceAccountToken:
+          audience: ACTOKEY
+          expirationSeconds: 4
+          path: ACTOKEY
+      - configMap:
+          items:
+          - key: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 3
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 3
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 0
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: true
+        downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 0
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: null
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: null
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: null
+              fieldPath: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+            resourceFieldRef: null
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 1
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+        secret: null
+        serviceAccountToken:
+          audience: null
+          expirationSeconds: 5
+          path: ACTOKEY
+      - configMap:
+          items:
+          - key: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: false
+        downwardAPI:
+          items:
+          - fieldRef: null
+            mode: 3
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: null
+              divisor: ACTOKEY
+              resource: ACTOKEY
+          - fieldRef:
+              apiVersion: ACTOKEY
+              fieldPath: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+            resourceFieldRef:
+              containerName: ACTOKEY
+              divisor: ACTOKEY
+              resource: ACTOKEY
+        secret:
+          items:
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 3
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 1
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: true
+        serviceAccountToken: null
+      - configMap:
+          items: null
+          name: ACTOKEY
+          optional: true
+        downwardAPI:
+          items: []
+        secret:
+          items:
+          - key: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 3
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: false
+        serviceAccountToken:
+          audience: ACTOKEY
+          expirationSeconds: 2
+          path: ACTOKEY
+      - configMap:
+          items:
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 2
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 3
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: false
+        downwardAPI:
+          items: []
+        secret:
+          items:
+          - key: ACTOKEY
+            mode: 4
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 4
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 1
+            path: ACTOKEY
+          - key: ACTOKEY
+            mode: 5
+            path: ACTOKEY
+          name: ACTOKEY
+          optional: true
+        serviceAccountToken:
+          audience: ACTOKEY
+          expirationSeconds: 5
+          path: ACTOKEY
+    quobyte:
+      group: ACTOKEY
+      readOnly: false
+      registry: ACTOKEY
+      tenant: ACTOKEY
+      user: ACTOKEY
+      volume: ACTOKEY
+    rbd: null
+    scaleIO:
+      fsType: ACTOKEY
+      gateway: ACTOKEY
+      protectionDomain: ACTOKEY
+      readOnly: true
+      secretRef:
+        name: ACTOKEY
+      sslEnabled: true
+      storageMode: ACTOKEY
+      storagePool: ACTOKEY
+      system: ACTOKEY
+      volumeName: ACTOKEY
+    secret:
+      defaultMode: 0
+      items:
+      - key: ACTOKEY
+        mode: 1
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 3
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 5
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 1
+        path: ACTOKEY
+      - key: ACTOKEY
+        mode: 2
+        path: ACTOKEY
+      optional: null
+      secretName: ACTOKEY
+    storageos:
+      fsType: ACTOKEY
+      readOnly: false
+      secretRef:
+        name: ACTOKEY
+      volumeName: ACTOKEY
+      volumeNamespace: ACTOKEY
+    vsphereVolume:
+      fsType: ACTOKEY
+      storagePolicyID: null
+      storagePolicyName: null
+      volumePath: ACTOKEY

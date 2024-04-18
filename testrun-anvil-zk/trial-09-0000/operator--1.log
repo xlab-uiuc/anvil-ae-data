@@ -1,0 +1,110 @@
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 18
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 18 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1813"), uid: Some("d5629104-bd4a-449f-b182-5fb8e2a32f07") } }, Action { requeue_after: Some(60s) })
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"ZookeeperCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"ZookeeperCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"zookeeper\"},\"spec\":{\"conf\":{\"autoPurgePurgeInterval\":1,\"autoPurgeSnapRetainCount\":3,\"commitLogCount\":500,\"globalOutstandingLimit\":1000,\"initLimit\":10,\"maxClientCnxns\":60,\"maxCnxns\":0,\"maxSessionTimeout\":40000,\"minSessionTimeout\":4000,\"preAllocSize\":65536,\"quorumListenOnAllIps\":false,\"snapCount\":10000,\"snapSizeLimitInKb\":4194304,\"syncLimit\":2,\"tickTime\":2000},\"image\":\"pravega/zookeeper:0.2.14\",\"persistence\":{\"enabled\":true,\"storageClassName\":\"standard\",\"storageSize\":\"20Gi\"},\"ports\":{\"adminServer\":8080,\"client\":2181,\"leaderElection\":3888,\"metrics\":7000,\"quorum\":2888},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-02T14:17:52Z","generation":3,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:status":{".":{},"f:ready_replicas":{}}},"manager":"unknown","operation":"Update","subresource":"status","time":"2023-11-02T14:26:11Z"},{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:conf":{".":{},"f:autoPurgePurgeInterval":{},"f:autoPurgeSnapRetainCount":{},"f:commitLogCount":{},"f:globalOutstandingLimit":{},"f:initLimit":{},"f:maxClientCnxns":{},"f:maxCnxns":{},"f:maxSessionTimeout":{},"f:minSessionTimeout":{},"f:preAllocSize":{},"f:quorumListenOnAllIps":{},"f:snapCount":{},"f:snapSizeLimitInKb":{},"f:syncLimit":{},"f:tickTime":{}},"f:image":{},"f:labels":{},"f:nodeSelector":{},"f:persistence":{".":{},"f:enabled":{},"f:storageClassName":{},"f:storageSize":{}},"f:ports":{".":{},"f:adminServer":{},"f:client":{},"f:leaderElection":{},"f:metrics":{},"f:quorum":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-02T14:33:13Z"}],"name":"test-cluster","namespace":"zookeeper","resourceVersion":"2492","uid":"d5629104-bd4a-449f-b182-5fb8e2a32f07"},"spec":{"replicas":3,"image":"pravega/zookeeper:0.2.14","ports":{"client":2181,"quorum":2888,"leaderElection":3888,"metrics":7000,"adminServer":8080},"conf":{"initLimit":10,"tickTime":2000,"syncLimit":2,"globalOutstandingLimit":1000,"preAllocSize":65536,"snapCount":10000,"commitLogCount":500,"snapSizeLimitInKb":4194304,"maxCnxns":0,"maxClientCnxns":60,"minSessionTimeout":4000,"maxSessionTimeout":40000,"autoPurgeSnapRetainCount":3,"autoPurgePurgeInterval":1,"quorumListenOnAllIps":false},"persistence":{"enabled":true,"storageSize":"20Gi","storageClassName":"standard"},"resources":null,"affinity":null,"tolerations":null,"node_selector":{},"labels":{},"annotations":{}},"status":{"ready_replicas":2}}
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 19
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 19 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1813"), uid: Some("d5629104-bd4a-449f-b182-5fb8e2a32f07") } }, Action { requeue_after: Some(60s) })
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"ZookeeperCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"ZookeeperCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"zookeeper\"},\"spec\":{\"conf\":{\"autoPurgePurgeInterval\":1,\"autoPurgeSnapRetainCount\":3,\"commitLogCount\":500,\"globalOutstandingLimit\":1000,\"initLimit\":10,\"maxClientCnxns\":60,\"maxCnxns\":0,\"maxSessionTimeout\":40000,\"minSessionTimeout\":4000,\"preAllocSize\":65536,\"quorumListenOnAllIps\":false,\"snapCount\":10000,\"snapSizeLimitInKb\":4194304,\"syncLimit\":2,\"tickTime\":2000},\"image\":\"pravega/zookeeper:0.2.14\",\"persistence\":{\"enabled\":true,\"storageClassName\":\"standard\",\"storageSize\":\"20Gi\"},\"ports\":{\"adminServer\":8080,\"client\":2181,\"leaderElection\":3888,\"metrics\":7000,\"quorum\":2888},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-02T14:17:52Z","generation":3,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:status":{".":{},"f:ready_replicas":{}}},"manager":"unknown","operation":"Update","subresource":"status","time":"2023-11-02T14:26:11Z"},{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:conf":{".":{},"f:autoPurgePurgeInterval":{},"f:autoPurgeSnapRetainCount":{},"f:commitLogCount":{},"f:globalOutstandingLimit":{},"f:initLimit":{},"f:maxClientCnxns":{},"f:maxCnxns":{},"f:maxSessionTimeout":{},"f:minSessionTimeout":{},"f:preAllocSize":{},"f:quorumListenOnAllIps":{},"f:snapCount":{},"f:snapSizeLimitInKb":{},"f:syncLimit":{},"f:tickTime":{}},"f:image":{},"f:labels":{},"f:nodeSelector":{},"f:persistence":{".":{},"f:enabled":{},"f:storageClassName":{},"f:storageSize":{}},"f:ports":{".":{},"f:adminServer":{},"f:client":{},"f:leaderElection":{},"f:metrics":{},"f:quorum":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-02T14:33:13Z"}],"name":"test-cluster","namespace":"zookeeper","resourceVersion":"2492","uid":"d5629104-bd4a-449f-b182-5fb8e2a32f07"},"spec":{"replicas":3,"image":"pravega/zookeeper:0.2.14","ports":{"client":2181,"quorum":2888,"leaderElection":3888,"metrics":7000,"adminServer":8080},"conf":{"initLimit":10,"tickTime":2000,"syncLimit":2,"globalOutstandingLimit":1000,"preAllocSize":65536,"snapCount":10000,"commitLogCount":500,"snapSizeLimitInKb":4194304,"maxCnxns":0,"maxClientCnxns":60,"minSessionTimeout":4000,"maxSessionTimeout":40000,"autoPurgeSnapRetainCount":3,"autoPurgePurgeInterval":1,"quorumListenOnAllIps":false},"persistence":{"enabled":true,"storageSize":"20Gi","storageClassName":"standard"},"resources":null,"affinity":null,"tolerations":null,"node_selector":{},"labels":{},"annotations":{}},"status":{"ready_replicas":2}}
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 20
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 20 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1813"), uid: Some("d5629104-bd4a-449f-b182-5fb8e2a32f07") } }, Action { requeue_after: Some(60s) })
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"ZookeeperCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"ZookeeperCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"zookeeper\"},\"spec\":{\"conf\":{\"autoPurgePurgeInterval\":1,\"autoPurgeSnapRetainCount\":3,\"commitLogCount\":500,\"globalOutstandingLimit\":1000,\"initLimit\":10,\"maxClientCnxns\":60,\"maxCnxns\":0,\"maxSessionTimeout\":40000,\"minSessionTimeout\":4000,\"preAllocSize\":65536,\"quorumListenOnAllIps\":false,\"snapCount\":10000,\"snapSizeLimitInKb\":4194304,\"syncLimit\":2,\"tickTime\":2000},\"image\":\"pravega/zookeeper:0.2.14\",\"persistence\":{\"enabled\":true,\"storageClassName\":\"standard\",\"storageSize\":\"20Gi\"},\"ports\":{\"adminServer\":8080,\"client\":2181,\"leaderElection\":3888,\"metrics\":7000,\"quorum\":2888},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-02T14:17:52Z","generation":3,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:conf":{".":{},"f:autoPurgePurgeInterval":{},"f:autoPurgeSnapRetainCount":{},"f:commitLogCount":{},"f:globalOutstandingLimit":{},"f:initLimit":{},"f:maxClientCnxns":{},"f:maxCnxns":{},"f:maxSessionTimeout":{},"f:minSessionTimeout":{},"f:preAllocSize":{},"f:quorumListenOnAllIps":{},"f:snapCount":{},"f:snapSizeLimitInKb":{},"f:syncLimit":{},"f:tickTime":{}},"f:image":{},"f:labels":{},"f:nodeSelector":{},"f:persistence":{".":{},"f:enabled":{},"f:storageClassName":{},"f:storageSize":{}},"f:ports":{".":{},"f:adminServer":{},"f:client":{},"f:leaderElection":{},"f:metrics":{},"f:quorum":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-02T14:33:13Z"},{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:status":{".":{},"f:ready_replicas":{}}},"manager":"unknown","operation":"Update","subresource":"status","time":"2023-11-02T14:34:13Z"}],"name":"test-cluster","namespace":"zookeeper","resourceVersion":"2617","uid":"d5629104-bd4a-449f-b182-5fb8e2a32f07"},"spec":{"replicas":3,"image":"pravega/zookeeper:0.2.14","ports":{"client":2181,"quorum":2888,"leaderElection":3888,"metrics":7000,"adminServer":8080},"conf":{"initLimit":10,"tickTime":2000,"syncLimit":2,"globalOutstandingLimit":1000,"preAllocSize":65536,"snapCount":10000,"commitLogCount":500,"snapSizeLimitInKb":4194304,"maxCnxns":0,"maxClientCnxns":60,"minSessionTimeout":4000,"maxSessionTimeout":40000,"autoPurgeSnapRetainCount":3,"autoPurgePurgeInterval":1,"quorumListenOnAllIps":false},"persistence":{"enabled":true,"storageSize":"20Gi","storageClassName":"standard"},"resources":null,"affinity":null,"tolerations":null,"node_selector":{},"labels":{},"annotations":{}},"status":{"ready_replicas":3}}
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 21
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 21 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1813"), uid: Some("d5629104-bd4a-449f-b182-5fb8e2a32f07") } }, Action { requeue_after: Some(60s) })
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"ZookeeperCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"ZookeeperCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"zookeeper\"},\"spec\":{\"conf\":{\"autoPurgePurgeInterval\":1,\"autoPurgeSnapRetainCount\":3,\"commitLogCount\":500,\"globalOutstandingLimit\":1000,\"initLimit\":10,\"maxClientCnxns\":60,\"maxCnxns\":0,\"maxSessionTimeout\":40000,\"minSessionTimeout\":4000,\"preAllocSize\":65536,\"quorumListenOnAllIps\":false,\"snapCount\":10000,\"snapSizeLimitInKb\":4194304,\"syncLimit\":2,\"tickTime\":2000},\"image\":\"pravega/zookeeper:0.2.14\",\"persistence\":{\"enabled\":true,\"storageClassName\":\"standard\",\"storageSize\":\"20Gi\"},\"ports\":{\"adminServer\":8080,\"client\":2181,\"leaderElection\":3888,\"metrics\":7000,\"quorum\":2888},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-02T14:17:52Z","generation":3,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:conf":{".":{},"f:autoPurgePurgeInterval":{},"f:autoPurgeSnapRetainCount":{},"f:commitLogCount":{},"f:globalOutstandingLimit":{},"f:initLimit":{},"f:maxClientCnxns":{},"f:maxCnxns":{},"f:maxSessionTimeout":{},"f:minSessionTimeout":{},"f:preAllocSize":{},"f:quorumListenOnAllIps":{},"f:snapCount":{},"f:snapSizeLimitInKb":{},"f:syncLimit":{},"f:tickTime":{}},"f:image":{},"f:labels":{},"f:nodeSelector":{},"f:persistence":{".":{},"f:enabled":{},"f:storageClassName":{},"f:storageSize":{}},"f:ports":{".":{},"f:adminServer":{},"f:client":{},"f:leaderElection":{},"f:metrics":{},"f:quorum":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-02T14:33:13Z"},{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:status":{".":{},"f:ready_replicas":{}}},"manager":"unknown","operation":"Update","subresource":"status","time":"2023-11-02T14:34:13Z"}],"name":"test-cluster","namespace":"zookeeper","resourceVersion":"2617","uid":"d5629104-bd4a-449f-b182-5fb8e2a32f07"},"spec":{"replicas":3,"image":"pravega/zookeeper:0.2.14","ports":{"client":2181,"quorum":2888,"leaderElection":3888,"metrics":7000,"adminServer":8080},"conf":{"initLimit":10,"tickTime":2000,"syncLimit":2,"globalOutstandingLimit":1000,"preAllocSize":65536,"snapCount":10000,"commitLogCount":500,"snapSizeLimitInKb":4194304,"maxCnxns":0,"maxClientCnxns":60,"minSessionTimeout":4000,"maxSessionTimeout":40000,"autoPurgeSnapRetainCount":3,"autoPurgePurgeInterval":1,"quorumListenOnAllIps":false},"persistence":{"enabled":true,"storageSize":"20Gi","storageClassName":"standard"},"resources":null,"affinity":null,"tolerations":null,"node_selector":{},"labels":{},"annotations":{}},"status":{"ready_replicas":3}}
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-headless done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-client done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update Service/zookeeper/test-cluster-admin-server done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update ConfigMap/zookeeper/test-cluster-configmap done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Checking existence of /zookeeper-operator/test-cluster ...
+Checking existence of zk node successfully
+The zk node exists and version is 22
+Connecting to zk uri test-cluster-client.zookeeper.svc.cluster.local:2181 ...
+Setting /zookeeper-operator/test-cluster CLUSTER_SIZE=3 22 ...
+Set zk node successfully
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Get StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: Update StatefulSet/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: UpdateStatus ZookeeperCluster/zookeeper/test-cluster done
+Reconciling ZookeeperCluster/zookeeper/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("zookeeper"), extra: Extra { resource_version: Some("1813"), uid: Some("d5629104-bd4a-449f-b182-5fb8e2a32f07") } }, Action { requeue_after: Some(60s) })
+

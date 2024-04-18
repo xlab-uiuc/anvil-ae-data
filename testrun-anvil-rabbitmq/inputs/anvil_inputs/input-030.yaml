@@ -1,0 +1,25 @@
+apiVersion: anvil.dev/v1
+kind: RabbitmqCluster
+metadata:
+  name: test-cluster
+  namespace: rabbitmq
+spec:
+  image: ghcr.io/xlab-uiuc/rabbitmq:3.11.10-management
+  persistence:
+    storage: 10Gi
+    storageClassName: null
+  persistentVolumeClaimRetentionPolicy:
+    whenDeleted: Delete
+  rabbitmqConfig:
+    additionalConfig: 'log.console.level = debug
+
+      '
+    advancedConfig: ''
+  replicas: 3
+  resources:
+    limits:
+      cpu: '2'
+      memory: 2Gi
+    requests:
+      cpu: '1'
+      memory: 2Gi

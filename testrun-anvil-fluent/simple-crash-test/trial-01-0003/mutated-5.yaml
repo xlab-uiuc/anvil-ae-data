@@ -1,0 +1,43 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  command: []
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  readinessProbe:
+    exec:
+      command:
+      - ACTOKEY
+    failureThreshold: 3
+    grpc:
+      port: 2
+      service: ACTOKEY
+    httpGet:
+      host: ACTOKEY
+      httpHeaders:
+      - name: ACTOKEY
+        value: ACTOKEY
+      - name: ACTOKEY
+        value: ACTOKEY
+      - name: ACTOKEY
+        value: ACTOKEY
+      - name: ACTOKEY
+        value: ACTOKEY
+      - name: ACTOKEY
+        value: ACTOKEY
+      path: ACTOKEY
+      port: ACTOKEY
+      scheme: ACTOKEY
+    initialDelaySeconds: 0
+    periodSeconds: 1
+    successThreshold: 1
+    tcpSocket:
+      host: ACTOKEY
+      port: ACTOKEY
+    terminationGracePeriodSeconds: 0
+    timeoutSeconds: 3
+  tolerations:
+  - operator: Exists
+  volumes: []

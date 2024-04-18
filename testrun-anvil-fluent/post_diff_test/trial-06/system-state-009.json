@@ -1,0 +1,2073 @@
+{
+      "pod": {},
+      "deployment_pods": {
+            "fluent-controller": [
+                  {
+                        "api_version": null,
+                        "kind": null,
+                        "metadata": {
+                              "annotations": null,
+                              "creation_timestamp": "2023-12-02T00:34:10+00:00",
+                              "deletion_grace_period_seconds": null,
+                              "deletion_timestamp": null,
+                              "finalizers": null,
+                              "generate_name": "fluent-controller-8557f6b8d4-",
+                              "generation": null,
+                              "labels": {
+                                    "acto/tag": "operator-pod",
+                                    "app.kubernetes.io/name": "fluent-controller",
+                                    "pod-template-hash": "8557f6b8d4"
+                              },
+                              "managed_fields": [
+                                    {
+                                          "api_version": "v1",
+                                          "fields_type": "FieldsV1",
+                                          "fields_v1": {
+                                                "f:metadata": {
+                                                      "f:generateName": {},
+                                                      "f:labels": {
+                                                            ".": {},
+                                                            "f:acto/tag": {},
+                                                            "f:app.kubernetes.io/name": {},
+                                                            "f:pod-template-hash": {}
+                                                      },
+                                                      "f:ownerReferences": {
+                                                            ".": {},
+                                                            "k:{\"uid\":\"491a2259-2e65-4577-ad4e-e6acc45ad611\"}": {}
+                                                      }
+                                                },
+                                                "f:spec": {
+                                                      "f:containers": {
+                                                            "k:{\"name\":\"controller\"}": {
+                                                                  ".": {},
+                                                                  "f:image": {},
+                                                                  "f:imagePullPolicy": {},
+                                                                  "f:name": {},
+                                                                  "f:resources": {},
+                                                                  "f:terminationMessagePath": {},
+                                                                  "f:terminationMessagePolicy": {}
+                                                            }
+                                                      },
+                                                      "f:dnsPolicy": {},
+                                                      "f:enableServiceLinks": {},
+                                                      "f:restartPolicy": {},
+                                                      "f:schedulerName": {},
+                                                      "f:securityContext": {},
+                                                      "f:serviceAccount": {},
+                                                      "f:serviceAccountName": {},
+                                                      "f:terminationGracePeriodSeconds": {}
+                                                }
+                                          },
+                                          "manager": "kube-controller-manager",
+                                          "operation": "Update",
+                                          "subresource": null,
+                                          "time": "2023-12-02T00:34:10+00:00"
+                                    },
+                                    {
+                                          "api_version": "v1",
+                                          "fields_type": "FieldsV1",
+                                          "fields_v1": {
+                                                "f:status": {
+                                                      "f:conditions": {
+                                                            "k:{\"type\":\"ContainersReady\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            },
+                                                            "k:{\"type\":\"Initialized\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            },
+                                                            "k:{\"type\":\"Ready\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            }
+                                                      },
+                                                      "f:containerStatuses": {},
+                                                      "f:hostIP": {},
+                                                      "f:phase": {},
+                                                      "f:podIP": {},
+                                                      "f:podIPs": {
+                                                            ".": {},
+                                                            "k:{\"ip\":\"10.244.2.2\"}": {
+                                                                  ".": {},
+                                                                  "f:ip": {}
+                                                            }
+                                                      },
+                                                      "f:startTime": {}
+                                                }
+                                          },
+                                          "manager": "kubelet",
+                                          "operation": "Update",
+                                          "subresource": "status",
+                                          "time": "2023-12-02T00:34:12+00:00"
+                                    }
+                              ],
+                              "name": "fluent-controller-8557f6b8d4-dj98q",
+                              "namespace": "fluent",
+                              "owner_references": [
+                                    {
+                                          "api_version": "apps/v1",
+                                          "block_owner_deletion": true,
+                                          "controller": true,
+                                          "kind": "ReplicaSet",
+                                          "name": "fluent-controller-8557f6b8d4",
+                                          "uid": "491a2259-2e65-4577-ad4e-e6acc45ad611"
+                                    }
+                              ],
+                              "resource_version": "673",
+                              "self_link": null,
+                              "uid": "78071e72-1888-462c-9d56-ffec1d57868b"
+                        },
+                        "spec": {
+                              "active_deadline_seconds": null,
+                              "affinity": null,
+                              "automount_service_account_token": null,
+                              "containers": [
+                                    {
+                                          "args": null,
+                                          "command": null,
+                                          "env": null,
+                                          "env_from": null,
+                                          "image": "ghcr.io/vmware-research/verifiable-controllers/fluent-controller:f077082763518a4c2ec87dcc362f063184ec6647",
+                                          "image_pull_policy": "IfNotPresent",
+                                          "lifecycle": null,
+                                          "liveness_probe": null,
+                                          "name": "controller",
+                                          "ports": null,
+                                          "readiness_probe": null,
+                                          "resources": {
+                                                "claims": null,
+                                                "limits": null,
+                                                "requests": null
+                                          },
+                                          "security_context": null,
+                                          "startup_probe": null,
+                                          "stdin": null,
+                                          "stdin_once": null,
+                                          "termination_message_path": "/dev/termination-log",
+                                          "termination_message_policy": "File",
+                                          "tty": null,
+                                          "volume_devices": null,
+                                          "volume_mounts": [
+                                                {
+                                                      "mount_path": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                                      "mount_propagation": null,
+                                                      "name": "kube-api-access-6n7ss",
+                                                      "read_only": true,
+                                                      "sub_path": null,
+                                                      "sub_path_expr": null
+                                                }
+                                          ],
+                                          "working_dir": null
+                                    }
+                              ],
+                              "dns_config": null,
+                              "dns_policy": "ClusterFirst",
+                              "enable_service_links": true,
+                              "ephemeral_containers": null,
+                              "host_aliases": null,
+                              "host_ipc": null,
+                              "host_network": null,
+                              "host_pid": null,
+                              "host_users": null,
+                              "hostname": null,
+                              "image_pull_secrets": null,
+                              "init_containers": null,
+                              "node_name": "acto-0-cluster-6-worker3",
+                              "node_selector": null,
+                              "os": null,
+                              "overhead": null,
+                              "preemption_policy": "PreemptLowerPriority",
+                              "priority": 0,
+                              "priority_class_name": null,
+                              "readiness_gates": null,
+                              "resource_claims": null,
+                              "restart_policy": "Always",
+                              "runtime_class_name": null,
+                              "scheduler_name": "default-scheduler",
+                              "scheduling_gates": null,
+                              "security_context": {
+                                    "fs_group": null,
+                                    "fs_group_change_policy": null,
+                                    "run_as_group": null,
+                                    "run_as_non_root": null,
+                                    "run_as_user": null,
+                                    "se_linux_options": null,
+                                    "seccomp_profile": null,
+                                    "supplemental_groups": null,
+                                    "sysctls": null,
+                                    "windows_options": null
+                              },
+                              "service_account": "fluent-controller",
+                              "service_account_name": "fluent-controller",
+                              "set_hostname_as_fqdn": null,
+                              "share_process_namespace": null,
+                              "subdomain": null,
+                              "termination_grace_period_seconds": 30,
+                              "tolerations": [
+                                    {
+                                          "effect": "NoExecute",
+                                          "key": "node.kubernetes.io/not-ready",
+                                          "operator": "Exists",
+                                          "toleration_seconds": 300,
+                                          "value": null
+                                    },
+                                    {
+                                          "effect": "NoExecute",
+                                          "key": "node.kubernetes.io/unreachable",
+                                          "operator": "Exists",
+                                          "toleration_seconds": 300,
+                                          "value": null
+                                    }
+                              ],
+                              "topology_spread_constraints": null,
+                              "volumes": [
+                                    {
+                                          "aws_elastic_block_store": null,
+                                          "azure_disk": null,
+                                          "azure_file": null,
+                                          "cephfs": null,
+                                          "cinder": null,
+                                          "config_map": null,
+                                          "csi": null,
+                                          "downward_api": null,
+                                          "empty_dir": null,
+                                          "ephemeral": null,
+                                          "fc": null,
+                                          "flex_volume": null,
+                                          "flocker": null,
+                                          "gce_persistent_disk": null,
+                                          "git_repo": null,
+                                          "glusterfs": null,
+                                          "host_path": null,
+                                          "iscsi": null,
+                                          "name": "kube-api-access-6n7ss",
+                                          "nfs": null,
+                                          "persistent_volume_claim": null,
+                                          "photon_persistent_disk": null,
+                                          "portworx_volume": null,
+                                          "projected": {
+                                                "default_mode": 420,
+                                                "sources": [
+                                                      {
+                                                            "config_map": null,
+                                                            "downward_api": null,
+                                                            "secret": null,
+                                                            "service_account_token": {
+                                                                  "audience": null,
+                                                                  "expiration_seconds": 3607,
+                                                                  "path": "token"
+                                                            }
+                                                      },
+                                                      {
+                                                            "config_map": {
+                                                                  "items": [
+                                                                        {
+                                                                              "key": "ca.crt",
+                                                                              "mode": null,
+                                                                              "path": "ca.crt"
+                                                                        }
+                                                                  ],
+                                                                  "name": "kube-root-ca.crt",
+                                                                  "optional": null
+                                                            },
+                                                            "downward_api": null,
+                                                            "secret": null,
+                                                            "service_account_token": null
+                                                      },
+                                                      {
+                                                            "config_map": null,
+                                                            "downward_api": {
+                                                                  "items": [
+                                                                        {
+                                                                              "field_ref": {
+                                                                                    "api_version": "v1",
+                                                                                    "field_path": "metadata.namespace"
+                                                                              },
+                                                                              "mode": null,
+                                                                              "path": "namespace",
+                                                                              "resource_field_ref": null
+                                                                        }
+                                                                  ]
+                                                            },
+                                                            "secret": null,
+                                                            "service_account_token": null
+                                                      }
+                                                ]
+                                          },
+                                          "quobyte": null,
+                                          "rbd": null,
+                                          "scale_io": null,
+                                          "secret": null,
+                                          "storageos": null,
+                                          "vsphere_volume": null
+                                    }
+                              ]
+                        },
+                        "status": {
+                              "conditions": [
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-12-02T00:34:10+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "Initialized"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-12-02T00:34:12+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "Ready"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-12-02T00:34:12+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "ContainersReady"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-12-02T00:34:10+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "PodScheduled"
+                                    }
+                              ],
+                              "container_statuses": [
+                                    {
+                                          "container_id": "containerd://d14c916ac40f08f7e28fee580a77510dea9eaa8f2169ee15f54e05fa8c08628c",
+                                          "image": "ghcr.io/vmware-research/verifiable-controllers/fluent-controller:f077082763518a4c2ec87dcc362f063184ec6647",
+                                          "image_id": "docker.io/library/import-2023-12-02@sha256:d2ba323b913baa126445ab208ff91f95205b850df660024ee1faa17b8b633c0a",
+                                          "last_state": {
+                                                "running": null,
+                                                "terminated": null,
+                                                "waiting": null
+                                          },
+                                          "name": "controller",
+                                          "ready": true,
+                                          "restart_count": 0,
+                                          "started": true,
+                                          "state": {
+                                                "running": {
+                                                      "started_at": "2023-12-02T00:34:11+00:00"
+                                                },
+                                                "terminated": null,
+                                                "waiting": null
+                                          }
+                                    }
+                              ],
+                              "ephemeral_container_statuses": null,
+                              "host_ip": "172.18.0.42",
+                              "init_container_statuses": null,
+                              "message": null,
+                              "nominated_node_name": null,
+                              "phase": "Running",
+                              "pod_ip": "10.244.2.2",
+                              "pod_i_ps": [
+                                    {
+                                          "ip": "10.244.2.2"
+                                    }
+                              ],
+                              "qos_class": "BestEffort",
+                              "reason": null,
+                              "start_time": "2023-12-02T00:34:10+00:00"
+                        }
+                  }
+            ]
+      },
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {
+            "fluent-controller": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "deployment.kubernetes.io/revision": "2"
+                        },
+                        "creation_timestamp": "2023-12-02T00:33:58+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": 2,
+                        "labels": {
+                              "acto/tag": "operator-deployment",
+                              "app.kubernetes.io/name": "fluent-controller"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:app.kubernetes.io/name": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:replicas": {},
+                                                "f:selector": {},
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:app.kubernetes.io/name": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:containers": {
+                                                                  "k:{\"name\":\"controller\"}": {
+                                                                        ".": {},
+                                                                        "f:image": {},
+                                                                        "f:name": {}
+                                                                  }
+                                                            },
+                                                            "f:serviceAccountName": {}
+                                                      }
+                                                }
+                                          }
+                                    },
+                                    "manager": "kubectl",
+                                    "operation": "Apply",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:33:58+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:acto/tag": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:acto/tag": {}
+                                                            }
+                                                      }
+                                                }
+                                          }
+                                    },
+                                    "manager": "OpenAPI-Generator",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:10+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:deployment.kubernetes.io/revision": {}
+                                                }
+                                          },
+                                          "f:status": {
+                                                "f:availableReplicas": {},
+                                                "f:conditions": {
+                                                      ".": {},
+                                                      "k:{\"type\":\"Available\"}": {
+                                                            ".": {},
+                                                            "f:lastTransitionTime": {},
+                                                            "f:lastUpdateTime": {},
+                                                            "f:message": {},
+                                                            "f:reason": {},
+                                                            "f:status": {},
+                                                            "f:type": {}
+                                                      },
+                                                      "k:{\"type\":\"Progressing\"}": {
+                                                            ".": {},
+                                                            "f:lastTransitionTime": {},
+                                                            "f:lastUpdateTime": {},
+                                                            "f:message": {},
+                                                            "f:reason": {},
+                                                            "f:status": {},
+                                                            "f:type": {}
+                                                      }
+                                                },
+                                                "f:observedGeneration": {},
+                                                "f:readyReplicas": {},
+                                                "f:replicas": {},
+                                                "f:updatedReplicas": {}
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2023-12-02T00:34:12+00:00"
+                              }
+                        ],
+                        "name": "fluent-controller",
+                        "namespace": "fluent",
+                        "owner_references": null,
+                        "resource_version": "683",
+                        "self_link": null,
+                        "uid": "0830350b-2862-41fa-a279-d62e5e58cae2"
+                  },
+                  "spec": {
+                        "min_ready_seconds": null,
+                        "paused": null,
+                        "progress_deadline_seconds": 600,
+                        "replicas": 1,
+                        "revision_history_limit": 10,
+                        "selector": {
+                              "match_expressions": null,
+                              "match_labels": {
+                                    "app.kubernetes.io/name": "fluent-controller"
+                              }
+                        },
+                        "strategy": {
+                              "rolling_update": {
+                                    "max_surge": "25%",
+                                    "max_unavailable": "25%"
+                              },
+                              "type": "RollingUpdate"
+                        },
+                        "template": {
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": null,
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "acto/tag": "operator-pod",
+                                          "app.kubernetes.io/name": "fluent-controller"
+                                    },
+                                    "managed_fields": null,
+                                    "name": null,
+                                    "namespace": null,
+                                    "owner_references": null,
+                                    "resource_version": null,
+                                    "self_link": null,
+                                    "uid": null
+                              },
+                              "spec": {
+                                    "active_deadline_seconds": null,
+                                    "affinity": null,
+                                    "automount_service_account_token": null,
+                                    "containers": [
+                                          {
+                                                "args": null,
+                                                "command": null,
+                                                "env": null,
+                                                "env_from": null,
+                                                "image": "ghcr.io/vmware-research/verifiable-controllers/fluent-controller:f077082763518a4c2ec87dcc362f063184ec6647",
+                                                "image_pull_policy": "IfNotPresent",
+                                                "lifecycle": null,
+                                                "liveness_probe": null,
+                                                "name": "controller",
+                                                "ports": null,
+                                                "readiness_probe": null,
+                                                "resources": {
+                                                      "claims": null,
+                                                      "limits": null,
+                                                      "requests": null
+                                                },
+                                                "security_context": null,
+                                                "startup_probe": null,
+                                                "stdin": null,
+                                                "stdin_once": null,
+                                                "termination_message_path": "/dev/termination-log",
+                                                "termination_message_policy": "File",
+                                                "tty": null,
+                                                "volume_devices": null,
+                                                "volume_mounts": null,
+                                                "working_dir": null
+                                          }
+                                    ],
+                                    "dns_config": null,
+                                    "dns_policy": "ClusterFirst",
+                                    "enable_service_links": null,
+                                    "ephemeral_containers": null,
+                                    "host_aliases": null,
+                                    "host_ipc": null,
+                                    "host_network": null,
+                                    "host_pid": null,
+                                    "host_users": null,
+                                    "hostname": null,
+                                    "image_pull_secrets": null,
+                                    "init_containers": null,
+                                    "node_name": null,
+                                    "node_selector": null,
+                                    "os": null,
+                                    "overhead": null,
+                                    "preemption_policy": null,
+                                    "priority": null,
+                                    "priority_class_name": null,
+                                    "readiness_gates": null,
+                                    "resource_claims": null,
+                                    "restart_policy": "Always",
+                                    "runtime_class_name": null,
+                                    "scheduler_name": "default-scheduler",
+                                    "scheduling_gates": null,
+                                    "security_context": {
+                                          "fs_group": null,
+                                          "fs_group_change_policy": null,
+                                          "run_as_group": null,
+                                          "run_as_non_root": null,
+                                          "run_as_user": null,
+                                          "se_linux_options": null,
+                                          "seccomp_profile": null,
+                                          "supplemental_groups": null,
+                                          "sysctls": null,
+                                          "windows_options": null
+                                    },
+                                    "service_account": "fluent-controller",
+                                    "service_account_name": "fluent-controller",
+                                    "set_hostname_as_fqdn": null,
+                                    "share_process_namespace": null,
+                                    "subdomain": null,
+                                    "termination_grace_period_seconds": 30,
+                                    "tolerations": null,
+                                    "topology_spread_constraints": null,
+                                    "volumes": null
+                              }
+                        }
+                  },
+                  "status": {
+                        "available_replicas": 1,
+                        "collision_count": null,
+                        "conditions": [
+                              {
+                                    "last_transition_time": "2023-12-02T00:33:59+00:00",
+                                    "last_update_time": "2023-12-02T00:33:59+00:00",
+                                    "message": "Deployment has minimum availability.",
+                                    "reason": "MinimumReplicasAvailable",
+                                    "status": "True",
+                                    "type": "Available"
+                              },
+                              {
+                                    "last_transition_time": "2023-12-02T00:33:58+00:00",
+                                    "last_update_time": "2023-12-02T00:34:12+00:00",
+                                    "message": "ReplicaSet \"fluent-controller-8557f6b8d4\" has successfully progressed.",
+                                    "reason": "NewReplicaSetAvailable",
+                                    "status": "True",
+                                    "type": "Progressing"
+                              }
+                        ],
+                        "observed_generation": 2,
+                        "ready_replicas": 1,
+                        "replicas": 1,
+                        "unavailable_replicas": null,
+                        "updated_replicas": 1
+                  }
+            }
+      },
+      "daemon_set": {},
+      "config_map": {
+            "kube-root-ca.crt": {
+                  "api_version": null,
+                  "binary_data": null,
+                  "data": {
+                        "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIC/jCCAeagAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl\ncm5ldGVzMB4XDTIzMTIwMjAwMzMxOFoXDTMzMTEyOTAwMzMxOFowFTETMBEGA1UE\nAxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMhi\nS9RqekAa/A3yzPbC36Esgd7LgIr1Z98GqLgCYfSktdnoIgdAGFLhz72l2SChNliX\nE44S+09ZONY4HD447tk7uDZirZxF17Vr4EBNwuQkwGcaVAJgLrGeyp4UCkuDJLvu\n4dLXq+g2uYMiMPKUg4CT5Ve1Cc2JBG62gvBC7MflhrutuWmNiQ1QQ4S85LXVvT61\nVs3REbuoJ8cP0x6lI6+x2ubAlWL2Q9i0R5XgHuglFxlRJZF2EDj+lq1CKXBqkknV\nWDDIfZ4GNsv6TrSdaWV7Al7hJ9mqaCZ2FSW1OpB1v8icpLk7AjINgkw8p4PKB10x\nxzz9ZjXGav1MyS+SxgcCAwEAAaNZMFcwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB\n/wQFMAMBAf8wHQYDVR0OBBYEFMEdQDmRtngiqGM9TieeZpkqFKwvMBUGA1UdEQQO\nMAyCCmt1YmVybmV0ZXMwDQYJKoZIhvcNAQELBQADggEBADWTu/fGC+RCYkUU+66A\nAwrwJhnl/ItZvAcTZNGtr3Zwr8pe0fsKxIr5IQGbs7aS68inKPXZgcJuVObO6OU/\nLQEdpt5u7Qb9PbHWZVZmQCrsMaayEA0QznWFUewVIot8Qe80CulYXEo3gyzbRqBX\nvV0iHFp2dY/3d85IerbnhNoFk/64xK0PYq1/iXF+7Kgk7+DiTMxvLOoyiCBIi9cb\ntznIbfWpXdOA3b1hwAtl3EvJv/buicfx4h4p6d3jOZRP8FoGSfeR16aad00triEN\nt4UFoIffwY96rjgUhXOfXGEjgJN9itG3JnuOry/KDIWkvKN0znV8qKLQIrxtXzt3\nXB0=\n-----END CERTIFICATE-----\n"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "kubernetes.io/description": "Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters."
+                        },
+                        "creation_timestamp": "2023-12-02T00:33:56+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:ca.crt": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:kubernetes.io/description": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:33:56+00:00"
+                              }
+                        ],
+                        "name": "kube-root-ca.crt",
+                        "namespace": "fluent",
+                        "owner_references": null,
+                        "resource_version": "595",
+                        "self_link": null,
+                        "uid": "e6edb9af-c997-492b-bd63-8cc9e740d7ef"
+                  }
+            }
+      },
+      "service": {
+            "test-cluster": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:34:36+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"2fc00edc-2b23-4985-82f5-5cfce6d1a9cf\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:internalTrafficPolicy": {},
+                                                "f:ports": {
+                                                      ".": {},
+                                                      "k:{\"port\":2020,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      }
+                                                },
+                                                "f:selector": {},
+                                                "f:sessionAffinity": {},
+                                                "f:type": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:36+00:00"
+                              }
+                        ],
+                        "name": "test-cluster",
+                        "namespace": "fluent",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "FluentBit",
+                                    "name": "test-cluster",
+                                    "uid": "2fc00edc-2b23-4985-82f5-5cfce6d1a9cf"
+                              }
+                        ],
+                        "resource_version": "731",
+                        "self_link": null,
+                        "uid": "c7183161-e2fb-4ac5-b8e8-b5c50749f44b"
+                  },
+                  "spec": {
+                        "allocate_load_balancer_node_ports": null,
+                        "cluster_ip": "10.96.196.49",
+                        "cluster_i_ps": [
+                              "10.96.196.49"
+                        ],
+                        "external_i_ps": null,
+                        "external_name": null,
+                        "external_traffic_policy": null,
+                        "health_check_node_port": null,
+                        "internal_traffic_policy": "Cluster",
+                        "ip_families": [
+                              "IPv4"
+                        ],
+                        "ip_family_policy": "SingleStack",
+                        "load_balancer_class": null,
+                        "load_balancer_ip": null,
+                        "load_balancer_source_ranges": null,
+                        "ports": [
+                              {
+                                    "app_protocol": null,
+                                    "name": "metrics",
+                                    "node_port": null,
+                                    "port": 2020,
+                                    "protocol": "TCP",
+                                    "target_port": 2020
+                              }
+                        ],
+                        "publish_not_ready_addresses": null,
+                        "selector": {
+                              "app": "test-cluster"
+                        },
+                        "session_affinity": "None",
+                        "session_affinity_config": null,
+                        "type": "ClusterIP"
+                  },
+                  "status": {
+                        "conditions": null,
+                        "load_balancer": {
+                              "ingress": null
+                        }
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {
+            "fluent-bit-config": {
+                  "api_version": null,
+                  "data": {
+                        "fluent-bit.conf": "[Service]\n    Parsers_File    parsers.conf\n[Input]\n    Name    tail\n    Path    /var/log/containers/*.log\n    Exclude_Path    /var/log/containers/utils_default_utils-*.log\n    Refresh_Interval    10\n    Skip_Long_Lines    true\n    DB    /fluent-bit/tail/pos.db\n    DB.Sync    Normal\n    Mem_Buf_Limit    5MB\n    Parser    docker\n    Tag    kube.*\n[Filter]\n    Name    kubernetes\n    Match    kube.*\n    Kube_URL    https://kubernetes.default.svc:443\n    Kube_CA_File    /var/run/secrets/kubernetes.io/serviceaccount/ca.crt\n    Kube_Token_File    /var/run/secrets/kubernetes.io/serviceaccount/token\n    Labels    false\n    Annotations    false\n[Filter]\n    Name    nest\n    Match    kube.*\n    Operation    lift\n    Nested_under    kubernetes\n    Add_prefix    kubernetes_\n[Filter]\n    Name    modify\n    Match    kube.*\n    Remove    stream\n    Remove    kubernetes_pod_id\n    Remove    kubernetes_host\n    Remove    kubernetes_container_hash\n[Filter]\n    Name    nest\n    Match    kube.*\n    Operation    nest\n    Wildcard    kubernetes_*\n    Nest_under    kubernetes\n    Remove_prefix    kubernetes_\n[Output]\n    Name    kafka\n    Match_Regex    (?:kube|service)\\.(.*)\n    Brokers    my-cluster-kafka-brokers.kafka.svc:9092\n    Topics    fluent-log\n",
+                        "parsers.conf": ""
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:34:05+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:fluent-bit.conf": {},
+                                                "f:parsers.conf": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"c734f90e-e009-4a3a-981a-cc480ab502f2\"}": {}
+                                                }
+                                          },
+                                          "f:type": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:05+00:00"
+                              }
+                        ],
+                        "name": "fluent-bit-config",
+                        "namespace": "fluent",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "FluentBitConfig",
+                                    "name": "fluent-bit-config",
+                                    "uid": "c734f90e-e009-4a3a-981a-cc480ab502f2"
+                              }
+                        ],
+                        "resource_version": "643",
+                        "self_link": null,
+                        "uid": "a6bd6c69-9449-4b64-9b2a-6a1a2d35c269"
+                  },
+                  "string_data": null,
+                  "type": "Opaque"
+            }
+      },
+      "endpoints": {
+            "test-cluster": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "endpoints.kubernetes.io/last-change-trigger-time": "2023-12-02T00:34:36Z"
+                        },
+                        "creation_timestamp": "2023-12-02T00:34:36+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                },
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:36+00:00"
+                              }
+                        ],
+                        "name": "test-cluster",
+                        "namespace": "fluent",
+                        "owner_references": null,
+                        "resource_version": "733",
+                        "self_link": null,
+                        "uid": "e60b7428-e14b-4790-bdcc-a8c2619bc4d0"
+                  },
+                  "subsets": null
+            }
+      },
+      "service_account": {
+            "default": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:33:56+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": null,
+                        "name": "default",
+                        "namespace": "fluent",
+                        "owner_references": null,
+                        "resource_version": "594",
+                        "self_link": null,
+                        "uid": "84f33308-1908-4b36-9165-eacc81bd9090"
+                  },
+                  "secrets": null
+            },
+            "fluent-controller": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:33:58+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app.kubernetes.io/name": "fluent-controller"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:app.kubernetes.io/name": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kubectl",
+                                    "operation": "Apply",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:33:58+00:00"
+                              }
+                        ],
+                        "name": "fluent-controller",
+                        "namespace": "fluent",
+                        "owner_references": null,
+                        "resource_version": "604",
+                        "self_link": null,
+                        "uid": "e02438f1-4dfb-4b3a-b4b2-2deb204c5f7e"
+                  },
+                  "secrets": null
+            },
+            "test-cluster": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:34:36+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"2fc00edc-2b23-4985-82f5-5cfce6d1a9cf\"}": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:36+00:00"
+                              }
+                        ],
+                        "name": "test-cluster",
+                        "namespace": "fluent",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "FluentBit",
+                                    "name": "test-cluster",
+                                    "uid": "2fc00edc-2b23-4985-82f5-5cfce6d1a9cf"
+                              }
+                        ],
+                        "resource_version": "727",
+                        "self_link": null,
+                        "uid": "6d9af343-f6e8-4c7f-942b-c4e23189fa1b"
+                  },
+                  "secrets": null
+            }
+      },
+      "job": {},
+      "role": {
+            "test-cluster-role": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:34:36+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "rbac.authorization.k8s.io/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"2fc00edc-2b23-4985-82f5-5cfce6d1a9cf\"}": {}
+                                                }
+                                          },
+                                          "f:rules": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:36+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-role",
+                        "namespace": "fluent",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "FluentBit",
+                                    "name": "test-cluster",
+                                    "uid": "2fc00edc-2b23-4985-82f5-5cfce6d1a9cf"
+                              }
+                        ],
+                        "resource_version": "728",
+                        "self_link": null,
+                        "uid": "1883ae54-f37a-4270-b149-a489ffb68ccb"
+                  },
+                  "rules": [
+                        {
+                              "api_groups": [
+                                    ""
+                              ],
+                              "non_resource_ur_ls": null,
+                              "resource_names": null,
+                              "resources": [
+                                    "pods"
+                              ],
+                              "verbs": [
+                                    "get"
+                              ]
+                        }
+                  ]
+            }
+      },
+      "role_binding": {
+            "test-cluster-role-binding": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-12-02T00:34:36+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "rbac.authorization.k8s.io/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"2fc00edc-2b23-4985-82f5-5cfce6d1a9cf\"}": {}
+                                                }
+                                          },
+                                          "f:roleRef": {},
+                                          "f:subjects": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-12-02T00:34:36+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-role-binding",
+                        "namespace": "fluent",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "FluentBit",
+                                    "name": "test-cluster",
+                                    "uid": "2fc00edc-2b23-4985-82f5-5cfce6d1a9cf"
+                              }
+                        ],
+                        "resource_version": "729",
+                        "self_link": null,
+                        "uid": "6c135203-5c27-41f7-a9db-cd40986d1fca"
+                  },
+                  "role_ref": {
+                        "api_group": "rbac.authorization.k8s.io",
+                        "kind": "Role",
+                        "name": "test-cluster-role"
+                  },
+                  "subjects": [
+                        {
+                              "api_group": null,
+                              "kind": "ServiceAccount",
+                              "name": "test-cluster",
+                              "namespace": "fluent"
+                        }
+                  ]
+            }
+      },
+      "custom_resource_spec": {
+            "annotations": {},
+            "disableLogVolumes": false,
+            "fluentBitConfigName": "fluent-bit-config",
+            "image": "kubesphere/fluent-bit:v2.1.7",
+            "initContainers": [
+                  {
+                        "args": [
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY"
+                        ],
+                        "command": [
+                              "ACTOKEY"
+                        ],
+                        "env": [
+                              {
+                                    "name": "ACTOKEY",
+                                    "valueFrom": {
+                                          "configMapKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": true
+                                          },
+                                          "fieldRef": {
+                                                "apiVersion": "ACTOKEY",
+                                                "fieldPath": "ACTOKEY"
+                                          },
+                                          "resourceFieldRef": {
+                                                "containerName": "ACTOKEY",
+                                                "divisor": "ACTOKEY",
+                                                "resource": "ACTOKEY"
+                                          },
+                                          "secretKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "optional": false
+                                          }
+                                    }
+                              },
+                              {
+                                    "name": "ACTOKEY",
+                                    "value": "ACTOKEY",
+                                    "valueFrom": {
+                                          "configMapKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": false
+                                          },
+                                          "fieldRef": {
+                                                "apiVersion": "ACTOKEY",
+                                                "fieldPath": "ACTOKEY"
+                                          },
+                                          "resourceFieldRef": {
+                                                "containerName": "ACTOKEY",
+                                                "divisor": "ACTOKEY",
+                                                "resource": "ACTOKEY"
+                                          },
+                                          "secretKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": true
+                                          }
+                                    }
+                              },
+                              {
+                                    "name": "ACTOKEY",
+                                    "value": "ACTOKEY",
+                                    "valueFrom": {
+                                          "configMapKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "optional": true
+                                          },
+                                          "fieldRef": {
+                                                "apiVersion": "ACTOKEY",
+                                                "fieldPath": "ACTOKEY"
+                                          },
+                                          "resourceFieldRef": {
+                                                "containerName": "ACTOKEY",
+                                                "divisor": "ACTOKEY",
+                                                "resource": "ACTOKEY"
+                                          }
+                                    }
+                              }
+                        ],
+                        "envFrom": [
+                              {
+                                    "configMapRef": {
+                                          "name": "ACTOKEY",
+                                          "optional": true
+                                    },
+                                    "secretRef": {
+                                          "name": "ACTOKEY",
+                                          "optional": true
+                                    }
+                              }
+                        ],
+                        "image": "ACTOKEY",
+                        "imagePullPolicy": "ACTOKEY",
+                        "lifecycle": {
+                              "postStart": {
+                                    "exec": {
+                                          "command": []
+                                    },
+                                    "httpGet": {
+                                          "host": "ACTOKEY",
+                                          "httpHeaders": [
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                }
+                                          ],
+                                          "path": "ACTOKEY",
+                                          "port": "ACTOKEY",
+                                          "scheme": "ACTOKEY"
+                                    },
+                                    "tcpSocket": {
+                                          "host": "ACTOKEY",
+                                          "port": "ACTOKEY"
+                                    }
+                              },
+                              "preStop": {
+                                    "exec": {},
+                                    "httpGet": {
+                                          "host": "ACTOKEY",
+                                          "httpHeaders": [
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                }
+                                          ],
+                                          "path": "ACTOKEY",
+                                          "port": "ACTOKEY",
+                                          "scheme": "ACTOKEY"
+                                    }
+                              }
+                        },
+                        "livenessProbe": {
+                              "exec": {
+                                    "command": []
+                              },
+                              "failureThreshold": 1,
+                              "grpc": {
+                                    "port": 2,
+                                    "service": "ACTOKEY"
+                              },
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "httpHeaders": [
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          }
+                                    ],
+                                    "path": "ACTOKEY",
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "periodSeconds": 2,
+                              "successThreshold": 0,
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 1
+                        },
+                        "name": "t",
+                        "ports": [],
+                        "readinessProbe": {
+                              "exec": {
+                                    "command": [
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "failureThreshold": 2,
+                              "grpc": {
+                                    "port": 3
+                              },
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "httpHeaders": [
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          }
+                                    ],
+                                    "path": "ACTOKEY",
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "initialDelaySeconds": 4,
+                              "periodSeconds": 5,
+                              "successThreshold": 2,
+                              "tcpSocket": {
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 4,
+                              "timeoutSeconds": 1
+                        },
+                        "resources": {
+                              "limits": {
+                                    "cpu": "800m",
+                                    "memory": "1000m"
+                              },
+                              "requests": {
+                                    "cpu": "800m",
+                                    "memory": "1000m"
+                              }
+                        },
+                        "securityContext": {
+                              "allowPrivilegeEscalation": false,
+                              "capabilities": {
+                                    "add": [
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY"
+                                    ],
+                                    "drop": [
+                                          "ACTOKEY",
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "privileged": false,
+                              "procMount": "ACTOKEY",
+                              "readOnlyRootFilesystem": false,
+                              "runAsGroup": 2,
+                              "runAsNonRoot": false,
+                              "runAsUser": 3,
+                              "seLinuxOptions": {
+                                    "level": "ACTOKEY",
+                                    "role": "ACTOKEY",
+                                    "type": "ACTOKEY",
+                                    "user": "ACTOKEY"
+                              },
+                              "seccompProfile": {
+                                    "localhostProfile": "ACTOKEY",
+                                    "type": "ACTOKEY"
+                              },
+                              "windowsOptions": {
+                                    "gmsaCredentialSpec": "ACTOKEY",
+                                    "gmsaCredentialSpecName": "ACTOKEY",
+                                    "hostProcess": false,
+                                    "runAsUserName": "ACTOKEY"
+                              }
+                        },
+                        "startupProbe": {
+                              "exec": {
+                                    "command": [
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "failureThreshold": 0,
+                              "grpc": {
+                                    "port": 2,
+                                    "service": "ACTOKEY"
+                              },
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "path": "ACTOKEY",
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "initialDelaySeconds": 4,
+                              "periodSeconds": 2,
+                              "successThreshold": 0,
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 2,
+                              "timeoutSeconds": 4
+                        },
+                        "stdin": false,
+                        "stdinOnce": false,
+                        "terminationMessagePath": "ACTOKEY",
+                        "terminationMessagePolicy": "ACTOKEY",
+                        "tty": true,
+                        "volumeDevices": [
+                              {
+                                    "devicePath": "ACTOKEY",
+                                    "name": "ACTOKEY"
+                              }
+                        ],
+                        "volumeMounts": [],
+                        "workingDir": "ACTOKEY"
+                  },
+                  {
+                        "args": [
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY"
+                        ],
+                        "command": [
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY"
+                        ],
+                        "env": [
+                              {
+                                    "name": "ACTOKEY",
+                                    "value": "ACTOKEY",
+                                    "valueFrom": {
+                                          "configMapKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": false
+                                          },
+                                          "fieldRef": {
+                                                "apiVersion": "ACTOKEY",
+                                                "fieldPath": "ACTOKEY"
+                                          },
+                                          "resourceFieldRef": {
+                                                "containerName": "ACTOKEY",
+                                                "divisor": "ACTOKEY",
+                                                "resource": "ACTOKEY"
+                                          },
+                                          "secretKeyRef": {
+                                                "key": "ACTOKEY",
+                                                "name": "ACTOKEY",
+                                                "optional": false
+                                          }
+                                    }
+                              }
+                        ],
+                        "envFrom": [],
+                        "image": "ACTOKEY",
+                        "imagePullPolicy": "ACTOKEY",
+                        "lifecycle": {
+                              "postStart": {
+                                    "exec": {
+                                          "command": [
+                                                "ACTOKEY"
+                                          ]
+                                    },
+                                    "httpGet": {
+                                          "host": "ACTOKEY",
+                                          "httpHeaders": [
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                }
+                                          ],
+                                          "path": "ACTOKEY",
+                                          "port": "ACTOKEY",
+                                          "scheme": "ACTOKEY"
+                                    },
+                                    "tcpSocket": {
+                                          "host": "ACTOKEY",
+                                          "port": "ACTOKEY"
+                                    }
+                              },
+                              "preStop": {
+                                    "httpGet": {
+                                          "host": "ACTOKEY",
+                                          "httpHeaders": [
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                },
+                                                {
+                                                      "name": "ACTOKEY",
+                                                      "value": "ACTOKEY"
+                                                }
+                                          ],
+                                          "path": "ACTOKEY",
+                                          "port": "ACTOKEY",
+                                          "scheme": "ACTOKEY"
+                                    },
+                                    "tcpSocket": {
+                                          "host": "ACTOKEY",
+                                          "port": "ACTOKEY"
+                                    }
+                              }
+                        },
+                        "livenessProbe": {
+                              "exec": {
+                                    "command": [
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "failureThreshold": 1,
+                              "grpc": {
+                                    "port": 5,
+                                    "service": "ACTOKEY"
+                              },
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "httpHeaders": [
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          }
+                                    ],
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "successThreshold": 0,
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 2,
+                              "timeoutSeconds": 5
+                        },
+                        "name": "p",
+                        "ports": [
+                              {
+                                    "containerPort": 3,
+                                    "hostIP": "ACTOKEY",
+                                    "hostPort": 5,
+                                    "name": "ACTOKEY",
+                                    "protocol": "ACTOKEY"
+                              },
+                              {
+                                    "containerPort": 2,
+                                    "hostIP": "ACTOKEY",
+                                    "hostPort": 1,
+                                    "name": "ACTOKEY",
+                                    "protocol": "ACTOKEY"
+                              },
+                              {
+                                    "containerPort": 4,
+                                    "hostIP": "ACTOKEY",
+                                    "hostPort": 4,
+                                    "name": "ACTOKEY"
+                              }
+                        ],
+                        "readinessProbe": {
+                              "failureThreshold": 5,
+                              "grpc": {
+                                    "port": 1,
+                                    "service": "ACTOKEY"
+                              },
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "httpHeaders": [
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          }
+                                    ],
+                                    "path": "ACTOKEY",
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "initialDelaySeconds": 3,
+                              "periodSeconds": 1,
+                              "successThreshold": 4,
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 3,
+                              "timeoutSeconds": 4
+                        },
+                        "resources": {
+                              "limits": {
+                                    "cpu": "800m",
+                                    "memory": "1000m"
+                              },
+                              "requests": {
+                                    "cpu": "800m",
+                                    "memory": "1000m"
+                              }
+                        },
+                        "securityContext": {
+                              "capabilities": {
+                                    "add": [
+                                          "ACTOKEY"
+                                    ],
+                                    "drop": [
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "procMount": "ACTOKEY",
+                              "readOnlyRootFilesystem": true,
+                              "runAsNonRoot": true,
+                              "runAsUser": 3,
+                              "seLinuxOptions": {
+                                    "level": "ACTOKEY",
+                                    "role": "ACTOKEY",
+                                    "type": "ACTOKEY",
+                                    "user": "ACTOKEY"
+                              },
+                              "seccompProfile": {
+                                    "type": "ACTOKEY"
+                              },
+                              "windowsOptions": {
+                                    "gmsaCredentialSpec": "ACTOKEY",
+                                    "gmsaCredentialSpecName": "ACTOKEY",
+                                    "hostProcess": true,
+                                    "runAsUserName": "ACTOKEY"
+                              }
+                        },
+                        "startupProbe": {
+                              "failureThreshold": 2,
+                              "grpc": {
+                                    "port": 0,
+                                    "service": "ACTOKEY"
+                              },
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "httpHeaders": [
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          },
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          }
+                                    ],
+                                    "path": "ACTOKEY",
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 2,
+                              "timeoutSeconds": 2
+                        },
+                        "stdin": true,
+                        "stdinOnce": false,
+                        "terminationMessagePath": "ACTOKEY",
+                        "terminationMessagePolicy": "ACTOKEY",
+                        "tty": false,
+                        "volumeDevices": [
+                              {
+                                    "devicePath": "ACTOKEY",
+                                    "name": "ACTOKEY"
+                              },
+                              {
+                                    "devicePath": "ACTOKEY",
+                                    "name": "ACTOKEY"
+                              },
+                              {
+                                    "devicePath": "ACTOKEY",
+                                    "name": "ACTOKEY"
+                              },
+                              {
+                                    "devicePath": "ACTOKEY",
+                                    "name": "ACTOKEY"
+                              },
+                              {
+                                    "devicePath": "ACTOKEY",
+                                    "name": "ACTOKEY"
+                              }
+                        ],
+                        "volumeMounts": [
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": false,
+                                    "subPath": "ACTOKEY"
+                              },
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": false,
+                                    "subPath": "ACTOKEY",
+                                    "subPathExpr": "ACTOKEY"
+                              },
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": true,
+                                    "subPath": "ACTOKEY",
+                                    "subPathExpr": "ACTOKEY"
+                              },
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": true,
+                                    "subPath": "ACTOKEY",
+                                    "subPathExpr": "ACTOKEY"
+                              },
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": false,
+                                    "subPath": "ACTOKEY",
+                                    "subPathExpr": "ACTOKEY"
+                              }
+                        ],
+                        "workingDir": "ACTOKEY"
+                  },
+                  {
+                        "args": [
+                              "ACTOKEY"
+                        ],
+                        "command": [
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY",
+                              "ACTOKEY"
+                        ],
+                        "env": [],
+                        "envFrom": [],
+                        "image": "ACTOKEY",
+                        "imagePullPolicy": "ACTOKEY",
+                        "name": "n6zewety",
+                        "ports": [
+                              {
+                                    "containerPort": 0,
+                                    "hostIP": "ACTOKEY",
+                                    "hostPort": 1,
+                                    "name": "ACTOKEY",
+                                    "protocol": "ACTOKEY"
+                              },
+                              {
+                                    "containerPort": 3,
+                                    "hostIP": "ACTOKEY",
+                                    "hostPort": 5,
+                                    "name": "ACTOKEY",
+                                    "protocol": "ACTOKEY"
+                              }
+                        ],
+                        "readinessProbe": {
+                              "exec": {
+                                    "command": [
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY",
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "failureThreshold": 4,
+                              "grpc": {
+                                    "port": 0,
+                                    "service": "ACTOKEY"
+                              },
+                              "httpGet": {
+                                    "httpHeaders": [
+                                          {
+                                                "name": "ACTOKEY",
+                                                "value": "ACTOKEY"
+                                          }
+                                    ],
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "initialDelaySeconds": 3,
+                              "periodSeconds": 3,
+                              "successThreshold": 5,
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 2,
+                              "timeoutSeconds": 2
+                        },
+                        "resources": {
+                              "limits": {
+                                    "cpu": "800m",
+                                    "memory": "1000m"
+                              },
+                              "requests": {
+                                    "cpu": "800m",
+                                    "memory": "1000m"
+                              }
+                        },
+                        "securityContext": {
+                              "allowPrivilegeEscalation": true,
+                              "capabilities": {
+                                    "drop": []
+                              },
+                              "privileged": true,
+                              "procMount": "ACTOKEY",
+                              "readOnlyRootFilesystem": false,
+                              "runAsGroup": 3,
+                              "runAsNonRoot": false,
+                              "runAsUser": 5,
+                              "seLinuxOptions": {
+                                    "level": "ACTOKEY",
+                                    "role": "ACTOKEY",
+                                    "type": "ACTOKEY",
+                                    "user": "ACTOKEY"
+                              },
+                              "seccompProfile": {
+                                    "localhostProfile": "ACTOKEY",
+                                    "type": "ACTOKEY"
+                              }
+                        },
+                        "startupProbe": {
+                              "exec": {
+                                    "command": [
+                                          "ACTOKEY"
+                                    ]
+                              },
+                              "failureThreshold": 1,
+                              "httpGet": {
+                                    "host": "ACTOKEY",
+                                    "path": "ACTOKEY",
+                                    "port": "ACTOKEY",
+                                    "scheme": "ACTOKEY"
+                              },
+                              "initialDelaySeconds": 4,
+                              "periodSeconds": 3,
+                              "successThreshold": 4,
+                              "tcpSocket": {
+                                    "host": "ACTOKEY",
+                                    "port": "ACTOKEY"
+                              },
+                              "terminationGracePeriodSeconds": 0,
+                              "timeoutSeconds": 2
+                        },
+                        "stdin": true,
+                        "stdinOnce": false,
+                        "terminationMessagePath": "ACTOKEY",
+                        "terminationMessagePolicy": "ACTOKEY",
+                        "tty": true,
+                        "volumeDevices": [],
+                        "volumeMounts": [
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": true,
+                                    "subPath": "ACTOKEY",
+                                    "subPathExpr": "ACTOKEY"
+                              },
+                              {
+                                    "mountPath": "ACTOKEY",
+                                    "mountPropagation": "ACTOKEY",
+                                    "name": "ACTOKEY",
+                                    "readOnly": false,
+                                    "subPath": "ACTOKEY",
+                                    "subPathExpr": "ACTOKEY"
+                              }
+                        ],
+                        "workingDir": "ACTOKEY"
+                  }
+            ],
+            "labels": {},
+            "nodeSelector": {},
+            "serviceAccountAnnotations": {},
+            "serviceAnnotations": {},
+            "serviceLabels": {},
+            "tolerations": [
+                  {
+                        "operator": "Exists"
+                  }
+            ]
+      },
+      "custom_resource_status": null
+}

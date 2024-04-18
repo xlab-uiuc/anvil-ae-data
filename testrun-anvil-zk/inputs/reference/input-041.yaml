@@ -1,0 +1,44 @@
+apiVersion: zookeeper.pravega.io/v1beta1
+kind: ZookeeperCluster
+metadata:
+  name: test-cluster
+spec:
+  config:
+    autoPurgePurgeInterval: 1
+    autoPurgeSnapRetainCount: 3
+    commitLogCount: 500
+    globalOutstandingLimit: 1000
+    initLimit: 10
+    maxClientCnxns: 60
+    maxCnxns: 0
+    maxSessionTimeout: 40000
+    minSessionTimeout: 4000
+    preAllocSize: 65536
+    quorumListenOnAllIPs: false
+    snapCount: 10000
+    snapSizeLimitInKb: 4194304
+    syncLimit: 2
+    tickTime: 2000
+  image:
+    repository: ghcr.io/xlab-uiuc/zookeeper
+    tag: 0.2.14
+  persistence:
+    spec:
+      resources:
+        requests:
+          storage: 20Gi
+      storageClassName: standard
+  pod:
+    affinity: null
+  ports:
+  - containerPort: 8080
+    name: admin-server
+  - containerPort: 2181
+    name: client
+  - containerPort: 3888
+    name: leader-election
+  - containerPort: 7000
+    name: metrics
+  - containerPort: 2888
+    name: quorum
+  replicas: 3

@@ -1,0 +1,111 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_added": {
+            "root['spec']['serviceLabels'][ACTOKEY]": {
+                  "prev": "NotPresent",
+                  "curr": "ACTOKEY",
+                  "path": [
+                        "spec",
+                        "serviceLabels",
+                        "ACTOKEY"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {
+            "dictionary_item_added": {
+                  "root['test-cluster']['metadata']['labels']['ACTOKEY']": {
+                        "prev": "NotPresent",
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "ACTOKEY"
+                        ]
+                  }
+            },
+            "dictionary_item_removed": {
+                  "root['test-cluster']['metadata']['labels']['app']": {
+                        "prev": "test-cluster",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "app"
+                        ]
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "type_changes": {
+                  "root['test-cluster']['metadata']['annotations'][endpoints.kubernetes.io/last-change-trigger-time]": {
+                        "prev": "2023-12-01T22:21:24Z",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "annotations",
+                              "endpoints.kubernetes.io/last-change-trigger-time"
+                        ]
+                  }
+            },
+            "dictionary_item_added": {
+                  "root['test-cluster']['metadata']['labels']['ACTOKEY']": {
+                        "prev": "NotPresent",
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "ACTOKEY"
+                        ]
+                  }
+            },
+            "dictionary_item_removed": {
+                  "root['test-cluster']['metadata']['labels']['app']": {
+                        "prev": "test-cluster",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "app"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "dictionary_item_added": {
+                  "root['serviceLabels']['ACTOKEY']": {
+                        "prev": "NotPresent",
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "serviceLabels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

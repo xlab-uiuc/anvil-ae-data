@@ -1,0 +1,972 @@
+---------- INPUT DELTA  ----------
+{
+      "values_changed": {
+            "root['spec']['tolerations'][0]['key']": {
+                  "prev": "test-key",
+                  "curr": "node-role.kubernetes.io/control-plane",
+                  "path": [
+                        "spec",
+                        "tolerations",
+                        0,
+                        "key"
+                  ]
+            },
+            "root['spec']['tolerations'][0]['operator']": {
+                  "prev": "Equal",
+                  "curr": "Exists",
+                  "path": [
+                        "spec",
+                        "tolerations",
+                        0,
+                        "operator"
+                  ]
+            }
+      },
+      "dictionary_item_removed": {
+            "root['spec']['tolerations'][0]['value']": {
+                  "prev": "test-value",
+                  "curr": "NotPresent",
+                  "path": [
+                        "spec",
+                        "tolerations",
+                        0,
+                        "value"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {
+            "type_changes": {
+                  "root['test-cluster'][0]['spec']['tolerations'][0]['value']": {
+                        "prev": "test-value",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "value"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['tolerations'][0]['value']": {
+                        "prev": "test-value",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "value"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['tolerations'][0]['value']": {
+                        "prev": "test-value",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "value"
+                        ]
+                  }
+            },
+            "values_changed": {
+                  "root['test-cluster'][0]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:51:59+00:00",
+                        "curr": "2023-12-01T22:53:06+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][0]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "5df8c84bd",
+                        "curr": "776c8b5f78",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][0]['metadata']['name']": {
+                        "prev": "test-cluster-5kgtm",
+                        "curr": "test-cluster-9n2gr",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['metadata']['uid']": {
+                        "prev": "463ae77a-529e-4eed-8c49-53047296a0f0",
+                        "curr": "5a9848d2-3d67-490d-8e6f-fb060fd2fb2e",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['affinity']['node_affinity']['required_during_scheduling_ignored_during_execution']['node_selector_terms'][0]['match_fields'][0]['values'][0]": {
+                        "prev": "acto-0-cluster-5-worker2",
+                        "curr": "acto-0-cluster-5-worker",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "affinity",
+                              "node_affinity",
+                              "required_during_scheduling_ignored_during_execution",
+                              "node_selector_terms",
+                              0,
+                              "match_fields",
+                              0,
+                              "values",
+                              0
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['containers'][0]['volume_mounts'][4]['name']": {
+                        "prev": "kube-api-access-g6r4r",
+                        "curr": "kube-api-access-f95l9",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['node_name']": {
+                        "prev": "acto-0-cluster-5-worker2",
+                        "curr": "acto-0-cluster-5-worker",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['tolerations'][0]['key']": {
+                        "prev": "test-key",
+                        "curr": "node-role.kubernetes.io/control-plane",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['tolerations'][0]['operator']": {
+                        "prev": "Equal",
+                        "curr": "Exists",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "operator"
+                        ]
+                  },
+                  "root['test-cluster'][0]['spec']['volumes'][4]['name']": {
+                        "prev": "kube-api-access-g6r4r",
+                        "curr": "kube-api-access-f95l9",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:59+00:00",
+                        "curr": "2023-12-01T22:53:06+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:52:00+00:00",
+                        "curr": "2023-12-01T22:53:07+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:52:00+00:00",
+                        "curr": "2023-12-01T22:53:07+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:59+00:00",
+                        "curr": "2023-12-01T22:53:06+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://f7cfe15aafbce9e6a464f88a293177775162c7effdb3d1141f258ef3cdf34883",
+                        "curr": "containerd://4ded7689a61d3e2bd42f1b55c1955d66910b3d637d84ddfaedabc50db5b2bca8",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:51:59+00:00",
+                        "curr": "2023-12-01T22:53:07+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['host_ip']": {
+                        "prev": "172.18.0.36",
+                        "curr": "172.18.0.31",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "host_ip"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['pod_ip']": {
+                        "prev": "10.244.2.4",
+                        "curr": "10.244.1.5",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.2.4",
+                        "curr": "10.244.1.5",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['start_time']": {
+                        "prev": "2023-12-01T22:51:59+00:00",
+                        "curr": "2023-12-01T22:53:06+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "start_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:51:55+00:00",
+                        "curr": "2023-12-01T22:53:03+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "5df8c84bd",
+                        "curr": "776c8b5f78",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['name']": {
+                        "prev": "test-cluster-ml7pw",
+                        "curr": "test-cluster-l4h6n",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['metadata']['uid']": {
+                        "prev": "f96b5032-3f4a-43ec-9caa-515e94bcf3f4",
+                        "curr": "a1bd5352-38a5-4622-93d7-b6acb8d4ba8c",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['containers'][0]['volume_mounts'][4]['name']": {
+                        "prev": "kube-api-access-6kwjk",
+                        "curr": "kube-api-access-wpght",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['tolerations'][0]['key']": {
+                        "prev": "test-key",
+                        "curr": "node-role.kubernetes.io/control-plane",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['tolerations'][0]['operator']": {
+                        "prev": "Equal",
+                        "curr": "Exists",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "operator"
+                        ]
+                  },
+                  "root['test-cluster'][1]['spec']['volumes'][4]['name']": {
+                        "prev": "kube-api-access-6kwjk",
+                        "curr": "kube-api-access-wpght",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:55+00:00",
+                        "curr": "2023-12-01T22:53:03+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:56+00:00",
+                        "curr": "2023-12-01T22:53:05+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:56+00:00",
+                        "curr": "2023-12-01T22:53:05+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:55+00:00",
+                        "curr": "2023-12-01T22:53:03+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://310528d8fb0d00e39b22c7373fef02842a82ae42e07a52637cf552dbf8e959e3",
+                        "curr": "containerd://5d3fd242976d9c08881814d05dd19bca450d4b0cdefba754d3a1092f9f39d2aa",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:51:55+00:00",
+                        "curr": "2023-12-01T22:53:04+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['pod_ip']": {
+                        "prev": "10.244.3.3",
+                        "curr": "10.244.3.4",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.3.3",
+                        "curr": "10.244.3.4",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['start_time']": {
+                        "prev": "2023-12-01T22:51:55+00:00",
+                        "curr": "2023-12-01T22:53:03+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "start_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['creation_timestamp']": {
+                        "prev": "2023-12-01T22:51:57+00:00",
+                        "curr": "2023-12-01T22:53:08+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "creation_timestamp"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['labels']['controller-revision-hash']": {
+                        "prev": "5df8c84bd",
+                        "curr": "776c8b5f78",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "labels",
+                              "controller-revision-hash"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['name']": {
+                        "prev": "test-cluster-pdkbp",
+                        "curr": "test-cluster-lbjqj",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['metadata']['uid']": {
+                        "prev": "4eadd0d3-92ec-47b4-8c47-91960c691764",
+                        "curr": "4c4c1fdb-2f0a-42fd-84cc-d9f4d0595cd1",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "metadata",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['affinity']['node_affinity']['required_during_scheduling_ignored_during_execution']['node_selector_terms'][0]['match_fields'][0]['values'][0]": {
+                        "prev": "acto-0-cluster-5-worker",
+                        "curr": "acto-0-cluster-5-worker2",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "affinity",
+                              "node_affinity",
+                              "required_during_scheduling_ignored_during_execution",
+                              "node_selector_terms",
+                              0,
+                              "match_fields",
+                              0,
+                              "values",
+                              0
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['containers'][0]['volume_mounts'][4]['name']": {
+                        "prev": "kube-api-access-x5fkw",
+                        "curr": "kube-api-access-p7vd7",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "containers",
+                              0,
+                              "volume_mounts",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['node_name']": {
+                        "prev": "acto-0-cluster-5-worker",
+                        "curr": "acto-0-cluster-5-worker2",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "node_name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['tolerations'][0]['key']": {
+                        "prev": "test-key",
+                        "curr": "node-role.kubernetes.io/control-plane",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['tolerations'][0]['operator']": {
+                        "prev": "Equal",
+                        "curr": "Exists",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "tolerations",
+                              0,
+                              "operator"
+                        ]
+                  },
+                  "root['test-cluster'][2]['spec']['volumes'][4]['name']": {
+                        "prev": "kube-api-access-x5fkw",
+                        "curr": "kube-api-access-p7vd7",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "spec",
+                              "volumes",
+                              4,
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][0]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:57+00:00",
+                        "curr": "2023-12-01T22:53:08+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              0,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:58+00:00",
+                        "curr": "2023-12-01T22:53:09+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:58+00:00",
+                        "curr": "2023-12-01T22:53:09+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][3]['last_transition_time']": {
+                        "prev": "2023-12-01T22:51:57+00:00",
+                        "curr": "2023-12-01T22:53:08+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              3,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://36d4a32de4dc9bf105ab056df89324ea643671d3f48fc9072a751251a41c1244",
+                        "curr": "containerd://7ad99d242a2f129271b9f2b248cb9a0820db185d2c4342c765d835250dda5eaa",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T22:51:58+00:00",
+                        "curr": "2023-12-01T22:53:09+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['host_ip']": {
+                        "prev": "172.18.0.31",
+                        "curr": "172.18.0.36",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "host_ip"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['pod_ip']": {
+                        "prev": "10.244.1.4",
+                        "curr": "10.244.2.5",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "pod_ip"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['pod_i_ps'][0]['ip']": {
+                        "prev": "10.244.1.4",
+                        "curr": "10.244.2.5",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "pod_i_ps",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['start_time']": {
+                        "prev": "2023-12-01T22:51:57+00:00",
+                        "curr": "2023-12-01T22:53:08+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "start_time"
+                        ]
+                  }
+            }
+      },
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {
+            "type_changes": {
+                  "root['test-cluster']['spec']['template']['spec']['tolerations'][0]['value']": {
+                        "prev": "test-value",
+                        "curr": null,
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "tolerations",
+                              0,
+                              "value"
+                        ]
+                  }
+            },
+            "values_changed": {
+                  "root['test-cluster']['spec']['template']['spec']['tolerations'][0]['key']": {
+                        "prev": "test-key",
+                        "curr": "node-role.kubernetes.io/control-plane",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "tolerations",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['test-cluster']['spec']['template']['spec']['tolerations'][0]['operator']": {
+                        "prev": "Equal",
+                        "curr": "Exists",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "template",
+                              "spec",
+                              "tolerations",
+                              0,
+                              "operator"
+                        ]
+                  }
+            }
+      },
+      "config_map": {},
+      "service": {},
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "values_changed": {
+                  "root['test-cluster']['metadata']['annotations']['endpoints.kubernetes.io/last-change-trigger-time']": {
+                        "prev": "2023-12-01T22:52:00Z",
+                        "curr": "2023-12-01T22:53:09Z",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "annotations",
+                              "endpoints.kubernetes.io/last-change-trigger-time"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][0]['ip']": {
+                        "prev": "10.244.1.4",
+                        "curr": "10.244.1.5",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][0]['target_ref']['name']": {
+                        "prev": "test-cluster-pdkbp",
+                        "curr": "test-cluster-9n2gr",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][0]['target_ref']['uid']": {
+                        "prev": "4eadd0d3-92ec-47b4-8c47-91960c691764",
+                        "curr": "5a9848d2-3d67-490d-8e6f-fb060fd2fb2e",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              0,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][1]['ip']": {
+                        "prev": "10.244.2.4",
+                        "curr": "10.244.2.5",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][1]['target_ref']['name']": {
+                        "prev": "test-cluster-5kgtm",
+                        "curr": "test-cluster-lbjqj",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][1]['target_ref']['uid']": {
+                        "prev": "463ae77a-529e-4eed-8c49-53047296a0f0",
+                        "curr": "4c4c1fdb-2f0a-42fd-84cc-d9f4d0595cd1",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              1,
+                              "target_ref",
+                              "uid"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][2]['ip']": {
+                        "prev": "10.244.3.3",
+                        "curr": "10.244.3.4",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "ip"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][2]['target_ref']['name']": {
+                        "prev": "test-cluster-ml7pw",
+                        "curr": "test-cluster-l4h6n",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "name"
+                        ]
+                  },
+                  "root['test-cluster']['subsets'][0]['addresses'][2]['target_ref']['uid']": {
+                        "prev": "f96b5032-3f4a-43ec-9caa-515e94bcf3f4",
+                        "curr": "a1bd5352-38a5-4622-93d7-b6acb8d4ba8c",
+                        "path": [
+                              "test-cluster",
+                              "subsets",
+                              0,
+                              "addresses",
+                              2,
+                              "target_ref",
+                              "uid"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "values_changed": {
+                  "root['tolerations'][0]['key']": {
+                        "prev": "test-key",
+                        "curr": "node-role.kubernetes.io/control-plane",
+                        "path": [
+                              "tolerations",
+                              0,
+                              "key"
+                        ]
+                  },
+                  "root['tolerations'][0]['operator']": {
+                        "prev": "Equal",
+                        "curr": "Exists",
+                        "path": [
+                              "tolerations",
+                              0,
+                              "operator"
+                        ]
+                  }
+            },
+            "dictionary_item_removed": {
+                  "root['tolerations'][0]['value']": {
+                        "prev": "test-value",
+                        "curr": "NotPresent",
+                        "path": [
+                              "tolerations",
+                              0,
+                              "value"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

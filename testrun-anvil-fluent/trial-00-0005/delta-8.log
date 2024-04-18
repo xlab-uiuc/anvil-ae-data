@@ -1,0 +1,62 @@
+---------- INPUT DELTA  ----------
+{
+      "values_changed": {
+            "root['spec']['serviceSelector']['ACTOKEY']": {
+                  "prev": "ACTOKEY",
+                  "curr": "",
+                  "path": [
+                        "spec",
+                        "serviceSelector",
+                        "ACTOKEY"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {
+            "values_changed": {
+                  "root['test-cluster']['spec']['selector']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "",
+                        "path": [
+                              "test-cluster",
+                              "spec",
+                              "selector",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {},
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "values_changed": {
+                  "root['serviceSelector']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "",
+                        "path": [
+                              "serviceSelector",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

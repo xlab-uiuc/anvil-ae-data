@@ -1,0 +1,16 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  securityContext:
+    fsGroup: 0
+    runAsGroup: 0
+    runAsUser: 0
+  tolerations:
+  - effect: NoExecute
+    key: node-role.kubernetes.io/control-plane
+    operator: Exists
+    tolerationSeconds: 3600

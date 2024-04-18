@@ -1,0 +1,62 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_added": {
+            "root['spec']['serviceAnnotations'][ACTOKEY]": {
+                  "prev": "NotPresent",
+                  "curr": "ACTOKEY",
+                  "path": [
+                        "spec",
+                        "serviceAnnotations",
+                        "ACTOKEY"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {
+            "type_changes": {
+                  "root['test-cluster']['metadata']['annotations'][ACTOKEY]": {
+                        "prev": null,
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "annotations",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {},
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "dictionary_item_added": {
+                  "root['serviceAnnotations']['ACTOKEY']": {
+                        "prev": "NotPresent",
+                        "curr": "ACTOKEY",
+                        "path": [
+                              "serviceAnnotations",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

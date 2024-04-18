@@ -1,0 +1,43 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  envVars:
+  - name: ACTOKEY
+    value: ACTOKEY
+    valueFrom:
+      configMapKeyRef:
+        key: ACTOKEY
+        name: ACTOKEY
+        optional: false
+      fieldRef:
+        apiVersion: null
+        fieldPath: ACTOKEY
+      resourceFieldRef: null
+      secretKeyRef:
+        key: ACTOKEY
+        name: ACTOKEY
+        optional: false
+  - name: ACTOKEY
+    value: ACTOKEY
+    valueFrom:
+      configMapKeyRef:
+        key: ACTOKEY
+        name: ACTOKEY
+        optional: true
+      fieldRef:
+        apiVersion: ACTOKEY
+        fieldPath: ACTOKEY
+      resourceFieldRef:
+        containerName: ACTOKEY
+        divisor: ACTOKEY
+        resource: ACTOKEY
+      secretKeyRef: null
+  - name: ACTOKEY
+    value: ACTOKEY
+    valueFrom: null
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  tolerations:
+  - operator: Exists

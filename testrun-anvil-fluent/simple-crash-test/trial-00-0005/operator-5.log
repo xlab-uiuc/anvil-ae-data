@@ -1,0 +1,19 @@
+Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done
+Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Update ServiceAccount/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role done
+Reconciling FluentBit/fluent/test-cluster: Update Role/fluent/test-cluster-role done
+Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding done
+Reconciling FluentBit/fluent/test-cluster: Update RoleBinding/fluent/test-cluster-role-binding done
+Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Update Service/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Update DaemonSet/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("fluent"), extra: Extra { resource_version: Some("742"), uid: Some("e6caa631-ec93-48d0-affb-eaf38004a117") } }, Action { requeue_after: Some(60s) })
+Reconciling FluentBitConfig/fluent/fluent-bit-config: Get cr {"apiVersion":"anvil.dev/v1","kind":"FluentBitConfig","metadata":{"creationTimestamp":"2023-12-02T02:38:41Z","generation":1,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:spec":{"f:fluentBitConfig":{},"f:parsersConfig":{}}},"manager":"kubectl","operation":"Apply","time":"2023-12-02T02:38:41Z"}],"name":"fluent-bit-config","namespace":"fluent","resourceVersion":"657","uid":"96d28a02-4bfe-4b07-ab07-3eae25c0bb1c"},"spec":{"fluentBitConfig":"[Service]\n    Parsers_File    parsers.conf\n[Input]\n    Name    tail\n    Path    /var/log/containers/*.log\n    Exclude_Path    /var/log/containers/utils_default_utils-*.log\n    Refresh_Interval    10\n    Skip_Long_Lines    true\n    DB    /fluent-bit/tail/pos.db\n    DB.Sync    Normal\n    Mem_Buf_Limit    5MB\n    Parser    docker\n    Tag    kube.*\n[Filter]\n    Name    kubernetes\n    Match    kube.*\n    Kube_URL    https://kubernetes.default.svc:443\n    Kube_CA_File    /var/run/secrets/kubernetes.io/serviceaccount/ca.crt\n    Kube_Token_File    /var/run/secrets/kubernetes.io/serviceaccount/token\n    Labels    false\n    Annotations    false\n[Filter]\n    Name    nest\n    Match    kube.*\n    Operation    lift\n    Nested_under    kubernetes\n    Add_prefix    kubernetes_\n[Filter]\n    Name    modify\n    Match    kube.*\n    Remove    stream\n    Remove    kubernetes_pod_id\n    Remove    kubernetes_host\n    Remove    kubernetes_container_hash\n[Filter]\n    Name    nest\n    Match    kube.*\n    Operation    nest\n    Wildcard    kubernetes_*\n    Nest_under    kubernetes\n    Remove_prefix    kubernetes_\n[Output]\n    Name    kafka\n    Match_Regex    (?:kube|service)\\.(.*)\n    Brokers    my-cluster-kafka-brokers.kafka.svc:9092\n    Topics    fluent-log\n","parsersConfig":""}}
+Reconciling FluentBitConfig/fluent/fluent-bit-config: Get Secret/fluent/fluent-bit-config done
+Reconciling FluentBitConfig/fluent/fluent-bit-config: Update Secret/fluent/fluent-bit-config done
+Reconciling FluentBitConfig/fluent/fluent-bit-config: done
+reconciled (ObjectRef { dyntype: (), name: "fluent-bit-config", namespace: Some("fluent"), extra: Extra { resource_version: Some("657"), uid: Some("96d28a02-4bfe-4b07-ab07-3eae25c0bb1c") } }, Action { requeue_after: Some(60s) })
+

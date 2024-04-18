@@ -1,0 +1,67 @@
++ source /conf/env.sh
+++ DOMAIN=test-cluster-headless.zookeeper.svc.cluster.local
+++ QUORUM_PORT=2888
+++ LEADER_PORT=3888
+++ CLIENT_HOST=test-cluster-client
+++ CLIENT_PORT=2181
+++ ADMIN_SERVER_HOST=test-cluster-admin-server
+++ ADMIN_SERVER_PORT=8080
+++ CLUSTER_NAME=test-cluster
++ source /usr/local/bin/zookeeperFunctions.sh
+++ set -ex
+++ hostname -s
++ HOST=test-cluster-1
++ DATA_DIR=/data
++ MYID_FILE=/data/myid
++ LOG4J_CONF=/conf/log4j-quiet.properties
++ DYNCONFIG=/data/zoo.cfg.dynamic
++ STATIC_CONFIG=/data/conf/zoo.cfg
++ [[ test-cluster-1 =~ (.*)-([0-9]+)$ ]]
++ NAME=test-cluster
++ ORD=1
++ MYID=2
++ WRITE_CONFIGURATION=true
++ REGISTER_NODE=true
++ ONDISK_MYID_CONFIG=false
++ ONDISK_DYN_CONFIG=false
++ '[' -f /data/myid ']'
+++ cat /data/myid
++ EXISTING_ID=2
++ [[ 2 == \2 ]]
++ [[ -f /data/conf/zoo.cfg ]]
++ '[' -f /data/zoo.cfg.dynamic ']'
++ set +e
++ [[ -n '' ]]
++ set -e
++ set +e
++ getent hosts test-cluster-headless.zookeeper.svc.cluster.local
+10.244.2.4      test-cluster-headless.zookeeper.svc.cluster.local
++ [[ 0 -eq 0 ]]
++ ACTIVE_ENSEMBLE=true
++ [[ false == true ]]
++ WRITE_CONFIGURATION=true
++ [[ true == false ]]
++ [[ false == false ]]
++ REGISTER_NODE=true
++ [[ true == true ]]
++ echo 'Writing myid: 2 to: /data/myid.'
+Writing myid: 2 to: /data/myid.
++ echo 2
++ [[ 2 -eq 1 ]]
++ [[ true == true ]]
++ ROLE=observer
+++ zkConnectionString
+++ set +e
+++ getent hosts test-cluster-client
+++ [[ 0 -ne 0 ]]
+++ set -e
+++ echo test-cluster-client:2181
++ ZKURL=test-cluster-client:2181
+++ zkConfig
+++ echo 'test-cluster-1.test-cluster-headless.zookeeper.svc.cluster.local:2888:3888:observer;2181'
++ ZKCONFIG='test-cluster-1.test-cluster-headless.zookeeper.svc.cluster.local:2888:3888:observer;2181'
++ set -e
++ echo Registering node and writing local configuration to disk.
+Registering node and writing local configuration to disk.
++ java -Dlog4j.configuration=file:/conf/log4j-quiet.properties -jar /opt/libs/zu.jar add test-cluster-client:2181 2 'test-cluster-1.test-cluster-headless.zookeeper.svc.cluster.local:2888:3888:observer;2181' /data/zoo.cfg.dynamic
+Connecting to Zookeeper test-cluster-client:2181

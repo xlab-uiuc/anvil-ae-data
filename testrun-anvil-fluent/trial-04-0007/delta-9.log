@@ -1,0 +1,471 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_added": {
+            "root['spec']['initContainers'][0][name]": {
+                  "prev": "NotPresent",
+                  "curr": "i",
+                  "path": [
+                        "spec",
+                        "initContainers",
+                        0,
+                        "name"
+                  ]
+            },
+            "root['spec']['initContainers'][0][resources][requests][cpu]": {
+                  "prev": "NotPresent",
+                  "curr": "1000m",
+                  "path": [
+                        "spec",
+                        "initContainers",
+                        0,
+                        "resources",
+                        "requests",
+                        "cpu"
+                  ]
+            },
+            "root['spec']['initContainers'][0][resources][requests][memory]": {
+                  "prev": "NotPresent",
+                  "curr": "1000m",
+                  "path": [
+                        "spec",
+                        "initContainers",
+                        0,
+                        "resources",
+                        "requests",
+                        "memory"
+                  ]
+            },
+            "root['spec']['initContainers'][0][resources][limits][cpu]": {
+                  "prev": "NotPresent",
+                  "curr": "800m",
+                  "path": [
+                        "spec",
+                        "initContainers",
+                        0,
+                        "resources",
+                        "limits",
+                        "cpu"
+                  ]
+            },
+            "root['spec']['initContainers'][0][resources][limits][memory]": {
+                  "prev": "NotPresent",
+                  "curr": "1000m",
+                  "path": [
+                        "spec",
+                        "initContainers",
+                        0,
+                        "resources",
+                        "limits",
+                        "memory"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {
+            "values_changed": {
+                  "root['test-cluster'][0]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T23:09:36+00:00",
+                        "curr": "2023-12-01T23:18:25+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T23:09:36+00:00",
+                        "curr": "2023-12-01T23:18:25+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://efe41430fe7a7bb3380ba9dc9fbc4c7d752524af8aedb5835cf6ea1edd78c2ec",
+                        "curr": "containerd://0496772c6c8f58efe0fb467ae39003cace770bf3e284749cd3e63b531dd0a2c4",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['last_state']['terminated']['container_id']": {
+                        "prev": "containerd://2b8f1c0fd0ff8700a3ef8f6adbafe3c331c546793a26f317bdb11c271397d7bd",
+                        "curr": "containerd://311a739d769b061b63467b9f60319a05dfb3fb1ed394c351cdac36d9065af909",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['last_state']['terminated']['finished_at']": {
+                        "prev": "2023-12-01T23:12:16+00:00",
+                        "curr": "2023-12-01T23:15:36+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "finished_at"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['last_state']['terminated']['started_at']": {
+                        "prev": "2023-12-01T23:11:37+00:00",
+                        "curr": "2023-12-01T23:15:03+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['restart_count']": {
+                        "prev": 4,
+                        "curr": 7,
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "restart_count"
+                        ]
+                  },
+                  "root['test-cluster'][0]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T23:12:17+00:00",
+                        "curr": "2023-12-01T23:18:24+00:00",
+                        "path": [
+                              "test-cluster",
+                              0,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T23:09:40+00:00",
+                        "curr": "2023-12-01T23:18:23+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T23:09:40+00:00",
+                        "curr": "2023-12-01T23:18:23+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://c193a83e0e536cf2ffb759b3e2c4f2c86a3dae845c42409e3f17047939948bb1",
+                        "curr": "containerd://d6d709668ba33c201ccad99b22287338a403d71e15a31e8b50847f7a27409f00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['last_state']['terminated']['container_id']": {
+                        "prev": "containerd://c96a767dec3ee94d1a93af88284c5d20840be215769899f4b427b0aeb850548a",
+                        "curr": "containerd://ebde55119a87e396031baea43fb41bfa5ff74eec845772970ba0b6ee4ac602ca",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['last_state']['terminated']['finished_at']": {
+                        "prev": "2023-12-01T23:12:50+00:00",
+                        "curr": "2023-12-01T23:15:30+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "finished_at"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['last_state']['terminated']['started_at']": {
+                        "prev": "2023-12-01T23:12:10+00:00",
+                        "curr": "2023-12-01T23:14:59+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['restart_count']": {
+                        "prev": 5,
+                        "curr": 7,
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "restart_count"
+                        ]
+                  },
+                  "root['test-cluster'][1]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T23:12:50+00:00",
+                        "curr": "2023-12-01T23:18:23+00:00",
+                        "path": [
+                              "test-cluster",
+                              1,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][1]['last_transition_time']": {
+                        "prev": "2023-12-01T23:09:37+00:00",
+                        "curr": "2023-12-01T23:18:12+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              1,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['conditions'][2]['last_transition_time']": {
+                        "prev": "2023-12-01T23:09:37+00:00",
+                        "curr": "2023-12-01T23:18:12+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "conditions",
+                              2,
+                              "last_transition_time"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['container_id']": {
+                        "prev": "containerd://f4c4619ef342562f33a39072738cc38ac13c83bbab399b6f460769acfc64d89a",
+                        "curr": "containerd://a6a347ca0bcdbd61882fa97a6b1fc45cdf05299f7ce5e25f2e8e9f052793b02d",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['last_state']['terminated']['container_id']": {
+                        "prev": "containerd://61ae08c8e6dbb0e3dfe00bb06249d36c106dd9dd258be910e711316f841fed34",
+                        "curr": "containerd://35ab88891e5535d0638cafc816a706d9b5667bf27f74c85852e7bfd58bf324b1",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "container_id"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['last_state']['terminated']['finished_at']": {
+                        "prev": "2023-12-01T23:12:48+00:00",
+                        "curr": "2023-12-01T23:15:28+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "finished_at"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['last_state']['terminated']['started_at']": {
+                        "prev": "2023-12-01T23:12:08+00:00",
+                        "curr": "2023-12-01T23:14:55+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "last_state",
+                              "terminated",
+                              "started_at"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['restart_count']": {
+                        "prev": 5,
+                        "curr": 7,
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "restart_count"
+                        ]
+                  },
+                  "root['test-cluster'][2]['status']['container_statuses'][0]['state']['running']['started_at']": {
+                        "prev": "2023-12-01T23:12:48+00:00",
+                        "curr": "2023-12-01T23:18:11+00:00",
+                        "path": [
+                              "test-cluster",
+                              2,
+                              "status",
+                              "container_statuses",
+                              0,
+                              "state",
+                              "running",
+                              "started_at"
+                        ]
+                  }
+            }
+      },
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {},
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "values_changed": {
+                  "root['test-cluster']['metadata']['annotations']['endpoints.kubernetes.io/last-change-trigger-time']": {
+                        "prev": "2023-12-01T23:09:40Z",
+                        "curr": "2023-12-01T23:18:25Z",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "annotations",
+                              "endpoints.kubernetes.io/last-change-trigger-time"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "dictionary_item_added": {
+                  "root['initContainers'][0][name]": {
+                        "prev": "NotPresent",
+                        "curr": "i",
+                        "path": [
+                              "initContainers",
+                              0,
+                              "name"
+                        ]
+                  },
+                  "root['initContainers'][0][resources][limits][cpu]": {
+                        "prev": "NotPresent",
+                        "curr": "800m",
+                        "path": [
+                              "initContainers",
+                              0,
+                              "resources",
+                              "limits",
+                              "cpu"
+                        ]
+                  },
+                  "root['initContainers'][0][resources][limits][memory]": {
+                        "prev": "NotPresent",
+                        "curr": "1000m",
+                        "path": [
+                              "initContainers",
+                              0,
+                              "resources",
+                              "limits",
+                              "memory"
+                        ]
+                  },
+                  "root['initContainers'][0][resources][requests][cpu]": {
+                        "prev": "NotPresent",
+                        "curr": "1000m",
+                        "path": [
+                              "initContainers",
+                              0,
+                              "resources",
+                              "requests",
+                              "cpu"
+                        ]
+                  },
+                  "root['initContainers'][0][resources][requests][memory]": {
+                        "prev": "NotPresent",
+                        "curr": "1000m",
+                        "path": [
+                              "initContainers",
+                              0,
+                              "resources",
+                              "requests",
+                              "memory"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

@@ -1,0 +1,99 @@
+---------- INPUT DELTA  ----------
+{
+      "dictionary_item_removed": {
+            "root['spec']['serviceLabels']['ACTOKEY']": {
+                  "prev": "ACTOKEY",
+                  "curr": "NotPresent",
+                  "path": [
+                        "spec",
+                        "serviceLabels",
+                        "ACTOKEY"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {
+            "dictionary_item_added": {
+                  "root['test-cluster']['metadata']['labels']['app']": {
+                        "prev": "NotPresent",
+                        "curr": "test-cluster",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "app"
+                        ]
+                  }
+            },
+            "dictionary_item_removed": {
+                  "root['test-cluster']['metadata']['labels']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {
+            "dictionary_item_added": {
+                  "root['test-cluster']['metadata']['labels']['app']": {
+                        "prev": "NotPresent",
+                        "curr": "test-cluster",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "app"
+                        ]
+                  }
+            },
+            "dictionary_item_removed": {
+                  "root['test-cluster']['metadata']['labels']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "NotPresent",
+                        "path": [
+                              "test-cluster",
+                              "metadata",
+                              "labels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "dictionary_item_removed": {
+                  "root['serviceLabels']['ACTOKEY']": {
+                        "prev": "ACTOKEY",
+                        "curr": "NotPresent",
+                        "path": [
+                              "serviceLabels",
+                              "ACTOKEY"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

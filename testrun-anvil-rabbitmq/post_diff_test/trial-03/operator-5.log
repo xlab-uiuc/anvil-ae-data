@@ -1,0 +1,72 @@
+running rabbitmq-controller
+starting controller
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"RabbitmqCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"RabbitmqCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"rabbitmq\"},\"spec\":{\"image\":\"rabbitmq:3.11.10-management\",\"labels\":{\"ACTOKEY\":\"ACTOKEY\"},\"persistence\":{\"storage\":\"10Gi\",\"storageClassName\":null},\"rabbitmqConfig\":{\"additionalConfig\":\"log.console.level = debug\\n\"},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-16T05:02:31Z","generation":1,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:image":{},"f:labels":{".":{},"f:ACTOKEY":{}},"f:persistence":{".":{},"f:storage":{},"f:storageClassName":{}},"f:podManagementPolicy":{},"f:rabbitmqConfig":{".":{},"f:additionalConfig":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-16T05:02:31Z"}],"name":"test-cluster","namespace":"rabbitmq","resourceVersion":"825","uid":"1c5fbe5b-cc71-4854-aadb-0e804d82728f"},"spec":{"replicas":3,"image":"rabbitmq:3.11.10-management","persistence":{"storageClassName":"standard","storage":"10Gi"},"rabbitmqConfig":{"additionalConfig":"log.console.level = debug\n","advancedConfig":null,"envConfig":null},"affinity":null,"tolerations":null,"labels":{"ACTOKEY":"ACTOKEY"},"annotations":{},"resources":null,"podManagementPolicy":"Parallel","persistentVolumeClaimRetentionPolicy":null}}
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Service/rabbitmq/test-cluster-nodes failed with error: ApiError: services "test-cluster-nodes" not found: NotFound (ErrorResponse { status: "Failure", message: "services \"test-cluster-nodes\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create Service/rabbitmq/test-cluster-nodes done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Service/rabbitmq/test-cluster-client failed with error: ApiError: services "test-cluster-client" not found: NotFound (ErrorResponse { status: "Failure", message: "services \"test-cluster-client\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create Service/rabbitmq/test-cluster-client done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Secret/rabbitmq/test-cluster-erlang-cookie failed with error: ApiError: secrets "test-cluster-erlang-cookie" not found: NotFound (ErrorResponse { status: "Failure", message: "secrets \"test-cluster-erlang-cookie\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create Secret/rabbitmq/test-cluster-erlang-cookie done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Secret/rabbitmq/test-cluster-default-user failed with error: ApiError: secrets "test-cluster-default-user" not found: NotFound (ErrorResponse { status: "Failure", message: "secrets \"test-cluster-default-user\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create Secret/rabbitmq/test-cluster-default-user done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ConfigMap/rabbitmq/test-cluster-plugins-conf failed with error: ApiError: configmaps "test-cluster-plugins-conf" not found: NotFound (ErrorResponse { status: "Failure", message: "configmaps \"test-cluster-plugins-conf\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create ConfigMap/rabbitmq/test-cluster-plugins-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ConfigMap/rabbitmq/test-cluster-server-conf failed with error: ApiError: configmaps "test-cluster-server-conf" not found: NotFound (ErrorResponse { status: "Failure", message: "configmaps \"test-cluster-server-conf\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create ConfigMap/rabbitmq/test-cluster-server-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ServiceAccount/rabbitmq/test-cluster-server failed with error: ApiError: serviceaccounts "test-cluster-server" not found: NotFound (ErrorResponse { status: "Failure", message: "serviceaccounts \"test-cluster-server\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create ServiceAccount/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Role/rabbitmq/test-cluster-peer-discovery failed with error: ApiError: roles.rbac.authorization.k8s.io "test-cluster-peer-discovery" not found: NotFound (ErrorResponse { status: "Failure", message: "roles.rbac.authorization.k8s.io \"test-cluster-peer-discovery\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create Role/rabbitmq/test-cluster-peer-discovery done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get RoleBinding/rabbitmq/test-cluster-server failed with error: ApiError: rolebindings.rbac.authorization.k8s.io "test-cluster-server" not found: NotFound (ErrorResponse { status: "Failure", message: "rolebindings.rbac.authorization.k8s.io \"test-cluster-server\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create RoleBinding/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get StatefulSet/rabbitmq/test-cluster-server failed with error: ApiError: statefulsets.apps "test-cluster-server" not found: NotFound (ErrorResponse { status: "Failure", message: "statefulsets.apps \"test-cluster-server\" not found", reason: "NotFound", code: 404 })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Create StatefulSet/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("rabbitmq"), extra: Extra { resource_version: Some("825"), uid: Some("1c5fbe5b-cc71-4854-aadb-0e804d82728f") } }, Action { requeue_after: Some(60s) })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"RabbitmqCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"RabbitmqCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"rabbitmq\"},\"spec\":{\"image\":\"rabbitmq:3.11.10-management\",\"labels\":{\"ACTOKEY\":\"ACTOKEY\"},\"persistence\":{\"storage\":\"10Gi\",\"storageClassName\":null},\"rabbitmqConfig\":{\"additionalConfig\":\"log.console.level = debug\\n\"},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-16T05:02:31Z","generation":1,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:image":{},"f:labels":{".":{},"f:ACTOKEY":{}},"f:persistence":{".":{},"f:storage":{},"f:storageClassName":{}},"f:podManagementPolicy":{},"f:rabbitmqConfig":{".":{},"f:additionalConfig":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-16T05:02:31Z"}],"name":"test-cluster","namespace":"rabbitmq","resourceVersion":"825","uid":"1c5fbe5b-cc71-4854-aadb-0e804d82728f"},"spec":{"replicas":3,"image":"rabbitmq:3.11.10-management","persistence":{"storageClassName":"standard","storage":"10Gi"},"rabbitmqConfig":{"additionalConfig":"log.console.level = debug\n","advancedConfig":null,"envConfig":null},"affinity":null,"tolerations":null,"labels":{"ACTOKEY":"ACTOKEY"},"annotations":{},"resources":null,"podManagementPolicy":"Parallel","persistentVolumeClaimRetentionPolicy":null}}
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Service/rabbitmq/test-cluster-nodes done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Service/rabbitmq/test-cluster-nodes done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Service/rabbitmq/test-cluster-client done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Service/rabbitmq/test-cluster-client done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Secret/rabbitmq/test-cluster-erlang-cookie done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Secret/rabbitmq/test-cluster-erlang-cookie done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Secret/rabbitmq/test-cluster-default-user done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Secret/rabbitmq/test-cluster-default-user done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ConfigMap/rabbitmq/test-cluster-plugins-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update ConfigMap/rabbitmq/test-cluster-plugins-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ConfigMap/rabbitmq/test-cluster-server-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update ConfigMap/rabbitmq/test-cluster-server-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ServiceAccount/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update ServiceAccount/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Role/rabbitmq/test-cluster-peer-discovery done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Role/rabbitmq/test-cluster-peer-discovery done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get RoleBinding/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update RoleBinding/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get StatefulSet/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update StatefulSet/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("rabbitmq"), extra: Extra { resource_version: Some("825"), uid: Some("1c5fbe5b-cc71-4854-aadb-0e804d82728f") } }, Action { requeue_after: Some(60s) })
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"RabbitmqCluster","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"RabbitmqCluster\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"rabbitmq\"},\"spec\":{\"image\":\"rabbitmq:3.11.10-management\",\"labels\":{\"ACTOKEY\":\"ACTOKEY\"},\"persistence\":{\"storage\":\"10Gi\",\"storageClassName\":null},\"rabbitmqConfig\":{\"additionalConfig\":\"log.console.level = debug\\n\"},\"replicas\":3}}\n"},"creationTimestamp":"2023-11-16T05:02:31Z","generation":1,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:image":{},"f:labels":{".":{},"f:ACTOKEY":{}},"f:persistence":{".":{},"f:storage":{},"f:storageClassName":{}},"f:podManagementPolicy":{},"f:rabbitmqConfig":{".":{},"f:additionalConfig":{}},"f:replicas":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-11-16T05:02:31Z"}],"name":"test-cluster","namespace":"rabbitmq","resourceVersion":"825","uid":"1c5fbe5b-cc71-4854-aadb-0e804d82728f"},"spec":{"replicas":3,"image":"rabbitmq:3.11.10-management","persistence":{"storageClassName":"standard","storage":"10Gi"},"rabbitmqConfig":{"additionalConfig":"log.console.level = debug\n","advancedConfig":null,"envConfig":null},"affinity":null,"tolerations":null,"labels":{"ACTOKEY":"ACTOKEY"},"annotations":{},"resources":null,"podManagementPolicy":"Parallel","persistentVolumeClaimRetentionPolicy":null}}
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Service/rabbitmq/test-cluster-nodes done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Service/rabbitmq/test-cluster-nodes done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Service/rabbitmq/test-cluster-client done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Service/rabbitmq/test-cluster-client done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Secret/rabbitmq/test-cluster-erlang-cookie done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Secret/rabbitmq/test-cluster-erlang-cookie done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Secret/rabbitmq/test-cluster-default-user done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Secret/rabbitmq/test-cluster-default-user done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ConfigMap/rabbitmq/test-cluster-plugins-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update ConfigMap/rabbitmq/test-cluster-plugins-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ConfigMap/rabbitmq/test-cluster-server-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update ConfigMap/rabbitmq/test-cluster-server-conf done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get ServiceAccount/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update ServiceAccount/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get Role/rabbitmq/test-cluster-peer-discovery done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update Role/rabbitmq/test-cluster-peer-discovery done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get RoleBinding/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update RoleBinding/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Get StatefulSet/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: Update StatefulSet/rabbitmq/test-cluster-server done
+Reconciling RabbitmqCluster/rabbitmq/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("rabbitmq"), extra: Extra { resource_version: Some("825"), uid: Some("1c5fbe5b-cc71-4854-aadb-0e804d82728f") } }, Action { requeue_after: Some(60s) })
+

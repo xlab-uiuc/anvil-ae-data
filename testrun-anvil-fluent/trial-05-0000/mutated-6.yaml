@@ -1,0 +1,14 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  annotations: {}
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  labels:
+    ACTOKEY: ACTOKEY
+  serviceLabels:
+    ACTOKEY: ''
+  tolerations:
+  - operator: Exists

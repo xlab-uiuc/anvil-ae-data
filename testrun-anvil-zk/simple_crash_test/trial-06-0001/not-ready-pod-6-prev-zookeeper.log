@@ -1,0 +1,110 @@
++ source /conf/env.sh
+++ DOMAIN=test-cluster-headless.zookeeper.svc.cluster.local
+++ QUORUM_PORT=2888
+++ LEADER_PORT=3888
+++ CLIENT_HOST=test-cluster-client
+++ CLIENT_PORT=2181
+++ ADMIN_SERVER_HOST=test-cluster-admin-server
+++ ADMIN_SERVER_PORT=8080
+++ CLUSTER_NAME=test-cluster
++ source /usr/local/bin/zookeeperFunctions.sh
+++ set -ex
+++ hostname -s
++ HOST=test-cluster-2
++ DATA_DIR=/data
++ MYID_FILE=/data/myid
++ LOG4J_CONF=/conf/log4j-quiet.properties
++ DYNCONFIG=/data/zoo.cfg.dynamic
++ STATIC_CONFIG=/data/conf/zoo.cfg
++ [[ test-cluster-2 =~ (.*)-([0-9]+)$ ]]
++ NAME=test-cluster
++ ORD=2
++ MYID=3
++ WRITE_CONFIGURATION=true
++ REGISTER_NODE=true
++ ONDISK_MYID_CONFIG=false
++ ONDISK_DYN_CONFIG=false
++ '[' -f /data/myid ']'
+++ cat /data/myid
++ EXISTING_ID=3
++ [[ 3 == \3 ]]
++ [[ -f /data/conf/zoo.cfg ]]
++ ONDISK_MYID_CONFIG=true
++ '[' -f /data/zoo.cfg.dynamic ']'
++ ONDISK_DYN_CONFIG=true
++ set +e
++ [[ -n '' ]]
++ set -e
++ set +e
++ getent hosts test-cluster-headless.zookeeper.svc.cluster.local
+10.244.2.4      test-cluster-headless.zookeeper.svc.cluster.local
+10.244.1.5      test-cluster-headless.zookeeper.svc.cluster.local
++ [[ 0 -eq 0 ]]
++ ACTIVE_ENSEMBLE=true
++ [[ true == true ]]
++ [[ true == true ]]
++ WRITE_CONFIGURATION=false
++ [[ true == false ]]
++ [[ true == false ]]
++ [[ true == false ]]
++ REGISTER_NODE=false
++ [[ false == true ]]
++ [[ false == true ]]
++ ZOOCFGDIR=/data/conf
++ export ZOOCFGDIR
++ echo Copying /conf contents to writable directory, to support Zookeeper dynamic reconfiguration
+Copying /conf contents to writable directory, to support Zookeeper dynamic reconfiguration
++ [[ ! -d /data/conf ]]
++ echo Copying the /conf/zoo.cfg contents except the dynamic config file during restart
+Copying the /conf/zoo.cfg contents except the dynamic config file during restart
+++ head -n -1 /conf/zoo.cfg
+++ tail -n 1 /data/conf/zoo.cfg
++ echo -e '4lw.commands.whitelist=cons, envi, conf, crst, srvr, stat, mntr, ruok
+dataDir=/data
+standaloneEnabled=false
+reconfigEnabled=true
+skipACL=yes
+metricsProvider.className=org.apache.zookeeper.metrics.prometheus.PrometheusMetricsProvider
+metricsProvider.httpPort=7000
+metricsProvider.exportJvmInfo=true
+initLimit=10
+syncLimit=2
+tickTime=0
+globalOutstandingLimit=1000
+preAllocSize=65536
+snapCount=10000
+commitLogCount=500
+snapSizeLimitInKb=4194304
+maxCnxns=0
+maxClientCnxns=60
+minSessionTimeout=4000
+maxSessionTimeout=40000
+autopurge.snapRetainCount=3
+autopurge.purgeInterval=1
+quorumListenOnAllIPs=false
+admin.serverPort=8080\ndynamicConfigFile=/data/conf/zoo.cfg.dynamic.10000002e'
++ cp -f /conf/log4j.properties /data/conf
++ cp -f /conf/log4j-quiet.properties /data/conf
++ cp -f /conf/env.sh /data/conf
++ '[' -f /data/zoo.cfg.dynamic ']'
++ echo Starting zookeeper service
++ zkServer.sh --config /data/conf start-foreground
+Starting zookeeper service
+ZooKeeper JMX enabled by default
+Using config: /data/conf/zoo.cfg
+2023-11-02 17:46:16,760 [myid:] - INFO  [main:QuorumPeerConfig@174] - Reading configuration from: /data/conf/zoo.cfg
+2023-11-02 17:46:16,764 [myid:] - INFO  [main:QuorumPeerConfig@435] - clientPort is not set
+2023-11-02 17:46:16,764 [myid:] - INFO  [main:QuorumPeerConfig@448] - secureClientPort is not set
+2023-11-02 17:46:16,764 [myid:] - INFO  [main:QuorumPeerConfig@464] - observerMasterPort is not set
+2023-11-02 17:46:16,765 [myid:] - ERROR [main:QuorumPeerMain@99] - Invalid config, exiting abnormally
+org.apache.zookeeper.server.quorum.QuorumPeerConfig$ConfigException: Error processing /data/conf/zoo.cfg
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:198)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.initializeAndRun(QuorumPeerMain.java:125)
+	at org.apache.zookeeper.server.quorum.QuorumPeerMain.main(QuorumPeerMain.java:91)
+Caused by: java.lang.IllegalArgumentException: tickTime is not set
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parseProperties(QuorumPeerConfig.java:471)
+	at org.apache.zookeeper.server.quorum.QuorumPeerConfig.parse(QuorumPeerConfig.java:194)
+	... 2 more
+Invalid config, exiting abnormally
+2023-11-02 17:46:16,767 [myid:] - INFO  [main:ZKAuditProvider@42] - ZooKeeper audit is disabled.
+2023-11-02 17:46:16,769 [myid:] - ERROR [main:ServiceUtils@42] - Exiting JVM with code 2

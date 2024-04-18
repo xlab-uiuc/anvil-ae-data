@@ -1,0 +1,18 @@
+apiVersion: anvil.dev/v1
+kind: ZookeeperCluster
+metadata:
+  name: test-cluster
+spec:
+  conf: {}
+  image: pravega/zookeeper:0.2.14
+  persistence:
+    enabled: true
+    storageClassName: standard
+    storageSize: 20Gi
+  ports:
+    adminServer: 8080
+    client: 2181
+    leaderElection: 3888
+    metrics: 7000
+    quorum: 2888
+  replicas: 3

@@ -1,0 +1,2946 @@
+{
+    "delta_from": null,
+    "existing_testcases": {},
+    "normal_testcases": {
+        "[\"spec\", \"affinity\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"annotations\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"annotations\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"image\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"labels\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"labels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"persistence\", \"storage\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"persistence\", \"storageClassName\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"persistence\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenDeleted\"]": [
+            "string-deletion",
+            "Retain",
+            "Delete"
+        ],
+        "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenScaled\"]": [
+            "string-deletion",
+            "Retain",
+            "Delete"
+        ],
+        "[\"spec\", \"persistentVolumeClaimRetentionPolicy\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"podManagementPolicy\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"rabbitmqConfig\", \"additionalConfig\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"rabbitmqConfig\", \"advancedConfig\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"rabbitmqConfig\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"replicas\"]": [
+            "number-deletion",
+            "number-change"
+        ],
+        "[\"spec\", \"resources\", \"claims\", 0, \"name\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"resources\", \"claims\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"resources\", \"claims\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"resources\", \"limits\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"resources\", \"limits\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"resources\", \"requests\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"resources\", \"requests\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"resources\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"tolerations\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"tolerations\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\"]": [
+            "object-deletion",
+            "object-empty"
+        ]
+    },
+    "overspecified_testcases": {
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]": [
+            "number-deletion",
+            "number-change"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"agawyavqtd\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"tbbifesjlm\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]": [
+            "number-deletion",
+            "number-change"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"sjwwzpczcq\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"xkbbpneptw\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"glkpjjrukf\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"ezwomfynnf\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]": [
+            "number-deletion",
+            "number-change"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"pmaqcvcvxv\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"jtcwqyjyln\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"affinity\", \"nodeAffinity\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAffinity\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"affinity\", \"podAntiAffinity\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"tolerations\", 0, \"effect\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"tolerations\", 0, \"key\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"tolerations\", 0, \"operator\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"tolerations\", 0, \"tolerationSeconds\"]": [
+            "number-deletion",
+            "number-change"
+        ],
+        "[\"spec\", \"tolerations\", 0, \"value\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ]
+    },
+    "copiedover_testcases": {},
+    "semantic_testcases": {
+        "[\"spec\", \"affinity\"]": [
+            "k8s-all_on_one_node",
+            "k8s-all_on_different_nodes",
+            "k8s-invalid_affinity",
+            "k8s-null_affinity"
+        ],
+        "[\"spec\", \"tolerations\", 0]": [
+            "k8s-plain_toleration",
+            "k8s-control_plane_toleration"
+        ],
+        "[\"spec\", \"tolerations\"]": [
+            "k8s-tolerations_pop"
+        ]
+    },
+    "additional_semantic_testcases": [],
+    "planned_normal_testcases": {
+        "[\"spec\", \"affinity\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"annotations\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"annotations\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"image\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"labels\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"labels\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"persistence\", \"storage\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"persistence\", \"storageClassName\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"persistence\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenDeleted\"]": [
+            "string-deletion",
+            "Retain",
+            "Delete"
+        ],
+        "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenScaled\"]": [
+            "string-deletion",
+            "Retain",
+            "Delete"
+        ],
+        "[\"spec\", \"persistentVolumeClaimRetentionPolicy\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"podManagementPolicy\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"rabbitmqConfig\", \"additionalConfig\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"rabbitmqConfig\", \"advancedConfig\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"rabbitmqConfig\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"replicas\"]": [
+            "number-deletion",
+            "number-change"
+        ],
+        "[\"spec\", \"resources\", \"claims\", 0, \"name\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"resources\", \"claims\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"resources\", \"claims\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\", \"resources\", \"limits\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"resources\", \"limits\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"resources\", \"requests\", \"ACTOKEY\"]": [
+            "string-deletion",
+            "string-change",
+            "string-empty"
+        ],
+        "[\"spec\", \"resources\", \"requests\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"resources\"]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"tolerations\", 0]": [
+            "object-deletion",
+            "object-empty"
+        ],
+        "[\"spec\", \"tolerations\"]": [
+            "array-deletion",
+            "array-push",
+            "array-pop",
+            "array-empty"
+        ],
+        "[\"spec\"]": [
+            "object-deletion",
+            "object-empty"
+        ]
+    },
+    "normal_subgroups": [
+        [
+            [
+                "[\"spec\", \"rabbitmqConfig\", \"additionalConfig\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"rabbitmqConfig\", \"additionalConfig\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"rabbitmqConfig\", \"additionalConfig\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"limits\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"limits\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"requests\", \"ACTOKEY\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"requests\", \"ACTOKEY\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"resources\", \"requests\", \"ACTOKEY\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"persistence\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"persistence\"]",
+                "object-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"tolerations\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"tolerations\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"tolerations\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"limits\", \"ACTOKEY\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"limits\", \"ACTOKEY\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"resources\", \"limits\", \"ACTOKEY\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"image\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"image\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"image\"]",
+                "string-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"annotations\", \"ACTOKEY\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"annotations\", \"ACTOKEY\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"annotations\", \"ACTOKEY\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\", 0, \"name\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\", 0, \"name\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\", 0, \"name\"]",
+                "string-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenScaled\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenScaled\"]",
+                "Retain"
+            ],
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenScaled\"]",
+                "Delete"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"rabbitmqConfig\", \"advancedConfig\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"rabbitmqConfig\", \"advancedConfig\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"rabbitmqConfig\", \"advancedConfig\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenDeleted\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenDeleted\"]",
+                "Retain"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\", \"whenDeleted\"]",
+                "Delete"
+            ],
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"persistentVolumeClaimRetentionPolicy\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"podManagementPolicy\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"podManagementPolicy\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"podManagementPolicy\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\"]",
+                "array-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"resources\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"persistence\", \"storageClassName\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"persistence\", \"storageClassName\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"persistence\", \"storageClassName\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"requests\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"requests\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"resources\", \"claims\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"rabbitmqConfig\"]",
+                "object-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"rabbitmqConfig\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"persistence\", \"storage\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"persistence\", \"storage\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"persistence\", \"storage\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"labels\", \"ACTOKEY\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"labels\", \"ACTOKEY\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"labels\", \"ACTOKEY\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"annotations\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"annotations\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"replicas\"]",
+                "number-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"replicas\"]",
+                "number-change"
+            ],
+            [
+                "[\"spec\", \"labels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"labels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"tolerations\"]",
+                "k8s-tolerations_pop"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0]",
+                "k8s-plain_toleration"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0]",
+                "k8s-control_plane_toleration"
+            ],
+            [
+                "[\"spec\", \"affinity\"]",
+                "k8s-all_on_one_node"
+            ],
+            [
+                "[\"spec\", \"affinity\"]",
+                "k8s-all_on_different_nodes"
+            ],
+            [
+                "[\"spec\", \"affinity\"]",
+                "k8s-invalid_affinity"
+            ],
+            [
+                "[\"spec\", \"affinity\"]",
+                "k8s-null_affinity"
+            ]
+        ]
+    ],
+    "overspecified_subgroups": [
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"glkpjjrukf\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"glkpjjrukf\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"glkpjjrukf\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]",
+                "number-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]",
+                "number-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"jtcwqyjyln\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"jtcwqyjyln\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"jtcwqyjyln\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\"]",
+                "array-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"tolerationSeconds\"]",
+                "number-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"tolerationSeconds\"]",
+                "number-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\", 0]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"topologyKey\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"effect\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"effect\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"effect\"]",
+                "string-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\"]",
+                "array-push"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]",
+                "number-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]",
+                "number-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"sjwwzpczcq\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"sjwwzpczcq\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"sjwwzpczcq\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"ezwomfynnf\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"ezwomfynnf\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"ezwomfynnf\"]",
+                "string-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"value\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"value\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"value\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]",
+                "number-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"weight\"]",
+                "number-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"key\"]",
+                "string-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"pmaqcvcvxv\"]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"pmaqcvcvxv\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchLabels\", \"pmaqcvcvxv\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "object-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"topologyKey\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"operator\"]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-push"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-push"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"tolerations\", 0, \"key\"]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"tolerations\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"tbbifesjlm\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"tbbifesjlm\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchLabels\", \"tbbifesjlm\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\"]",
+                "array-push"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"preference\", \"matchFields\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaces\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaces\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-push"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-pop"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"values\"]",
+                "array-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\"]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"namespaceSelector\"]",
+                "object-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"labelSelector\", \"matchExpressions\", 0, \"key\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"agawyavqtd\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"agawyavqtd\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchLabels\", \"agawyavqtd\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"xkbbpneptw\"]",
+                "string-deletion"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"xkbbpneptw\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", 0, \"namespaceSelector\", \"matchLabels\", \"xkbbpneptw\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\", 0]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\", 0]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"nodeAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\", \"nodeSelectorTerms\", 0, \"matchFields\", 0, \"values\", 0]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-change"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0, \"podAffinityTerm\", \"labelSelector\", \"matchExpressions\", 0, \"operator\"]",
+                "string-empty"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"preferredDuringSchedulingIgnoredDuringExecution\", 0]",
+                "object-empty"
+            ]
+        ],
+        [
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-deletion"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-push"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-pop"
+            ],
+            [
+                "[\"spec\", \"affinity\", \"podAntiAffinity\", \"requiredDuringSchedulingIgnoredDuringExecution\"]",
+                "array-empty"
+            ]
+        ]
+    ],
+    "copiedover_subgroups": []
+}

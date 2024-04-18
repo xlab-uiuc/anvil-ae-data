@@ -1,0 +1,13 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: ghcr.io/xlab-uiuc/fluent-bit:v2.1.7
+  tolerations:
+  - effect: NoExecute
+    key: test-key
+    operator: Equal
+    tolerationSeconds: 3600
+    value: test-value

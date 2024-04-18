@@ -1,0 +1,32 @@
+{
+      "trial_num": "00-0000",
+      "duration": "00:23:18",
+      "time_breakdown": {
+            "k8s_bootstrap": 149.70953702926636,
+            "operator_deploy": 17.664886236190796,
+            "trial_run": 1230.912452697754
+      },
+      "num_tests": 4,
+      "error": {
+            "revert": false,
+            "generation": 2,
+            "testcase": {
+                  "field": "[\"spec\", \"rabbitmqConfig\", \"additionalConfig\"]",
+                  "testcase": "string-change"
+            },
+            "crash_result": {
+                  "oracle": "Crash",
+                  "message": "Pod test-cluster-server-2 crashed"
+            },
+            "input_result": "Pass",
+            "health_result": {
+                  "oracle": "SystemHealth",
+                  "message": "statefulset: test-cluster-server replicas [3] ready_replicas [2]"
+            },
+            "state_result": "Pass",
+            "log_result": "Pass",
+            "custom_result": null,
+            "misc_result": null,
+            "recovery_result": "Pass"
+      }
+}

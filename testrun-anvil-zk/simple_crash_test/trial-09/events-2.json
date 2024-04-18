@@ -1,0 +1,1189 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "1799"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "data-test-cluster-0.1793e0cfed61a7d9",
+        "namespace": "zookeeper",
+        "uid": "44e8daa4-10d1-4c32-858f-22ce11b44c42",
+        "resourceVersion": "801",
+        "creationTimestamp": "2023-11-02T18:11:08Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:08Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "zookeeper",
+        "name": "data-test-cluster-0",
+        "uid": "ea1e40cc-e6b0-432b-9a10-eca119e3347d",
+        "apiVersion": "v1",
+        "resourceVersion": "795"
+      },
+      "reason": "WaitForFirstConsumer",
+      "message": "waiting for first consumer to be created before binding",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:11:08Z",
+      "lastTimestamp": "2023-11-02T18:11:08Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "data-test-cluster-0.1793e0cfede5e4f5",
+        "namespace": "zookeeper",
+        "uid": "eb40539b-0237-44cb-be90-5a49bb7e0200",
+        "resourceVersion": "1561",
+        "creationTimestamp": "2023-11-02T18:11:08Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:17:07Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "zookeeper",
+        "name": "data-test-cluster-0",
+        "uid": "ea1e40cc-e6b0-432b-9a10-eca119e3347d",
+        "apiVersion": "v1",
+        "resourceVersion": "799"
+      },
+      "reason": "WaitForPodScheduled",
+      "message": "waiting for pod test-cluster-0 to be scheduled",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:11:08Z",
+      "lastTimestamp": "2023-11-02T18:17:07Z",
+      "count": 25,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-0.1793e0cfedbc7f75",
+        "namespace": "zookeeper",
+        "uid": "ee492c0b-da3a-4660-b755-728048c77fa7",
+        "resourceVersion": "1444",
+        "creationTimestamp": "2023-11-02T18:11:08Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:16:11Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "test-cluster-0",
+        "uid": "0894bdb7-4746-4c47-802b-f148b3bcf5e7",
+        "apiVersion": "v1",
+        "resourceVersion": "798"
+      },
+      "reason": "FailedScheduling",
+      "message": "0/4 nodes are available: 1 node(s) had untolerated taint {node-role.kubernetes.io/control-plane: }, 3 node(s) didn't match Pod's node affinity/selector. preemption: 0/4 nodes are available: 4 Preemption is not helpful for scheduling..",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-02T18:11:08Z",
+      "lastTimestamp": "2023-11-02T18:16:11Z",
+      "count": 2,
+      "type": "Warning",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster.1793e0cfed6b1338",
+        "namespace": "zookeeper",
+        "uid": "f4328680-c9df-4361-86ef-74513c706511",
+        "resourceVersion": "797",
+        "creationTimestamp": "2023-11-02T18:11:08Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:08Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "zookeeper",
+        "name": "test-cluster",
+        "uid": "04ee44cb-01c5-4917-a039-9b6a2cdeb418",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "792"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Claim data-test-cluster-0 Pod test-cluster-0 in StatefulSet test-cluster success",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:11:08Z",
+      "lastTimestamp": "2023-11-02T18:11:08Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster.1793e0cfede355ed",
+        "namespace": "zookeeper",
+        "uid": "f3f78c4d-85ec-4496-a44a-ac9acc65ab0e",
+        "resourceVersion": "802",
+        "creationTimestamp": "2023-11-02T18:11:08Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:08Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "zookeeper",
+        "name": "test-cluster",
+        "uid": "04ee44cb-01c5-4917-a039-9b6a2cdeb418",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "792"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Pod test-cluster-0 in StatefulSet test-cluster successful",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:11:08Z",
+      "lastTimestamp": "2023-11-02T18:11:08Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454-jzvqh.1793e0c816ffb94d",
+        "namespace": "zookeeper",
+        "uid": "dbc5f087-eb50-4ce9-8076-1146af65cc6b",
+        "resourceVersion": "691",
+        "creationTimestamp": "2023-11-02T18:10:34Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:34Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454-jzvqh",
+        "uid": "4df56c2a-56b6-4fd4-9606-795992ffe9b3",
+        "apiVersion": "v1",
+        "resourceVersion": "685"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned zookeeper/zookeeper-controller-5d866c5454-jzvqh to acto-0-cluster-9-worker",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-02T18:10:34Z",
+      "lastTimestamp": "2023-11-02T18:10:34Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454-jzvqh.1793e0c83b2c2c8b",
+        "namespace": "zookeeper",
+        "uid": "ab48f859-0cac-4090-95ea-c423f65856cc",
+        "resourceVersion": "775",
+        "creationTimestamp": "2023-11-02T18:10:35Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:07Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454-jzvqh",
+        "uid": "4df56c2a-56b6-4fd4-9606-795992ffe9b3",
+        "apiVersion": "v1",
+        "resourceVersion": "689",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulling",
+      "message": "Pulling image \"ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest\"",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker"
+      },
+      "firstTimestamp": "2023-11-02T18:10:35Z",
+      "lastTimestamp": "2023-11-02T18:11:07Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454-jzvqh.1793e0c850d7d5ee",
+        "namespace": "zookeeper",
+        "uid": "3ca79e03-5610-44f4-98b7-32e9166451d8",
+        "resourceVersion": "696",
+        "creationTimestamp": "2023-11-02T18:10:35Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454-jzvqh",
+        "uid": "4df56c2a-56b6-4fd4-9606-795992ffe9b3",
+        "apiVersion": "v1",
+        "resourceVersion": "689",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest\" in 363.538944ms (363.55127ms including waiting)",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker"
+      },
+      "firstTimestamp": "2023-11-02T18:10:35Z",
+      "lastTimestamp": "2023-11-02T18:10:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454-jzvqh.1793e0c851bbcb17",
+        "namespace": "zookeeper",
+        "uid": "651d3335-ca9a-4260-9b0a-f67ce74efacc",
+        "resourceVersion": "780",
+        "creationTimestamp": "2023-11-02T18:10:35Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:07Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454-jzvqh",
+        "uid": "4df56c2a-56b6-4fd4-9606-795992ffe9b3",
+        "apiVersion": "v1",
+        "resourceVersion": "689",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Created",
+      "message": "Created container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker"
+      },
+      "firstTimestamp": "2023-11-02T18:10:35Z",
+      "lastTimestamp": "2023-11-02T18:11:07Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454-jzvqh.1793e0c86030c004",
+        "namespace": "zookeeper",
+        "uid": "23b61fa5-0691-4b7b-a7ed-c1571ce74a38",
+        "resourceVersion": "781",
+        "creationTimestamp": "2023-11-02T18:10:35Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:07Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454-jzvqh",
+        "uid": "4df56c2a-56b6-4fd4-9606-795992ffe9b3",
+        "apiVersion": "v1",
+        "resourceVersion": "689",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Started",
+      "message": "Started container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker"
+      },
+      "firstTimestamp": "2023-11-02T18:10:35Z",
+      "lastTimestamp": "2023-11-02T18:11:07Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454-jzvqh.1793e0cfd45c1c02",
+        "namespace": "zookeeper",
+        "uid": "ca0e00a3-c8fe-463b-b30b-355e1792559e",
+        "resourceVersion": "779",
+        "creationTimestamp": "2023-11-02T18:11:07Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:11:07Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454-jzvqh",
+        "uid": "4df56c2a-56b6-4fd4-9606-795992ffe9b3",
+        "apiVersion": "v1",
+        "resourceVersion": "689",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest\" in 186.068117ms (186.078685ms including waiting)",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker"
+      },
+      "firstTimestamp": "2023-11-02T18:11:07Z",
+      "lastTimestamp": "2023-11-02T18:11:07Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-5d866c5454.1793e0c816918a49",
+        "namespace": "zookeeper",
+        "uid": "f2e0df5e-b0e4-42bc-84ae-77aa2125bb70",
+        "resourceVersion": "687",
+        "creationTimestamp": "2023-11-02T18:10:34Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:34Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-5d866c5454",
+        "uid": "f4ffc1f8-db03-4462-92ad-601604754a64",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "683"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: zookeeper-controller-5d866c5454-jzvqh",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:10:34Z",
+      "lastTimestamp": "2023-11-02T18:10:34Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx.1793e0c5b792b6af",
+        "namespace": "zookeeper",
+        "uid": "a381b87b-cb99-4365-b778-ef5145fc9fa0",
+        "resourceVersion": "650",
+        "creationTimestamp": "2023-11-02T18:10:24Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:24Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx",
+        "uid": "124e37c8-ceab-423b-a508-fa9a5194a5ed",
+        "apiVersion": "v1",
+        "resourceVersion": "646"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned zookeeper/zookeeper-controller-78c8cd8bcb-nzxwx to acto-0-cluster-9-worker3",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-02T18:10:24Z",
+      "lastTimestamp": "2023-11-02T18:10:24Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx.1793e0c5d8119947",
+        "namespace": "zookeeper",
+        "uid": "4b23af7c-619f-4cb1-9ce8-7bf026df036f",
+        "resourceVersion": "655",
+        "creationTimestamp": "2023-11-02T18:10:24Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:24Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx",
+        "uid": "124e37c8-ceab-423b-a508-fa9a5194a5ed",
+        "apiVersion": "v1",
+        "resourceVersion": "648",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulling",
+      "message": "Pulling image \"ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest\"",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker3"
+      },
+      "firstTimestamp": "2023-11-02T18:10:24Z",
+      "lastTimestamp": "2023-11-02T18:10:24Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx.1793e0c5f0f833eb",
+        "namespace": "zookeeper",
+        "uid": "7a725f3a-b52f-4f21-91bb-4238ae342a6a",
+        "resourceVersion": "656",
+        "creationTimestamp": "2023-11-02T18:10:25Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:25Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx",
+        "uid": "124e37c8-ceab-423b-a508-fa9a5194a5ed",
+        "apiVersion": "v1",
+        "resourceVersion": "648",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"ghcr.io/vmware-research/verifiable-controllers/zookeeper-controller:latest\" in 417.721608ms (417.729121ms including waiting)",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker3"
+      },
+      "firstTimestamp": "2023-11-02T18:10:25Z",
+      "lastTimestamp": "2023-11-02T18:10:25Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx.1793e0c5f21c5b4b",
+        "namespace": "zookeeper",
+        "uid": "aaa10cdb-272e-48d7-85b6-577a08ad48f7",
+        "resourceVersion": "657",
+        "creationTimestamp": "2023-11-02T18:10:25Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:25Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx",
+        "uid": "124e37c8-ceab-423b-a508-fa9a5194a5ed",
+        "apiVersion": "v1",
+        "resourceVersion": "648",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Created",
+      "message": "Created container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker3"
+      },
+      "firstTimestamp": "2023-11-02T18:10:25Z",
+      "lastTimestamp": "2023-11-02T18:10:25Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx.1793e0c5fc4e2826",
+        "namespace": "zookeeper",
+        "uid": "c830ef60-0dd6-4c6b-9e6e-8ad4bdd5bc14",
+        "resourceVersion": "658",
+        "creationTimestamp": "2023-11-02T18:10:25Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:25Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx",
+        "uid": "124e37c8-ceab-423b-a508-fa9a5194a5ed",
+        "apiVersion": "v1",
+        "resourceVersion": "648",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Started",
+      "message": "Started container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker3"
+      },
+      "firstTimestamp": "2023-11-02T18:10:25Z",
+      "lastTimestamp": "2023-11-02T18:10:25Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx.1793e0c88f8f76b9",
+        "namespace": "zookeeper",
+        "uid": "77992982-35c0-44ae-b4fe-35f73397522e",
+        "resourceVersion": "716",
+        "creationTimestamp": "2023-11-02T18:10:36Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:38Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb-nzxwx",
+        "uid": "124e37c8-ceab-423b-a508-fa9a5194a5ed",
+        "apiVersion": "v1",
+        "resourceVersion": "648",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Killing",
+      "message": "Stopping container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-9-worker3"
+      },
+      "firstTimestamp": "2023-11-02T18:10:36Z",
+      "lastTimestamp": "2023-11-02T18:10:38Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb.1793e0c5b764471a",
+        "namespace": "zookeeper",
+        "uid": "ed349e03-8e41-4b73-ad97-76e614e2571a",
+        "resourceVersion": "647",
+        "creationTimestamp": "2023-11-02T18:10:24Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:24Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb",
+        "uid": "43316965-f376-4894-bc1d-81a0261ec0a1",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "642"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: zookeeper-controller-78c8cd8bcb-nzxwx",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:10:24Z",
+      "lastTimestamp": "2023-11-02T18:10:24Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller-78c8cd8bcb.1793e0c88f880894",
+        "namespace": "zookeeper",
+        "uid": "8c7c16b9-5c31-4d87-8f0f-110ed2ccdaa0",
+        "resourceVersion": "707",
+        "creationTimestamp": "2023-11-02T18:10:36Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:36Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller-78c8cd8bcb",
+        "uid": "43316965-f376-4894-bc1d-81a0261ec0a1",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "703"
+      },
+      "reason": "SuccessfulDelete",
+      "message": "Deleted pod: zookeeper-controller-78c8cd8bcb-nzxwx",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:10:36Z",
+      "lastTimestamp": "2023-11-02T18:10:36Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller.1793e0c5b7176c7b",
+        "namespace": "zookeeper",
+        "uid": "4ecd4fb0-a26b-4d30-88cf-9add24b2b360",
+        "resourceVersion": "644",
+        "creationTimestamp": "2023-11-02T18:10:24Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:24Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller",
+        "uid": "4740eec7-076e-44c1-9cee-bb94e9fa0988",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "641"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set zookeeper-controller-78c8cd8bcb to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:10:24Z",
+      "lastTimestamp": "2023-11-02T18:10:24Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller.1793e0c81650dd52",
+        "namespace": "zookeeper",
+        "uid": "63d543d8-2a07-46f7-84ef-fa20cf26c20b",
+        "resourceVersion": "684",
+        "creationTimestamp": "2023-11-02T18:10:34Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:34Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller",
+        "uid": "4740eec7-076e-44c1-9cee-bb94e9fa0988",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "682"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set zookeeper-controller-5d866c5454 to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:10:34Z",
+      "lastTimestamp": "2023-11-02T18:10:34Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "zookeeper-controller.1793e0c88f3a3b53",
+        "namespace": "zookeeper",
+        "uid": "f2153566-820e-46f6-8a83-5419c791a263",
+        "resourceVersion": "704",
+        "creationTimestamp": "2023-11-02T18:10:36Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-02T18:10:36Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "zookeeper",
+        "name": "zookeeper-controller",
+        "uid": "4740eec7-076e-44c1-9cee-bb94e9fa0988",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "694"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled down replica set zookeeper-controller-78c8cd8bcb to 0 from 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2023-11-02T18:10:36Z",
+      "lastTimestamp": "2023-11-02T18:10:36Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    }
+  ]
+}

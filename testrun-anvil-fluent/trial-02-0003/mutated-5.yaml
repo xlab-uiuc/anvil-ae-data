@@ -1,0 +1,20 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  ports:
+  - containerPort: 2
+    hostIP: null
+    hostPort: 0
+    name: ACTOKEY
+    protocol: ACTOKEY
+  - containerPort: 0
+    hostIP: ACTOKEY
+    hostPort: 3
+    name: ACTOKEY
+    protocol: ACTOKEY
+  tolerations:
+  - operator: Exists

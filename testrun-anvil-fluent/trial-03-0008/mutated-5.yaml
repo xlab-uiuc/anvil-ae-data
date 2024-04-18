@@ -1,0 +1,33 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  containerSecurityContext:
+    allowPrivilegeEscalation: false
+    capabilities:
+      add: []
+      drop: []
+    privileged: false
+    procMount: ACTOKEY
+    readOnlyRootFilesystem: false
+    runAsGroup: 0
+    runAsNonRoot: false
+    runAsUser: 5
+    seLinuxOptions:
+      level: ACTOKEY
+      role: ACTOKEY
+      type: null
+      user: ACTOKEY
+    seccompProfile:
+      localhostProfile: ACTOKEY
+      type: ACTOKEY
+    windowsOptions:
+      gmsaCredentialSpec: null
+      gmsaCredentialSpecName: ACTOKEY
+      hostProcess: null
+      runAsUserName: null
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  tolerations:
+  - operator: Exists

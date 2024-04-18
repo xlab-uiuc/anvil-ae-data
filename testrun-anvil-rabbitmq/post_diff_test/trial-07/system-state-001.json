@@ -1,0 +1,1680 @@
+{
+      "pod": {},
+      "deployment_pods": {
+            "rabbitmq-controller": [
+                  {
+                        "api_version": null,
+                        "kind": null,
+                        "metadata": {
+                              "annotations": null,
+                              "creation_timestamp": "2023-11-16T04:41:12+00:00",
+                              "deletion_grace_period_seconds": null,
+                              "deletion_timestamp": null,
+                              "finalizers": null,
+                              "generate_name": "rabbitmq-controller-794b558dbc-",
+                              "generation": null,
+                              "labels": {
+                                    "acto/tag": "operator-pod",
+                                    "app.kubernetes.io/name": "rabbitmq-controller",
+                                    "pod-template-hash": "794b558dbc"
+                              },
+                              "managed_fields": [
+                                    {
+                                          "api_version": "v1",
+                                          "fields_type": "FieldsV1",
+                                          "fields_v1": {
+                                                "f:metadata": {
+                                                      "f:generateName": {},
+                                                      "f:labels": {
+                                                            ".": {},
+                                                            "f:acto/tag": {},
+                                                            "f:app.kubernetes.io/name": {},
+                                                            "f:pod-template-hash": {}
+                                                      },
+                                                      "f:ownerReferences": {
+                                                            ".": {},
+                                                            "k:{\"uid\":\"cf47f700-4253-4bed-8213-c168f81ea38f\"}": {}
+                                                      }
+                                                },
+                                                "f:spec": {
+                                                      "f:containers": {
+                                                            "k:{\"name\":\"controller\"}": {
+                                                                  ".": {},
+                                                                  "f:image": {},
+                                                                  "f:imagePullPolicy": {},
+                                                                  "f:name": {},
+                                                                  "f:resources": {},
+                                                                  "f:terminationMessagePath": {},
+                                                                  "f:terminationMessagePolicy": {}
+                                                            }
+                                                      },
+                                                      "f:dnsPolicy": {},
+                                                      "f:enableServiceLinks": {},
+                                                      "f:restartPolicy": {},
+                                                      "f:schedulerName": {},
+                                                      "f:securityContext": {},
+                                                      "f:serviceAccount": {},
+                                                      "f:serviceAccountName": {},
+                                                      "f:terminationGracePeriodSeconds": {}
+                                                }
+                                          },
+                                          "manager": "kube-controller-manager",
+                                          "operation": "Update",
+                                          "subresource": null,
+                                          "time": "2023-11-16T04:41:12+00:00"
+                                    },
+                                    {
+                                          "api_version": "v1",
+                                          "fields_type": "FieldsV1",
+                                          "fields_v1": {
+                                                "f:status": {
+                                                      "f:conditions": {
+                                                            "k:{\"type\":\"ContainersReady\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            },
+                                                            "k:{\"type\":\"Initialized\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            },
+                                                            "k:{\"type\":\"Ready\"}": {
+                                                                  ".": {},
+                                                                  "f:lastProbeTime": {},
+                                                                  "f:lastTransitionTime": {},
+                                                                  "f:status": {},
+                                                                  "f:type": {}
+                                                            }
+                                                      },
+                                                      "f:containerStatuses": {},
+                                                      "f:hostIP": {},
+                                                      "f:phase": {},
+                                                      "f:podIP": {},
+                                                      "f:podIPs": {
+                                                            ".": {},
+                                                            "k:{\"ip\":\"10.244.4.2\"}": {
+                                                                  ".": {},
+                                                                  "f:ip": {}
+                                                            }
+                                                      },
+                                                      "f:startTime": {}
+                                                }
+                                          },
+                                          "manager": "kubelet",
+                                          "operation": "Update",
+                                          "subresource": "status",
+                                          "time": "2023-11-16T04:41:20+00:00"
+                                    }
+                              ],
+                              "name": "rabbitmq-controller-794b558dbc-8j9mb",
+                              "namespace": "rabbitmq",
+                              "owner_references": [
+                                    {
+                                          "api_version": "apps/v1",
+                                          "block_owner_deletion": true,
+                                          "controller": true,
+                                          "kind": "ReplicaSet",
+                                          "name": "rabbitmq-controller-794b558dbc",
+                                          "uid": "cf47f700-4253-4bed-8213-c168f81ea38f"
+                                    }
+                              ],
+                              "resource_version": "871",
+                              "self_link": null,
+                              "uid": "0402e267-54c5-4a42-b573-37af89b89760"
+                        },
+                        "spec": {
+                              "active_deadline_seconds": null,
+                              "affinity": null,
+                              "automount_service_account_token": null,
+                              "containers": [
+                                    {
+                                          "args": null,
+                                          "command": null,
+                                          "env": null,
+                                          "env_from": null,
+                                          "image": "ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35",
+                                          "image_pull_policy": "IfNotPresent",
+                                          "lifecycle": null,
+                                          "liveness_probe": null,
+                                          "name": "controller",
+                                          "ports": null,
+                                          "readiness_probe": null,
+                                          "resources": {
+                                                "claims": null,
+                                                "limits": null,
+                                                "requests": null
+                                          },
+                                          "security_context": null,
+                                          "startup_probe": null,
+                                          "stdin": null,
+                                          "stdin_once": null,
+                                          "termination_message_path": "/dev/termination-log",
+                                          "termination_message_policy": "File",
+                                          "tty": null,
+                                          "volume_devices": null,
+                                          "volume_mounts": [
+                                                {
+                                                      "mount_path": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                                      "mount_propagation": null,
+                                                      "name": "kube-api-access-69wh2",
+                                                      "read_only": true,
+                                                      "sub_path": null,
+                                                      "sub_path_expr": null
+                                                }
+                                          ],
+                                          "working_dir": null
+                                    }
+                              ],
+                              "dns_config": null,
+                              "dns_policy": "ClusterFirst",
+                              "enable_service_links": true,
+                              "ephemeral_containers": null,
+                              "host_aliases": null,
+                              "host_ipc": null,
+                              "host_network": null,
+                              "host_pid": null,
+                              "host_users": null,
+                              "hostname": null,
+                              "image_pull_secrets": null,
+                              "init_containers": null,
+                              "node_name": "acto-0-cluster-7-worker4",
+                              "node_selector": null,
+                              "os": null,
+                              "overhead": null,
+                              "preemption_policy": "PreemptLowerPriority",
+                              "priority": 0,
+                              "priority_class_name": null,
+                              "readiness_gates": null,
+                              "resource_claims": null,
+                              "restart_policy": "Always",
+                              "runtime_class_name": null,
+                              "scheduler_name": "default-scheduler",
+                              "scheduling_gates": null,
+                              "security_context": {
+                                    "fs_group": null,
+                                    "fs_group_change_policy": null,
+                                    "run_as_group": null,
+                                    "run_as_non_root": null,
+                                    "run_as_user": null,
+                                    "se_linux_options": null,
+                                    "seccomp_profile": null,
+                                    "supplemental_groups": null,
+                                    "sysctls": null,
+                                    "windows_options": null
+                              },
+                              "service_account": "rabbitmq-controller",
+                              "service_account_name": "rabbitmq-controller",
+                              "set_hostname_as_fqdn": null,
+                              "share_process_namespace": null,
+                              "subdomain": null,
+                              "termination_grace_period_seconds": 30,
+                              "tolerations": [
+                                    {
+                                          "effect": "NoExecute",
+                                          "key": "node.kubernetes.io/not-ready",
+                                          "operator": "Exists",
+                                          "toleration_seconds": 300,
+                                          "value": null
+                                    },
+                                    {
+                                          "effect": "NoExecute",
+                                          "key": "node.kubernetes.io/unreachable",
+                                          "operator": "Exists",
+                                          "toleration_seconds": 300,
+                                          "value": null
+                                    }
+                              ],
+                              "topology_spread_constraints": null,
+                              "volumes": [
+                                    {
+                                          "aws_elastic_block_store": null,
+                                          "azure_disk": null,
+                                          "azure_file": null,
+                                          "cephfs": null,
+                                          "cinder": null,
+                                          "config_map": null,
+                                          "csi": null,
+                                          "downward_api": null,
+                                          "empty_dir": null,
+                                          "ephemeral": null,
+                                          "fc": null,
+                                          "flex_volume": null,
+                                          "flocker": null,
+                                          "gce_persistent_disk": null,
+                                          "git_repo": null,
+                                          "glusterfs": null,
+                                          "host_path": null,
+                                          "iscsi": null,
+                                          "name": "kube-api-access-69wh2",
+                                          "nfs": null,
+                                          "persistent_volume_claim": null,
+                                          "photon_persistent_disk": null,
+                                          "portworx_volume": null,
+                                          "projected": {
+                                                "default_mode": 420,
+                                                "sources": [
+                                                      {
+                                                            "config_map": null,
+                                                            "downward_api": null,
+                                                            "secret": null,
+                                                            "service_account_token": {
+                                                                  "audience": null,
+                                                                  "expiration_seconds": 3607,
+                                                                  "path": "token"
+                                                            }
+                                                      },
+                                                      {
+                                                            "config_map": {
+                                                                  "items": [
+                                                                        {
+                                                                              "key": "ca.crt",
+                                                                              "mode": null,
+                                                                              "path": "ca.crt"
+                                                                        }
+                                                                  ],
+                                                                  "name": "kube-root-ca.crt",
+                                                                  "optional": null
+                                                            },
+                                                            "downward_api": null,
+                                                            "secret": null,
+                                                            "service_account_token": null
+                                                      },
+                                                      {
+                                                            "config_map": null,
+                                                            "downward_api": {
+                                                                  "items": [
+                                                                        {
+                                                                              "field_ref": {
+                                                                                    "api_version": "v1",
+                                                                                    "field_path": "metadata.namespace"
+                                                                              },
+                                                                              "mode": null,
+                                                                              "path": "namespace",
+                                                                              "resource_field_ref": null
+                                                                        }
+                                                                  ]
+                                                            },
+                                                            "secret": null,
+                                                            "service_account_token": null
+                                                      }
+                                                ]
+                                          },
+                                          "quobyte": null,
+                                          "rbd": null,
+                                          "scale_io": null,
+                                          "secret": null,
+                                          "storageos": null,
+                                          "vsphere_volume": null
+                                    }
+                              ]
+                        },
+                        "status": {
+                              "conditions": [
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-16T04:41:12+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "Initialized"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-16T04:41:20+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "Ready"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-16T04:41:20+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "ContainersReady"
+                                    },
+                                    {
+                                          "last_probe_time": null,
+                                          "last_transition_time": "2023-11-16T04:41:12+00:00",
+                                          "message": null,
+                                          "reason": null,
+                                          "status": "True",
+                                          "type": "PodScheduled"
+                                    }
+                              ],
+                              "container_statuses": [
+                                    {
+                                          "container_id": "containerd://6d5d7566d0e5360c281b0779baf166967c5f8cf4bd0763dd299239937ce68910",
+                                          "image": "ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35",
+                                          "image_id": "ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller@sha256:519c3c8feeb37145a75bc1212e434752adc26b34c5a04732dce2a168fc4f2107",
+                                          "last_state": {
+                                                "running": null,
+                                                "terminated": null,
+                                                "waiting": null
+                                          },
+                                          "name": "controller",
+                                          "ready": true,
+                                          "restart_count": 0,
+                                          "started": true,
+                                          "state": {
+                                                "running": {
+                                                      "started_at": "2023-11-16T04:41:20+00:00"
+                                                },
+                                                "terminated": null,
+                                                "waiting": null
+                                          }
+                                    }
+                              ],
+                              "ephemeral_container_statuses": null,
+                              "host_ip": "172.18.0.17",
+                              "init_container_statuses": null,
+                              "message": null,
+                              "nominated_node_name": null,
+                              "phase": "Running",
+                              "pod_ip": "10.244.4.2",
+                              "pod_i_ps": [
+                                    {
+                                          "ip": "10.244.4.2"
+                                    }
+                              ],
+                              "qos_class": "BestEffort",
+                              "reason": null,
+                              "start_time": "2023-11-16T04:41:12+00:00"
+                        }
+                  }
+            ]
+      },
+      "daemonset_pods": {},
+      "stateful_set": {},
+      "deployment": {
+            "rabbitmq-controller": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "deployment.kubernetes.io/revision": "2"
+                        },
+                        "creation_timestamp": "2023-11-16T04:40:57+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": 2,
+                        "labels": {
+                              "acto/tag": "operator-deployment",
+                              "app.kubernetes.io/name": "rabbitmq-controller"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:app.kubernetes.io/name": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:replicas": {},
+                                                "f:selector": {},
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:app.kubernetes.io/name": {}
+                                                            }
+                                                      },
+                                                      "f:spec": {
+                                                            "f:containers": {
+                                                                  "k:{\"name\":\"controller\"}": {
+                                                                        ".": {},
+                                                                        "f:image": {},
+                                                                        "f:imagePullPolicy": {},
+                                                                        "f:name": {}
+                                                                  }
+                                                            },
+                                                            "f:serviceAccountName": {}
+                                                      }
+                                                }
+                                          }
+                                    },
+                                    "manager": "kubectl",
+                                    "operation": "Apply",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:40:57+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:acto/tag": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:template": {
+                                                      "f:metadata": {
+                                                            "f:labels": {
+                                                                  "f:acto/tag": {}
+                                                            }
+                                                      }
+                                                }
+                                          }
+                                    },
+                                    "manager": "OpenAPI-Generator",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:12+00:00"
+                              },
+                              {
+                                    "api_version": "apps/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:deployment.kubernetes.io/revision": {}
+                                                }
+                                          },
+                                          "f:status": {
+                                                "f:availableReplicas": {},
+                                                "f:conditions": {
+                                                      ".": {},
+                                                      "k:{\"type\":\"Available\"}": {
+                                                            ".": {},
+                                                            "f:lastTransitionTime": {},
+                                                            "f:lastUpdateTime": {},
+                                                            "f:message": {},
+                                                            "f:reason": {},
+                                                            "f:status": {},
+                                                            "f:type": {}
+                                                      },
+                                                      "k:{\"type\":\"Progressing\"}": {
+                                                            ".": {},
+                                                            "f:lastTransitionTime": {},
+                                                            "f:lastUpdateTime": {},
+                                                            "f:message": {},
+                                                            "f:reason": {},
+                                                            "f:status": {},
+                                                            "f:type": {}
+                                                      }
+                                                },
+                                                "f:observedGeneration": {},
+                                                "f:readyReplicas": {},
+                                                "f:replicas": {},
+                                                "f:updatedReplicas": {}
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": "status",
+                                    "time": "2023-11-16T04:41:20+00:00"
+                              }
+                        ],
+                        "name": "rabbitmq-controller",
+                        "namespace": "rabbitmq",
+                        "owner_references": null,
+                        "resource_version": "881",
+                        "self_link": null,
+                        "uid": "2fb69a50-4b3b-405f-8d91-ef1a314f47bf"
+                  },
+                  "spec": {
+                        "min_ready_seconds": null,
+                        "paused": null,
+                        "progress_deadline_seconds": 600,
+                        "replicas": 1,
+                        "revision_history_limit": 10,
+                        "selector": {
+                              "match_expressions": null,
+                              "match_labels": {
+                                    "app.kubernetes.io/name": "rabbitmq-controller"
+                              }
+                        },
+                        "strategy": {
+                              "rolling_update": {
+                                    "max_surge": "25%",
+                                    "max_unavailable": "25%"
+                              },
+                              "type": "RollingUpdate"
+                        },
+                        "template": {
+                              "metadata": {
+                                    "annotations": null,
+                                    "creation_timestamp": null,
+                                    "deletion_grace_period_seconds": null,
+                                    "deletion_timestamp": null,
+                                    "finalizers": null,
+                                    "generate_name": null,
+                                    "generation": null,
+                                    "labels": {
+                                          "acto/tag": "operator-pod",
+                                          "app.kubernetes.io/name": "rabbitmq-controller"
+                                    },
+                                    "managed_fields": null,
+                                    "name": null,
+                                    "namespace": null,
+                                    "owner_references": null,
+                                    "resource_version": null,
+                                    "self_link": null,
+                                    "uid": null
+                              },
+                              "spec": {
+                                    "active_deadline_seconds": null,
+                                    "affinity": null,
+                                    "automount_service_account_token": null,
+                                    "containers": [
+                                          {
+                                                "args": null,
+                                                "command": null,
+                                                "env": null,
+                                                "env_from": null,
+                                                "image": "ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35",
+                                                "image_pull_policy": "IfNotPresent",
+                                                "lifecycle": null,
+                                                "liveness_probe": null,
+                                                "name": "controller",
+                                                "ports": null,
+                                                "readiness_probe": null,
+                                                "resources": {
+                                                      "claims": null,
+                                                      "limits": null,
+                                                      "requests": null
+                                                },
+                                                "security_context": null,
+                                                "startup_probe": null,
+                                                "stdin": null,
+                                                "stdin_once": null,
+                                                "termination_message_path": "/dev/termination-log",
+                                                "termination_message_policy": "File",
+                                                "tty": null,
+                                                "volume_devices": null,
+                                                "volume_mounts": null,
+                                                "working_dir": null
+                                          }
+                                    ],
+                                    "dns_config": null,
+                                    "dns_policy": "ClusterFirst",
+                                    "enable_service_links": null,
+                                    "ephemeral_containers": null,
+                                    "host_aliases": null,
+                                    "host_ipc": null,
+                                    "host_network": null,
+                                    "host_pid": null,
+                                    "host_users": null,
+                                    "hostname": null,
+                                    "image_pull_secrets": null,
+                                    "init_containers": null,
+                                    "node_name": null,
+                                    "node_selector": null,
+                                    "os": null,
+                                    "overhead": null,
+                                    "preemption_policy": null,
+                                    "priority": null,
+                                    "priority_class_name": null,
+                                    "readiness_gates": null,
+                                    "resource_claims": null,
+                                    "restart_policy": "Always",
+                                    "runtime_class_name": null,
+                                    "scheduler_name": "default-scheduler",
+                                    "scheduling_gates": null,
+                                    "security_context": {
+                                          "fs_group": null,
+                                          "fs_group_change_policy": null,
+                                          "run_as_group": null,
+                                          "run_as_non_root": null,
+                                          "run_as_user": null,
+                                          "se_linux_options": null,
+                                          "seccomp_profile": null,
+                                          "supplemental_groups": null,
+                                          "sysctls": null,
+                                          "windows_options": null
+                                    },
+                                    "service_account": "rabbitmq-controller",
+                                    "service_account_name": "rabbitmq-controller",
+                                    "set_hostname_as_fqdn": null,
+                                    "share_process_namespace": null,
+                                    "subdomain": null,
+                                    "termination_grace_period_seconds": 30,
+                                    "tolerations": null,
+                                    "topology_spread_constraints": null,
+                                    "volumes": null
+                              }
+                        }
+                  },
+                  "status": {
+                        "available_replicas": 1,
+                        "collision_count": null,
+                        "conditions": [
+                              {
+                                    "last_transition_time": "2023-11-16T04:41:10+00:00",
+                                    "last_update_time": "2023-11-16T04:41:10+00:00",
+                                    "message": "Deployment has minimum availability.",
+                                    "reason": "MinimumReplicasAvailable",
+                                    "status": "True",
+                                    "type": "Available"
+                              },
+                              {
+                                    "last_transition_time": "2023-11-16T04:40:57+00:00",
+                                    "last_update_time": "2023-11-16T04:41:20+00:00",
+                                    "message": "ReplicaSet \"rabbitmq-controller-794b558dbc\" has successfully progressed.",
+                                    "reason": "NewReplicaSetAvailable",
+                                    "status": "True",
+                                    "type": "Progressing"
+                              }
+                        ],
+                        "observed_generation": 2,
+                        "ready_replicas": 1,
+                        "replicas": 1,
+                        "unavailable_replicas": null,
+                        "updated_replicas": 1
+                  }
+            }
+      },
+      "daemon_set": {},
+      "config_map": {
+            "kube-root-ca.crt": {
+                  "api_version": null,
+                  "binary_data": null,
+                  "data": {
+                        "ca.crt": "-----BEGIN CERTIFICATE-----\nMIIC/jCCAeagAwIBAgIBADANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwprdWJl\ncm5ldGVzMB4XDTIzMTExNjA0MzkyOFoXDTMzMTExMzA0MzkyOFowFTETMBEGA1UE\nAxMKa3ViZXJuZXRlczCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAMAT\nIoqDLWRxtvHKy+kMoV6zebZ7Z/EP4IkC3HRU8SfCNkeuRXsH8sfwRGMOYFCLMVxW\nC7mC13VL6bFe+z238rX93yrlg0AbKkoYBC696Vb7L3my4uOgzoRewgOvTLMb/BO4\nS/pc/qlP3PqOu9k43FlIy4rkotqnxKqZzHPH7DWzRm36QfaFbY6MIxYKwVBvZxfr\nFjS91MLPrfBTB85LWHtx9nCbb2Xil2j7Nqync3O6+nfCP0SdZ0PJ4r9NdFK4Tt5B\nkAJjao27iwbPVWeuirLXAgPAW7ppxDIwd/6xC6GaIUH4sa5tocekuHOVcwQKDRUW\nIhGgJWI8qMG29i6PQ8UCAwEAAaNZMFcwDgYDVR0PAQH/BAQDAgKkMA8GA1UdEwEB\n/wQFMAMBAf8wHQYDVR0OBBYEFG4Da5t3mzdM6vzRzRlEwwOWwFDjMBUGA1UdEQQO\nMAyCCmt1YmVybmV0ZXMwDQYJKoZIhvcNAQELBQADggEBABVMTlyS24l62MM3Yfco\n1nEjv9HnOWDRa6YThReNh7v6P2+o5+Pjvb5Cx+ZBrzzqPKr0qP6GKTekubUqXMT/\noI9LvfyDnehmPvjqA1Lj5eQLD+SVLk5Ce1ibDklZSGZYLG/SMatKFMgh4ldFlZ+J\nu8YE1nYTgLkeS/beVSS7ynarMinwPt+WZaYI5tL6NW1xfpWGjKg9K/NiPTnkL/9f\nZuQawGz6C4s2798ne16Ffe3LaDZLecpNgU/XNI/PfdFR3J8pSPEQu5fXoAuqPrm7\nhjfhfKUHWh5zRUtTJrB5iautBNIWy3FzG/gS1Z+zm8FDUmK/Jr8Uf6/leQrVgJXK\nVr4=\n-----END CERTIFICATE-----\n"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "kubernetes.io/description": "Contains a CA bundle that can be used to verify the kube-apiserver when using internal endpoints such as the internal service IP or kubernetes.default.svc. No other usage is guaranteed across distributions of Kubernetes clusters."
+                        },
+                        "creation_timestamp": "2023-11-16T04:40:55+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:ca.crt": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:kubernetes.io/description": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:40:55+00:00"
+                              }
+                        ],
+                        "name": "kube-root-ca.crt",
+                        "namespace": "rabbitmq",
+                        "owner_references": null,
+                        "resource_version": "775",
+                        "self_link": null,
+                        "uid": "0dacfa6f-c9d9-4b16-8cb4-cf16c23543e5"
+                  }
+            },
+            "test-cluster-plugins-conf": {
+                  "api_version": null,
+                  "binary_data": null,
+                  "data": {
+                        "enabled_plugins": "[rabbitmq_peer_discovery_k8s,rabbitmq_prometheus,rabbitmq_management]."
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:enabled_plugins": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-plugins-conf",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "901",
+                        "self_link": null,
+                        "uid": "217cee0e-7ce7-49fa-8448-0c27720842fb"
+                  }
+            },
+            "test-cluster-server-conf": {
+                  "api_version": null,
+                  "binary_data": null,
+                  "data": {
+                        "operatorDefaults.conf": "queue_master_locator = min-masters\ndisk_free_limit.absolute = 2GB\ncluster_partition_handling = pause_minority\ncluster_formation.peer_discovery_backend = rabbit_peer_discovery_k8s\ncluster_formation.k8s.host = kubernetes.default\ncluster_formation.k8s.address_type = hostname\ncluster_formation.target_cluster_size_hint = 3\ncluster_name = test-cluster\n",
+                        "userDefinedConfiguration.conf": "total_memory_available_override_value = 1717986919\nlog.console.level = debug\n"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:operatorDefaults.conf": {},
+                                                "f:userDefinedConfiguration.conf": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-server-conf",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "902",
+                        "self_link": null,
+                        "uid": "c76681e0-8cdc-4e2a-b644-8703d6af419d"
+                  }
+            }
+      },
+      "service": {
+            "test-cluster-client": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:internalTrafficPolicy": {},
+                                                "f:ports": {
+                                                      ".": {},
+                                                      "k:{\"port\":5672,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:appProtocol": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":15672,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:appProtocol": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":15692,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:appProtocol": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      }
+                                                },
+                                                "f:publishNotReadyAddresses": {},
+                                                "f:selector": {},
+                                                "f:sessionAffinity": {},
+                                                "f:type": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-client",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "896",
+                        "self_link": null,
+                        "uid": "df828c9c-42e9-4308-a970-0954618174a0"
+                  },
+                  "spec": {
+                        "allocate_load_balancer_node_ports": null,
+                        "cluster_ip": "10.96.131.223",
+                        "cluster_i_ps": [
+                              "10.96.131.223"
+                        ],
+                        "external_i_ps": null,
+                        "external_name": null,
+                        "external_traffic_policy": null,
+                        "health_check_node_port": null,
+                        "internal_traffic_policy": "Cluster",
+                        "ip_families": [
+                              "IPv4"
+                        ],
+                        "ip_family_policy": "SingleStack",
+                        "load_balancer_class": null,
+                        "load_balancer_ip": null,
+                        "load_balancer_source_ranges": null,
+                        "ports": [
+                              {
+                                    "app_protocol": "amqp",
+                                    "name": "amqp",
+                                    "node_port": null,
+                                    "port": 5672,
+                                    "protocol": "TCP",
+                                    "target_port": 5672
+                              },
+                              {
+                                    "app_protocol": "http",
+                                    "name": "management",
+                                    "node_port": null,
+                                    "port": 15672,
+                                    "protocol": "TCP",
+                                    "target_port": 15672
+                              },
+                              {
+                                    "app_protocol": "prometheus.io/metrics",
+                                    "name": "prometheus",
+                                    "node_port": null,
+                                    "port": 15692,
+                                    "protocol": "TCP",
+                                    "target_port": 15692
+                              }
+                        ],
+                        "publish_not_ready_addresses": true,
+                        "selector": {
+                              "app": "test-cluster"
+                        },
+                        "session_affinity": "None",
+                        "session_affinity_config": null,
+                        "type": "ClusterIP"
+                  },
+                  "status": {
+                        "conditions": null,
+                        "load_balancer": {
+                              "ingress": null
+                        }
+                  }
+            },
+            "test-cluster-nodes": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          },
+                                          "f:spec": {
+                                                "f:clusterIP": {},
+                                                "f:internalTrafficPolicy": {},
+                                                "f:ports": {
+                                                      ".": {},
+                                                      "k:{\"port\":4369,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      },
+                                                      "k:{\"port\":25672,\"protocol\":\"TCP\"}": {
+                                                            ".": {},
+                                                            "f:name": {},
+                                                            "f:port": {},
+                                                            "f:protocol": {},
+                                                            "f:targetPort": {}
+                                                      }
+                                                },
+                                                "f:publishNotReadyAddresses": {},
+                                                "f:selector": {},
+                                                "f:sessionAffinity": {},
+                                                "f:type": {}
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-nodes",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "892",
+                        "self_link": null,
+                        "uid": "44833fd5-8c0c-4144-9409-ea64c5a1260e"
+                  },
+                  "spec": {
+                        "allocate_load_balancer_node_ports": null,
+                        "cluster_ip": "None",
+                        "cluster_i_ps": [
+                              "None"
+                        ],
+                        "external_i_ps": null,
+                        "external_name": null,
+                        "external_traffic_policy": null,
+                        "health_check_node_port": null,
+                        "internal_traffic_policy": "Cluster",
+                        "ip_families": [
+                              "IPv4"
+                        ],
+                        "ip_family_policy": "SingleStack",
+                        "load_balancer_class": null,
+                        "load_balancer_ip": null,
+                        "load_balancer_source_ranges": null,
+                        "ports": [
+                              {
+                                    "app_protocol": null,
+                                    "name": "epmd",
+                                    "node_port": null,
+                                    "port": 4369,
+                                    "protocol": "TCP",
+                                    "target_port": 4369
+                              },
+                              {
+                                    "app_protocol": null,
+                                    "name": "cluster-rpc",
+                                    "node_port": null,
+                                    "port": 25672,
+                                    "protocol": "TCP",
+                                    "target_port": 25672
+                              }
+                        ],
+                        "publish_not_ready_addresses": true,
+                        "selector": {
+                              "app": "test-cluster"
+                        },
+                        "session_affinity": "None",
+                        "session_affinity_config": null,
+                        "type": "ClusterIP"
+                  },
+                  "status": {
+                        "conditions": null,
+                        "load_balancer": {
+                              "ingress": null
+                        }
+                  }
+            }
+      },
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {
+            "test-cluster-default-user": {
+                  "api_version": null,
+                  "data": {
+                        "default_user.conf": "default_user = user\ndefault_pass = changeme",
+                        "host": "test-cluster.rabbitmq.svc",
+                        "password": "changeme",
+                        "port": "5672",
+                        "provider": "rabbitmq",
+                        "type": "rabbitmq",
+                        "username": "user"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:default_user.conf": {},
+                                                "f:host": {},
+                                                "f:password": {},
+                                                "f:port": {},
+                                                "f:provider": {},
+                                                "f:type": {},
+                                                "f:username": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          },
+                                          "f:type": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-default-user",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "900",
+                        "self_link": null,
+                        "uid": "89316a0c-2b43-4c4a-89a6-85fdaf7858eb"
+                  },
+                  "string_data": null,
+                  "type": "Opaque"
+            },
+            "test-cluster-erlang-cookie": {
+                  "api_version": null,
+                  "data": {
+                        ".erlang.cookie": "hp58yWqULbZd+l2OySSm7wZJT4QKCHuT"
+                  },
+                  "immutable": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:data": {
+                                                ".": {},
+                                                "f:.erlang.cookie": {}
+                                          },
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          },
+                                          "f:type": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-erlang-cookie",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "899",
+                        "self_link": null,
+                        "uid": "ee0b43a1-daf2-44b4-b5be-59ba1c9e8bc3"
+                  },
+                  "string_data": null,
+                  "type": "Opaque"
+            }
+      },
+      "endpoints": {
+            "test-cluster-client": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "endpoints.kubernetes.io/last-change-trigger-time": "2023-11-16T04:41:25Z"
+                        },
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                },
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-client",
+                        "namespace": "rabbitmq",
+                        "owner_references": null,
+                        "resource_version": "897",
+                        "self_link": null,
+                        "uid": "596088b9-c4c5-4fda-9f4d-0a2b5b3d6f42"
+                  },
+                  "subsets": null
+            },
+            "test-cluster-nodes": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": {
+                              "endpoints.kubernetes.io/last-change-trigger-time": "2023-11-16T04:41:25Z"
+                        },
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster",
+                              "service.kubernetes.io/headless": ""
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:annotations": {
+                                                      ".": {},
+                                                      "f:endpoints.kubernetes.io/last-change-trigger-time": {}
+                                                },
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {},
+                                                      "f:service.kubernetes.io/headless": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kube-controller-manager",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-nodes",
+                        "namespace": "rabbitmq",
+                        "owner_references": null,
+                        "resource_version": "893",
+                        "self_link": null,
+                        "uid": "c676a849-3e97-4bee-91fe-5a708f2e1315"
+                  },
+                  "subsets": null
+            }
+      },
+      "service_account": {
+            "default": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:40:55+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": null,
+                        "managed_fields": null,
+                        "name": "default",
+                        "namespace": "rabbitmq",
+                        "owner_references": null,
+                        "resource_version": "774",
+                        "self_link": null,
+                        "uid": "37be0989-8361-43cc-9bf7-dffba24e009f"
+                  },
+                  "secrets": null
+            },
+            "rabbitmq-controller": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:40:57+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app.kubernetes.io/name": "rabbitmq-controller"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      "f:app.kubernetes.io/name": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "kubectl",
+                                    "operation": "Apply",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:40:57+00:00"
+                              }
+                        ],
+                        "name": "rabbitmq-controller",
+                        "namespace": "rabbitmq",
+                        "owner_references": null,
+                        "resource_version": "779",
+                        "self_link": null,
+                        "uid": "93138640-29eb-4dd3-ada3-289555a50122"
+                  },
+                  "secrets": null
+            },
+            "test-cluster-server": {
+                  "api_version": null,
+                  "automount_service_account_token": null,
+                  "image_pull_secrets": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          }
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-server",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "903",
+                        "self_link": null,
+                        "uid": "3a5dd1c4-be74-43a3-b39f-43d16d5bb279"
+                  },
+                  "secrets": null
+            }
+      },
+      "job": {},
+      "role": {
+            "test-cluster-peer-discovery": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "rbac.authorization.k8s.io/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          },
+                                          "f:rules": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-peer-discovery",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "904",
+                        "self_link": null,
+                        "uid": "5807236a-0ab4-4bba-8f20-3084a4b2131f"
+                  },
+                  "rules": [
+                        {
+                              "api_groups": [
+                                    ""
+                              ],
+                              "non_resource_ur_ls": null,
+                              "resource_names": null,
+                              "resources": [
+                                    "endpoints"
+                              ],
+                              "verbs": [
+                                    "get"
+                              ]
+                        },
+                        {
+                              "api_groups": [
+                                    ""
+                              ],
+                              "non_resource_ur_ls": null,
+                              "resource_names": null,
+                              "resources": [
+                                    "events"
+                              ],
+                              "verbs": [
+                                    "create"
+                              ]
+                        }
+                  ]
+            }
+      },
+      "role_binding": {
+            "test-cluster-server": {
+                  "api_version": null,
+                  "kind": null,
+                  "metadata": {
+                        "annotations": null,
+                        "creation_timestamp": "2023-11-16T04:41:25+00:00",
+                        "deletion_grace_period_seconds": null,
+                        "deletion_timestamp": null,
+                        "finalizers": null,
+                        "generate_name": null,
+                        "generation": null,
+                        "labels": {
+                              "app": "test-cluster"
+                        },
+                        "managed_fields": [
+                              {
+                                    "api_version": "rbac.authorization.k8s.io/v1",
+                                    "fields_type": "FieldsV1",
+                                    "fields_v1": {
+                                          "f:metadata": {
+                                                "f:labels": {
+                                                      ".": {},
+                                                      "f:app": {}
+                                                },
+                                                "f:ownerReferences": {
+                                                      ".": {},
+                                                      "k:{\"uid\":\"067cbf4b-c15b-4ea4-b245-d253b0dbb077\"}": {}
+                                                }
+                                          },
+                                          "f:roleRef": {},
+                                          "f:subjects": {}
+                                    },
+                                    "manager": "unknown",
+                                    "operation": "Update",
+                                    "subresource": null,
+                                    "time": "2023-11-16T04:41:25+00:00"
+                              }
+                        ],
+                        "name": "test-cluster-server",
+                        "namespace": "rabbitmq",
+                        "owner_references": [
+                              {
+                                    "api_version": "anvil.dev/v1",
+                                    "block_owner_deletion": null,
+                                    "controller": true,
+                                    "kind": "RabbitmqCluster",
+                                    "name": "test-cluster",
+                                    "uid": "067cbf4b-c15b-4ea4-b245-d253b0dbb077"
+                              }
+                        ],
+                        "resource_version": "905",
+                        "self_link": null,
+                        "uid": "6b4a988f-78c0-4dcc-a98d-159ab4923ab1"
+                  },
+                  "role_ref": {
+                        "api_group": "rbac.authorization.k8s.io",
+                        "kind": "Role",
+                        "name": "test-cluster-peer-discovery"
+                  },
+                  "subjects": [
+                        {
+                              "api_group": null,
+                              "kind": "ServiceAccount",
+                              "name": "test-cluster-server",
+                              "namespace": "rabbitmq"
+                        }
+                  ]
+            }
+      },
+      "custom_resource_spec": {
+            "annotations": {},
+            "image": "rabbitmq:3.11.10-management",
+            "labels": {},
+            "persistence": {
+                  "storage": "10Gi",
+                  "storageClassName": "standard"
+            },
+            "podManagementPolicy": "Parallel",
+            "rabbitmqConfig": {
+                  "additionalConfig": "log.console.level = debug\n"
+            },
+            "replicas": 3,
+            "resources": {
+                  "claims": [],
+                  "limits": {
+                        "ACTOKEY": ".700404e-.1953"
+                  },
+                  "requests": {
+                        "ACTOKEY": "+090925.4576Ki"
+                  }
+            }
+      },
+      "custom_resource_status": null
+}

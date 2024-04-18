@@ -1,0 +1,14 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  readinessProbe:
+    exec:
+      command:
+      - /liveness.sh
+    initialDelaySeconds: 10
+  tolerations:
+  - operator: Exists

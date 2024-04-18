@@ -1,0 +1,124 @@
+Trial number,testcase,baseline_alarm,baseline_crash_result,baseline_health_result,baseline_recovery_result,baseline_state_result,baseline_custom_result
+compare-results-324e3ba3a957a38cc236117f9c7c9950.json,,True,Pass,Pass,"{'dictionary_item_removed': [""root['pod']['test-cluster-server-0']"", ""root['pod']['test-cluster-server-1']"", ""root['pod']['test-cluster-server-2']"", ""root['stateful_set']['test-cluster-server']""]}",Pass,Pass
+trial-00-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-00-0000,"{'field': '[""spec"", ""rabbitmqConfig"", ""additionalConfig""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-00-0000,"{'field': '[""spec"", ""rabbitmqConfig"", ""additionalConfig""]', 'testcase': 'string-change'}",True,Pod test-cluster-server-2 crashed,statefulset: test-cluster-server replicas [3] ready_replicas [2],Pass,Pass,Pass
+trial-00-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-00-0001,"{'field': '[""spec"", ""rabbitmqConfig"", ""additionalConfig""]', 'testcase': 'string-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-00-0001,"{'field': '[""spec"", ""resources"", ""limits""]', 'testcase': 'object-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-00-0002,,False,Pass,Pass,Pass,Pass,Pass
+trial-00-0002,"{'field': '[""spec"", ""resources"", ""requests"", ""ACTOKEY""]', 'testcase': 'string-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-00-0002,"{'field': '[""spec"", ""resources"", ""limits""]', 'testcase': 'object-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-00-0003,,False,Pass,Pass,Pass,Pass,Pass
+trial-00-0003,"{'field': '[""spec"", ""resources"", ""requests"", ""ACTOKEY""]', 'testcase': 'string-change'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-00-0004,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-00-0004,,False,Pass,Pass,Pass,Pass,Pass
+trial-00-0004,"{'field': '[""spec"", ""persistence""]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-01-0000,"{'field': '[""spec"", ""resources"", ""limits"", ""ACTOKEY""]', 'testcase': 'string-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-01-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-01-0000,"{'field': '[""spec"", ""tolerations""]', 'testcase': 'array-pop'}",False,Pass,Pass,Pass,Pass,Pass
+trial-01-0000,"{'field': '[""spec"", ""tolerations""]', 'testcase': 'array-push'}",False,Pass,Pass,Pass,Pass,Pass
+trial-01-0000,"{'field': '[""spec"", ""tolerations""]', 'testcase': 'array-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-01-0000,"{'field': '[""spec"", ""tolerations""]', 'testcase': 'array-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-01-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-01-0001,"{'field': '[""spec"", ""resources"", ""limits"", ""ACTOKEY""]', 'testcase': 'string-change'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-01-0002,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-01-0002,,False,Pass,Pass,Pass,Pass,Pass
+trial-01-0002,"{'field': '[""spec"", ""image""]', 'testcase': 'string-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-01-0003,,False,Pass,Pass,Pass,Pass,Pass
+trial-01-0003,"{'field': '[""spec"", ""image""]', 'testcase': 'string-change'}",True,Pass,"statefulset: test-cluster-server replicas [3] ready_replicas [2]
+pod: test-cluster-server-2",Pass,Pass,Pass
+trial-01-0004,,False,Pass,Pass,Pass,Pass,Pass
+trial-01-0004,"{'field': '[""spec"", ""image""]', 'testcase': 'string-empty'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-02-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-02-0000,"{'field': '[""spec"", ""affinity""]', 'testcase': 'object-deletion'}",True,Pass,"statefulset: test-cluster-server replicas [3] ready_replicas [2]
+pod: test-cluster-server-2",Pass,Pass,Pass
+trial-02-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""annotations"", ""ACTOKEY""]', 'testcase': 'string-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""annotations"", ""ACTOKEY""]', 'testcase': 'string-change'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""resources"", ""claims"", 0, ""name""]', 'testcase': 'string-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""resources"", ""claims"", 0, ""name""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""annotations"", ""ACTOKEY""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""annotations"", ""ACTOKEY""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""affinity""]', 'testcase': 'object-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""resources"", ""claims"", 0, ""name""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-02-0001,"{'field': '[""spec"", ""resources"", ""claims"", 0, ""name""]', 'testcase': 'string-change'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0000,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy"", ""whenScaled""]', 'testcase': 'Delete'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-03-0000,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy"", ""whenScaled""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0000,"{'field': '[""spec"", ""tolerations"", 0]', 'testcase': 'object-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-03-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0000,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy"", ""whenScaled""]', 'testcase': 'Retain'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0000,"{'field': '[""spec"", ""tolerations"", 0]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0001,"{'field': '[""spec"", ""tolerations"", 0]', 'testcase': 'object-empty'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-03-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-03-0002,,False,Pass,Pass,Pass,Pass,Pass
+trial-03-0002,"{'field': '[""spec"", ""rabbitmqConfig"", ""advancedConfig""]', 'testcase': 'string-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-03-0003,"{'field': '[""spec"", ""rabbitmqConfig"", ""advancedConfig""]', 'testcase': 'string-change'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-03-0003,,False,Pass,Pass,Pass,Pass,Pass
+trial-03-0004,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0004,"{'field': '[""spec"", ""rabbitmqConfig"", ""advancedConfig""]', 'testcase': 'string-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0004,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy"", ""whenDeleted""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0004,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy"", ""whenDeleted""]', 'testcase': 'Retain'}",False,Pass,Pass,Pass,Pass,Pass
+trial-03-0004,,False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '[""spec"", ""resources"", ""claims""]', 'testcase': 'array-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy""]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '[""spec"", ""persistentVolumeClaimRetentionPolicy"", ""whenDeleted""]', 'testcase': 'Delete'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0000,"{'field': '[""spec"", ""resources"", ""claims""]', 'testcase': 'array-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-04-0001,"{'field': '[""spec"", ""resources"", ""claims""]', 'testcase': 'array-push'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0001,"{'field': '[""spec"", ""resources"", ""claims""]', 'testcase': 'array-push'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0001,"{'field': '[""spec"", ""resources"", ""claims""]', 'testcase': 'array-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-04-0001,"{'field': '[""spec"", ""resources"", ""claims""]', 'testcase': 'array-pop'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-05-0000,"{'field': '[""spec"", ""resources""]', 'testcase': 'object-deletion'}",True,Pass,Pass,Pass,"['spec', 'resources', 'limits', 'ACTOKEY']",Pass
+trial-05-0001,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0001,"{'field': '[""spec"", ""resources""]', 'testcase': 'object-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0001,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0001,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0001,"{'field': '[""spec"", ""resources"", ""requests""]', 'testcase': 'object-deletion'}",True,Pass,statefulset: test-cluster-server replicas [2] ready_replicas [2],Pass,Pass,Pass
+trial-05-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-05-0002,"{'field': '[""spec"", ""resources"", ""requests""]', 'testcase': 'object-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0002,"{'field': '[""spec"", ""rabbitmqConfig""]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0002,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0002,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0002,"{'field': '[""spec"", ""resources"", ""claims"", 0]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-05-0002,,False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,"{'field': '[""spec"", ""labels"", ""ACTOKEY""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,"{'field': '[""spec"", ""labels"", ""ACTOKEY""]', 'testcase': 'string-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,"{'field': '[""spec"", ""rabbitmqConfig""]', 'testcase': 'object-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,"{'field': '[""spec"", ""labels"", ""ACTOKEY""]', 'testcase': 'string-change'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,"{'field': '[""spec"", ""labels"", ""ACTOKEY""]', 'testcase': 'string-change'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,"{'field': '', 'testcase': 'revert'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,"{'field': '[""spec"", ""labels"", ""ACTOKEY""]', 'testcase': 'string-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,"{'field': '[""spec"", ""annotations""]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-06-0001,"{'field': '[""spec"", ""annotations""]', 'testcase': 'object-deletion'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0000,"{'field': '[""spec"", ""labels""]', 'testcase': 'object-deletion'}",True,Pass,statefulset: test-cluster-server replicas [5] ready_replicas [4],Pass,Pass,Pass
+trial-07-0000,,False,Pass,Pass,Pass,Pass,Pass
+trial-07-0000,"{'field': '[""spec"", ""replicas""]', 'testcase': 'number-change'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0001,"{'field': '[""spec"", ""tolerations""]', 'testcase': 'k8s-tolerations_pop'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0001,"{'field': '[""spec"", ""affinity""]', 'testcase': 'k8s-all_on_one_node'}",True,Pass,"statefulset: test-cluster-server replicas [3] ready_replicas [2]
+pod: test-cluster-server-2",Pass,Pass,Pass
+trial-07-0001,"{'field': '[""spec"", ""tolerations"", 0]', 'testcase': 'k8s-control_plane_toleration'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0001,"{'field': '[""spec"", ""labels""]', 'testcase': 'object-empty'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0001,"{'field': '[""spec"", ""tolerations""]', 'testcase': 'k8s-tolerations_pop'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0001,,False,Pass,Pass,Pass,Pass,Pass
+trial-07-0001,"{'field': '[""spec"", ""tolerations"", 0]', 'testcase': 'k8s-plain_toleration'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0002,"{'field': '[""spec"", ""affinity""]', 'testcase': 'k8s-all_on_different_nodes'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0002,,False,Pass,Pass,Pass,Pass,Pass
+trial-07-0002,"{'field': '[""spec"", ""affinity""]', 'testcase': 'k8s-invalid_affinity'}",True,Pass,"statefulset: test-cluster-server replicas [3] ready_replicas [2]
+pod: test-cluster-server-2",Pass,Pass,Pass
+trial-07-0003,,False,Pass,Pass,Pass,Pass,Pass
+trial-07-0003,"{'field': '[""spec"", ""affinity""]', 'testcase': 'k8s-null_affinity'}",False,Pass,Pass,Pass,Pass,Pass
+trial-07-0003,"{'field': '[""spec"", ""affinity""]', 'testcase': 'k8s-null_affinity'}",False,Pass,Pass,Pass,Pass,Pass

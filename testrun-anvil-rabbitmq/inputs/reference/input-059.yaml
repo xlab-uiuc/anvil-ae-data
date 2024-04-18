@@ -1,0 +1,34 @@
+apiVersion: rabbitmq.com/v1beta1
+kind: RabbitmqCluster
+metadata:
+  name: test-cluster
+  namespace: rabbitmq-system
+spec:
+  image: ghcr.io/xlab-uiuc/rabbitmq:3.11.10-management
+  override:
+    statefulSet:
+      spec:
+        template:
+          metadata:
+            labels: {}
+  persistence:
+    storage: 10Gi
+    storageClassName: null
+  rabbitmq:
+    additionalConfig: 'log.console.level = debug
+
+      '
+  replicas: 3
+  resources:
+    limits:
+      cpu: '2'
+      memory: 2Gi
+    requests:
+      cpu: '1'
+      memory: 2Gi
+  tolerations:
+  - effect: NoExecute
+    key: test-key
+    operator: Equal
+    tolerationSeconds: 3600
+    value: test-value

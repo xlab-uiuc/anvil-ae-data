@@ -1,0 +1,19 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  imagePullSecrets:
+  - name: ''
+  securityContext: {}
+  tolerations:
+  - operator: Exists
+  volumeMounts:
+  - mountPath: ACTOKEY
+    mountPropagation: ACTOKEY
+    name: ACTOKEY
+    readOnly: false
+    subPath: ACTOKEY
+    subPathExpr: ACTOKEY

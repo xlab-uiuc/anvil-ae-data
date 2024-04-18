@@ -1,0 +1,62 @@
+---------- INPUT DELTA  ----------
+{
+      "values_changed": {
+            "root['spec']['persistentVolumeClaimRetentionPolicy']['whenScaled']": {
+                  "prev": "Retain",
+                  "curr": "Delete",
+                  "path": [
+                        "spec",
+                        "persistentVolumeClaimRetentionPolicy",
+                        "whenScaled"
+                  ]
+            }
+      }
+}
+---------- SYSTEM DELTA ----------
+{
+      "pod": {},
+      "deployment_pods": {},
+      "daemonset_pods": {},
+      "stateful_set": {
+            "values_changed": {
+                  "root['test-cluster-server']['spec']['persistent_volume_claim_retention_policy']['when_scaled']": {
+                        "prev": "Retain",
+                        "curr": "Delete",
+                        "path": [
+                              "test-cluster-server",
+                              "spec",
+                              "persistent_volume_claim_retention_policy",
+                              "when_scaled"
+                        ]
+                  }
+            }
+      },
+      "deployment": {},
+      "daemon_set": {},
+      "config_map": {},
+      "service": {},
+      "pvc": {},
+      "cronjob": {},
+      "ingress": {},
+      "network_policy": {},
+      "pod_disruption_budget": {},
+      "secret": {},
+      "endpoints": {},
+      "service_account": {},
+      "job": {},
+      "role": {},
+      "role_binding": {},
+      "custom_resource_spec": {
+            "values_changed": {
+                  "root['persistentVolumeClaimRetentionPolicy']['whenScaled']": {
+                        "prev": "Retain",
+                        "curr": "Delete",
+                        "path": [
+                              "persistentVolumeClaimRetentionPolicy",
+                              "whenScaled"
+                        ]
+                  }
+            }
+      },
+      "custom_resource_status": {}
+}

@@ -1,0 +1,11 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  annotations:
+    ACTOKEY: ACTOKEY
+  fluentBitConfigName: fluent-bit-config
+  image: ghcr.io/xlab-uiuc/fluent-bit:v2.1.7
+  tolerations:
+  - operator: Exists

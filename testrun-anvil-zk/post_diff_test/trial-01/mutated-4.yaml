@@ -1,0 +1,42 @@
+apiVersion: anvil.dev/v1
+kind: ZookeeperCluster
+metadata:
+  name: test-cluster
+spec:
+  conf:
+    autoPurgePurgeInterval: 1
+    autoPurgeSnapRetainCount: 3
+    commitLogCount: 500
+    globalOutstandingLimit: 1000
+    initLimit: 10
+    maxClientCnxns: 60
+    maxCnxns: 0
+    maxSessionTimeout: 40000
+    minSessionTimeout: 4000
+    preAllocSize: 65536
+    quorumListenOnAllIps: false
+    snapCount: 10000
+    snapSizeLimitInKb: 4194304
+    syncLimit: 2
+    tickTime: 2000
+  image: pravega/zookeeper:0.2.14
+  persistence:
+    enabled: true
+    storageClassName: standard
+    storageSize: 20Gi
+  ports:
+    adminServer: 8080
+    client: 2181
+    leaderElection: 3888
+    metrics: 7000
+    quorum: 2888
+  replicas: 3
+  resources:
+    claims:
+    - name: ACTOKEY
+  tolerations:
+  - effect: NoExecute
+    key: test-key
+    operator: Equal
+    tolerationSeconds: 3600
+    value: test-value

@@ -1,0 +1,50 @@
+2023-11-20 07:38:23.057094+00:00 [error] <0.132.0> Error parsing configuration:
+2023-11-20 07:38:23.083212+00:00 [error] <0.132.0>   - Syntax error in /etc/rabbitmq/conf.d/90-userDefinedConfiguration.conf after line 2 column 1, parsing incomplete
+2023-11-20 07:38:23.083270+00:00 [error] <0.132.0> Are these files using the Cuttlefish format?
+
+BOOT FAILED
+===========
+2023-11-20 07:38:23.087168+00:00 [error] <0.132.0> 
+2023-11-20 07:38:23.087168+00:00 [error] <0.132.0> BOOT FAILED
+2023-11-20 07:38:23.087168+00:00 [error] <0.132.0> ===========
+Error during startup: {error,failed_to_parse_configuration_file}
+
+2023-11-20 07:38:23.087168+00:00 [error] <0.132.0> Error during startup: {error,failed_to_parse_configuration_file}
+2023-11-20 07:38:23.087168+00:00 [error] <0.132.0> 
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>     supervisor: {local,rabbit_prelaunch_sup}
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>     errorContext: start_error
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>     reason: failed_to_parse_configuration_file
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>     offender: [{pid,undefined},
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>                {id,prelaunch},
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>                {mfargs,{rabbit_prelaunch,run_prelaunch_first_phase,[]}},
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>                {restart_type,transient},
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>                {significant,false},
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>                {shutdown,5000},
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0>                {child_type,worker}]
+2023-11-20 07:38:24.096143+00:00 [error] <0.132.0> 
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>   crasher:
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     initial call: application_master:init/4
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     pid: <0.130.0>
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     registered_name: []
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     exception exit: {{shutdown,
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>                          {failed_to_start_child,prelaunch,
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>                              failed_to_parse_configuration_file}},
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>                      {rabbit_prelaunch_app,start,[normal,[]]}}
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>       in function  application_master:init/4 (application_master.erl, line 142)
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     ancestors: [<0.129.0>]
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     message_queue_len: 1
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     messages: [{'EXIT',<0.131.0>,normal}]
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     links: [<0.129.0>,<0.44.0>]
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     dictionary: []
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     trap_exit: true
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     status: running
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     heap_size: 233
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     stack_size: 28
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>     reductions: 170
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0>   neighbours:
+2023-11-20 07:38:24.097061+00:00 [error] <0.130.0> 
+2023-11-20 07:38:24.104824+00:00 [notice] <0.44.0> Application rabbitmq_prelaunch exited with reason: {{shutdown,{failed_to_start_child,prelaunch,failed_to_parse_configuration_file}},{rabbit_prelaunch_app,start,[normal,[]]}}
+{"Kernel pid terminated",application_controller,"{application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,failed_to_parse_configuration_file}},{rabbit_prelaunch_app,start,[normal,[]]}}}"}
+Kernel pid terminated (application_controller) ({application_start_failure,rabbitmq_prelaunch,{{shutdown,{failed_to_start_child,prelaunch,failed_to_parse_configuration_file}},{rabbit_prelaunch_app,start,[normal,[]]}}})
+
+Crash dump is being written to: erl_crash.dump...

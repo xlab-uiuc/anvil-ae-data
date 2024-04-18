@@ -1,0 +1,32 @@
+{
+      "trial_num": "06-0001",
+      "duration": "00:30:01",
+      "time_breakdown": {
+            "k8s_bootstrap": 73.73192286491394,
+            "operator_deploy": 52.071773529052734,
+            "trial_run": 1675.4824786186218
+      },
+      "num_tests": 8,
+      "error": {
+            "revert": false,
+            "generation": 6,
+            "testcase": {
+                  "field": "[\"spec\", \"conf\", \"tickTime\"]",
+                  "testcase": "number-deletion"
+            },
+            "crash_result": {
+                  "oracle": "Crash",
+                  "message": "Pod test-cluster-2 crashed"
+            },
+            "input_result": "Pass",
+            "health_result": {
+                  "oracle": "SystemHealth",
+                  "message": "statefulset: test-cluster replicas [3] ready_replicas [2]"
+            },
+            "state_result": "Pass",
+            "log_result": "Pass",
+            "custom_result": null,
+            "misc_result": null,
+            "recovery_result": "Pass"
+      }
+}

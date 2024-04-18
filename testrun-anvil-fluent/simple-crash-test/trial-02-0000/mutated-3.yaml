@@ -1,0 +1,10 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  dnsPolicy: c4hbk.n0n6hk36j.b.z.d.y.4.z.qu
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  tolerations:
+  - operator: Exists

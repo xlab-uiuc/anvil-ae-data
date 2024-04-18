@@ -1,0 +1,3037 @@
+{
+  "kind": "EventList",
+  "apiVersion": "v1",
+  "metadata": {
+    "resourceVersion": "1472"
+  },
+  "items": [
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-0.1797f1353934b2a1",
+        "namespace": "rabbitmq",
+        "uid": "31cd532c-fa3f-48b9-9e71-e67b41e7ff5c",
+        "resourceVersion": "968",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-0",
+        "uid": "d63a1168-1a6a-49eb-94f2-7b1e0664d5c8",
+        "apiVersion": "v1",
+        "resourceVersion": "960"
+      },
+      "reason": "WaitForFirstConsumer",
+      "message": "waiting for first consumer to be created before binding",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-0.1797f1353b20a61b",
+        "namespace": "rabbitmq",
+        "uid": "3ad1bb77-9f3c-4af2-830f-bfd812b3d0c2",
+        "resourceVersion": "975",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-0",
+        "uid": "d63a1168-1a6a-49eb-94f2-7b1e0664d5c8",
+        "apiVersion": "v1",
+        "resourceVersion": "969"
+      },
+      "reason": "ExternalProvisioning",
+      "message": "waiting for a volume to be created, either by external provisioner \"rancher.io/local-path\" or manually created by system administrator",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-0.1797f1353c525d9a",
+        "namespace": "rabbitmq",
+        "uid": "35db8afb-91b9-46a5-b042-c59d5f1b1a47",
+        "resourceVersion": "985",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "local-path-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-0",
+        "uid": "d63a1168-1a6a-49eb-94f2-7b1e0664d5c8",
+        "apiVersion": "v1",
+        "resourceVersion": "969"
+      },
+      "reason": "Provisioning",
+      "message": "External provisioner is provisioning volume for claim \"rabbitmq/persistence-test-cluster-server-0\"",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-75f5b54ffd-qb5mz_2f95a330-7cd3-4fc9-825a-bf4a79509957"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-0.1797f1365afb055c",
+        "namespace": "rabbitmq",
+        "uid": "34b3fb40-6d57-4a55-b2cb-0a33bc77d687",
+        "resourceVersion": "1030",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "local-path-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-0",
+        "uid": "d63a1168-1a6a-49eb-94f2-7b1e0664d5c8",
+        "apiVersion": "v1",
+        "resourceVersion": "969"
+      },
+      "reason": "ProvisioningSucceeded",
+      "message": "Successfully provisioned volume pvc-d63a1168-1a6a-49eb-94f2-7b1e0664d5c8",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-75f5b54ffd-qb5mz_2f95a330-7cd3-4fc9-825a-bf4a79509957"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-1.1797f13539e2eb51",
+        "namespace": "rabbitmq",
+        "uid": "f7f99c97-e477-4c7e-a76c-e85147973f8c",
+        "resourceVersion": "973",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-1",
+        "uid": "4dec3580-01a1-4f1e-a4cd-878cbab9b1e4",
+        "apiVersion": "v1",
+        "resourceVersion": "963"
+      },
+      "reason": "WaitForFirstConsumer",
+      "message": "waiting for first consumer to be created before binding",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-1.1797f1353bbd12ba",
+        "namespace": "rabbitmq",
+        "uid": "e9b7cd84-cae2-4716-8237-8e812c7eb0c2",
+        "resourceVersion": "981",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-1",
+        "uid": "4dec3580-01a1-4f1e-a4cd-878cbab9b1e4",
+        "apiVersion": "v1",
+        "resourceVersion": "976"
+      },
+      "reason": "ExternalProvisioning",
+      "message": "waiting for a volume to be created, either by external provisioner \"rancher.io/local-path\" or manually created by system administrator",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-1.1797f1353c9be289",
+        "namespace": "rabbitmq",
+        "uid": "6850e68e-93c6-4ad0-a110-2cc7ac413860",
+        "resourceVersion": "986",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "local-path-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-1",
+        "uid": "4dec3580-01a1-4f1e-a4cd-878cbab9b1e4",
+        "apiVersion": "v1",
+        "resourceVersion": "976"
+      },
+      "reason": "Provisioning",
+      "message": "External provisioner is provisioning volume for claim \"rabbitmq/persistence-test-cluster-server-1\"",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-75f5b54ffd-qb5mz_2f95a330-7cd3-4fc9-825a-bf4a79509957"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-1.1797f1364f640a55",
+        "namespace": "rabbitmq",
+        "uid": "97841eb0-ef12-4bbe-8313-da86019acbe7",
+        "resourceVersion": "1023",
+        "creationTimestamp": "2023-11-15T23:56:39Z",
+        "managedFields": [
+          {
+            "manager": "local-path-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:39Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-1",
+        "uid": "4dec3580-01a1-4f1e-a4cd-878cbab9b1e4",
+        "apiVersion": "v1",
+        "resourceVersion": "976"
+      },
+      "reason": "ProvisioningSucceeded",
+      "message": "Successfully provisioned volume pvc-4dec3580-01a1-4f1e-a4cd-878cbab9b1e4",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-75f5b54ffd-qb5mz_2f95a330-7cd3-4fc9-825a-bf4a79509957"
+      },
+      "firstTimestamp": "2023-11-15T23:56:39Z",
+      "lastTimestamp": "2023-11-15T23:56:39Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-2.1797f1353b50bb5d",
+        "namespace": "rabbitmq",
+        "uid": "6453e276-3709-4948-842f-ed43e5d063f4",
+        "resourceVersion": "978",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-2",
+        "uid": "41a55f6d-6284-4dc3-9d65-39b33a029165",
+        "apiVersion": "v1",
+        "resourceVersion": "970"
+      },
+      "reason": "WaitForFirstConsumer",
+      "message": "waiting for first consumer to be created before binding",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-2.1797f1353c6f9a61",
+        "namespace": "rabbitmq",
+        "uid": "cee239e1-c713-4e4d-98b9-dc040a15f42a",
+        "resourceVersion": "984",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-2",
+        "uid": "41a55f6d-6284-4dc3-9d65-39b33a029165",
+        "apiVersion": "v1",
+        "resourceVersion": "983"
+      },
+      "reason": "ExternalProvisioning",
+      "message": "waiting for a volume to be created, either by external provisioner \"rancher.io/local-path\" or manually created by system administrator",
+      "source": {
+        "component": "persistentvolume-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-2.1797f1353cff053e",
+        "namespace": "rabbitmq",
+        "uid": "29cfe86f-e0d7-4a56-98b2-ed491fd90d28",
+        "resourceVersion": "994",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "local-path-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-2",
+        "uid": "41a55f6d-6284-4dc3-9d65-39b33a029165",
+        "apiVersion": "v1",
+        "resourceVersion": "983"
+      },
+      "reason": "Provisioning",
+      "message": "External provisioner is provisioning volume for claim \"rabbitmq/persistence-test-cluster-server-2\"",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-75f5b54ffd-qb5mz_2f95a330-7cd3-4fc9-825a-bf4a79509957"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "persistence-test-cluster-server-2.1797f13666e3a4c0",
+        "namespace": "rabbitmq",
+        "uid": "b62c187b-f7bd-424d-b869-1ea01521031e",
+        "resourceVersion": "1046",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "local-path-provisioner",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "PersistentVolumeClaim",
+        "namespace": "rabbitmq",
+        "name": "persistence-test-cluster-server-2",
+        "uid": "41a55f6d-6284-4dc3-9d65-39b33a029165",
+        "apiVersion": "v1",
+        "resourceVersion": "983"
+      },
+      "reason": "ProvisioningSucceeded",
+      "message": "Successfully provisioned volume pvc-41a55f6d-6284-4dc3-9d65-39b33a029165",
+      "source": {
+        "component": "rancher.io/local-path_local-path-provisioner-75f5b54ffd-qb5mz_2f95a330-7cd3-4fc9-825a-bf4a79509957"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777-q5cf7.1797f12f74d45e77",
+        "namespace": "rabbitmq",
+        "uid": "16775c54-373c-40f5-bd16-5f639bfd2cdf",
+        "resourceVersion": "850",
+        "creationTimestamp": "2023-11-15T23:56:10Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:10Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777-q5cf7",
+        "uid": "8827601c-24a0-45a4-95da-38572f2fd40c",
+        "apiVersion": "v1",
+        "resourceVersion": "845"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned rabbitmq/rabbitmq-controller-5679bc6777-q5cf7 to acto-0-cluster-5-worker2",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-15T23:56:10Z",
+      "lastTimestamp": "2023-11-15T23:56:10Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777-q5cf7.1797f12f92d3f171",
+        "namespace": "rabbitmq",
+        "uid": "118e9695-41d8-4569-b3f9-ca855b7e838d",
+        "resourceVersion": "856",
+        "creationTimestamp": "2023-11-15T23:56:10Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:10Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777-q5cf7",
+        "uid": "8827601c-24a0-45a4-95da-38572f2fd40c",
+        "apiVersion": "v1",
+        "resourceVersion": "847",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulling",
+      "message": "Pulling image \"ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35\"",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker2"
+      },
+      "firstTimestamp": "2023-11-15T23:56:10Z",
+      "lastTimestamp": "2023-11-15T23:56:10Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777-q5cf7.1797f130f1782d51",
+        "namespace": "rabbitmq",
+        "uid": "26dfbb0e-180a-43d1-b252-6cce6203b670",
+        "resourceVersion": "869",
+        "creationTimestamp": "2023-11-15T23:56:16Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777-q5cf7",
+        "uid": "8827601c-24a0-45a4-95da-38572f2fd40c",
+        "apiVersion": "v1",
+        "resourceVersion": "847",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35\" in 5.882727672s (5.882741761s including waiting)",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker2"
+      },
+      "firstTimestamp": "2023-11-15T23:56:16Z",
+      "lastTimestamp": "2023-11-15T23:56:16Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777-q5cf7.1797f130f1d8ba69",
+        "namespace": "rabbitmq",
+        "uid": "370a13b3-391f-4305-a835-b9dd8296f681",
+        "resourceVersion": "870",
+        "creationTimestamp": "2023-11-15T23:56:16Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:16Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777-q5cf7",
+        "uid": "8827601c-24a0-45a4-95da-38572f2fd40c",
+        "apiVersion": "v1",
+        "resourceVersion": "847",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Created",
+      "message": "Created container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker2"
+      },
+      "firstTimestamp": "2023-11-15T23:56:16Z",
+      "lastTimestamp": "2023-11-15T23:56:16Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777-q5cf7.1797f130fe212198",
+        "namespace": "rabbitmq",
+        "uid": "6570b594-e0db-4d13-983e-900307da5ae2",
+        "resourceVersion": "871",
+        "creationTimestamp": "2023-11-15T23:56:17Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:17Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777-q5cf7",
+        "uid": "8827601c-24a0-45a4-95da-38572f2fd40c",
+        "apiVersion": "v1",
+        "resourceVersion": "847",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Started",
+      "message": "Started container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker2"
+      },
+      "firstTimestamp": "2023-11-15T23:56:17Z",
+      "lastTimestamp": "2023-11-15T23:56:17Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777-q5cf7.1797f1331393769e",
+        "namespace": "rabbitmq",
+        "uid": "8355872a-0354-4cac-b768-22db26775a22",
+        "resourceVersion": "926",
+        "creationTimestamp": "2023-11-15T23:56:26Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:26Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777-q5cf7",
+        "uid": "8827601c-24a0-45a4-95da-38572f2fd40c",
+        "apiVersion": "v1",
+        "resourceVersion": "847",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Killing",
+      "message": "Stopping container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker2"
+      },
+      "firstTimestamp": "2023-11-15T23:56:26Z",
+      "lastTimestamp": "2023-11-15T23:56:26Z",
+      "count": 2,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777.1797f12f746954df",
+        "namespace": "rabbitmq",
+        "uid": "f9478c01-3bca-460a-a43b-98d37454e476",
+        "resourceVersion": "846",
+        "creationTimestamp": "2023-11-15T23:56:10Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:10Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777",
+        "uid": "7adcd9f7-3c4f-4210-bf83-f92884687ae7",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "841"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: rabbitmq-controller-5679bc6777-q5cf7",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:10Z",
+      "lastTimestamp": "2023-11-15T23:56:10Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-5679bc6777.1797f133138eb6f3",
+        "namespace": "rabbitmq",
+        "uid": "66dc9e5b-8ec0-449b-b8fb-f993527d6eed",
+        "resourceVersion": "918",
+        "creationTimestamp": "2023-11-15T23:56:26Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:26Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-5679bc6777",
+        "uid": "7adcd9f7-3c4f-4210-bf83-f92884687ae7",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "914"
+      },
+      "reason": "SuccessfulDelete",
+      "message": "Deleted pod: rabbitmq-controller-5679bc6777-q5cf7",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:26Z",
+      "lastTimestamp": "2023-11-15T23:56:26Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-794b558dbc-wprdf.1797f131e4889360",
+        "namespace": "rabbitmq",
+        "uid": "49e19be4-8fcc-4c6c-9cc3-1804cd874b6d",
+        "resourceVersion": "890",
+        "creationTimestamp": "2023-11-15T23:56:20Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:20Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-794b558dbc-wprdf",
+        "uid": "7d7ad1a0-c0c6-458e-ab7b-b02cf25767dc",
+        "apiVersion": "v1",
+        "resourceVersion": "884"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned rabbitmq/rabbitmq-controller-794b558dbc-wprdf to acto-0-cluster-5-worker3",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-15T23:56:20Z",
+      "lastTimestamp": "2023-11-15T23:56:20Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-794b558dbc-wprdf.1797f132030ab26a",
+        "namespace": "rabbitmq",
+        "uid": "974806fb-1ab3-4d1c-9723-e523d0f66773",
+        "resourceVersion": "898",
+        "creationTimestamp": "2023-11-15T23:56:21Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:21Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-794b558dbc-wprdf",
+        "uid": "7d7ad1a0-c0c6-458e-ab7b-b02cf25767dc",
+        "apiVersion": "v1",
+        "resourceVersion": "888",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulling",
+      "message": "Pulling image \"ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35\"",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker3"
+      },
+      "firstTimestamp": "2023-11-15T23:56:21Z",
+      "lastTimestamp": "2023-11-15T23:56:21Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-794b558dbc-wprdf.1797f132e995abd5",
+        "namespace": "rabbitmq",
+        "uid": "a712ccaf-87b4-464f-b9fa-5a25b23ff32d",
+        "resourceVersion": "908",
+        "creationTimestamp": "2023-11-15T23:56:25Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:25Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-794b558dbc-wprdf",
+        "uid": "7d7ad1a0-c0c6-458e-ab7b-b02cf25767dc",
+        "apiVersion": "v1",
+        "resourceVersion": "888",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Pulled",
+      "message": "Successfully pulled image \"ghcr.io/vmware-research/verifiable-controllers/rabbitmq-controller:b3ead032464239272e77420ea297d6e1af188b35\" in 3.867788707s (3.867804123s including waiting)",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker3"
+      },
+      "firstTimestamp": "2023-11-15T23:56:25Z",
+      "lastTimestamp": "2023-11-15T23:56:25Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-794b558dbc-wprdf.1797f132ea3fd6f5",
+        "namespace": "rabbitmq",
+        "uid": "dce0f009-4f99-453a-a037-21c44e9f8c71",
+        "resourceVersion": "909",
+        "creationTimestamp": "2023-11-15T23:56:25Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:25Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-794b558dbc-wprdf",
+        "uid": "7d7ad1a0-c0c6-458e-ab7b-b02cf25767dc",
+        "apiVersion": "v1",
+        "resourceVersion": "888",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Created",
+      "message": "Created container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker3"
+      },
+      "firstTimestamp": "2023-11-15T23:56:25Z",
+      "lastTimestamp": "2023-11-15T23:56:25Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-794b558dbc-wprdf.1797f132fb758f29",
+        "namespace": "rabbitmq",
+        "uid": "4994d911-caa8-4257-b345-b810af58b622",
+        "resourceVersion": "910",
+        "creationTimestamp": "2023-11-15T23:56:25Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:25Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-794b558dbc-wprdf",
+        "uid": "7d7ad1a0-c0c6-458e-ab7b-b02cf25767dc",
+        "apiVersion": "v1",
+        "resourceVersion": "888",
+        "fieldPath": "spec.containers{controller}"
+      },
+      "reason": "Started",
+      "message": "Started container controller",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker3"
+      },
+      "firstTimestamp": "2023-11-15T23:56:25Z",
+      "lastTimestamp": "2023-11-15T23:56:25Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller-794b558dbc.1797f131e46287b9",
+        "namespace": "rabbitmq",
+        "uid": "a6f5bd3d-158d-45d0-9e0b-66b37b7bf579",
+        "resourceVersion": "887",
+        "creationTimestamp": "2023-11-15T23:56:20Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:20Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "ReplicaSet",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller-794b558dbc",
+        "uid": "1ed1a605-5003-483d-823a-c541afb3be3f",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "883"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "Created pod: rabbitmq-controller-794b558dbc-wprdf",
+      "source": {
+        "component": "replicaset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:20Z",
+      "lastTimestamp": "2023-11-15T23:56:20Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller.1797f12f73fc25c2",
+        "namespace": "rabbitmq",
+        "uid": "8ca08b81-ea98-4186-9ab8-c165bc008719",
+        "resourceVersion": "844",
+        "creationTimestamp": "2023-11-15T23:56:10Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:10Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller",
+        "uid": "1a1c4622-b397-4670-849a-cc102d92f457",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "840"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set rabbitmq-controller-5679bc6777 to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:10Z",
+      "lastTimestamp": "2023-11-15T23:56:10Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller.1797f131e426a9fc",
+        "namespace": "rabbitmq",
+        "uid": "1e3b5da4-7524-4fd7-a559-f0a52ee485ee",
+        "resourceVersion": "885",
+        "creationTimestamp": "2023-11-15T23:56:20Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:20Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller",
+        "uid": "1a1c4622-b397-4670-849a-cc102d92f457",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "882"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled up replica set rabbitmq-controller-794b558dbc to 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:20Z",
+      "lastTimestamp": "2023-11-15T23:56:20Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "rabbitmq-controller.1797f133134a1442",
+        "namespace": "rabbitmq",
+        "uid": "569be8b7-9f5f-44e0-9eba-e9ec0b05bca3",
+        "resourceVersion": "915",
+        "creationTimestamp": "2023-11-15T23:56:26Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:26Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Deployment",
+        "namespace": "rabbitmq",
+        "name": "rabbitmq-controller",
+        "uid": "1a1c4622-b397-4670-849a-cc102d92f457",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "894"
+      },
+      "reason": "ScalingReplicaSet",
+      "message": "Scaled down replica set rabbitmq-controller-5679bc6777 to 0 from 1",
+      "source": {
+        "component": "deployment-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:26Z",
+      "lastTimestamp": "2023-11-15T23:56:26Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1700092667453",
+        "namespace": "rabbitmq",
+        "uid": "5346c728-158a-42f1-b63a-b9a85891531e",
+        "resourceVersion": "1214",
+        "creationTimestamp": "2023-11-15T23:57:47Z",
+        "managedFields": [
+          {
+            "manager": "unknown",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:47Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "RabbitMQ",
+        "namespace": "rabbitmq",
+        "name": "pod/test-cluster-server-0",
+        "apiVersion": "v1"
+      },
+      "reason": "Created",
+      "message": "Node rabbit@test-cluster-server-0.test-cluster-nodes.rabbitmq is registered",
+      "source": {
+        "component": "test-cluster-server-0/rabbitmq_peer_discovery",
+        "host": "test-cluster-server-0"
+      },
+      "firstTimestamp": null,
+      "lastTimestamp": "2023-11-15T23:57:47Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f1366486fef3",
+        "namespace": "rabbitmq",
+        "uid": "8a48d508-5853-4ca5-8f15-d7c2e3cfc7aa",
+        "resourceVersion": "1035",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "962"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned rabbitmq/test-cluster-server-0 to acto-0-cluster-5-worker4",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f13680e2404e",
+        "namespace": "rabbitmq",
+        "uid": "8477f374-aea2-44ac-a858-c22d7de7b4e2",
+        "resourceVersion": "1047",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "1034",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"rabbitmq:3.11.10-management\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker4"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f13681874727",
+        "namespace": "rabbitmq",
+        "uid": "ff62b577-76a2-4e77-9119-70424e810bac",
+        "resourceVersion": "1049",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "1034",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Created",
+      "message": "Created container setup-container",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker4"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f136d6d800b1",
+        "namespace": "rabbitmq",
+        "uid": "15ad5297-0dbb-479b-9206-544bd853fe86",
+        "resourceVersion": "1063",
+        "creationTimestamp": "2023-11-15T23:56:42Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:42Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "1034",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Started",
+      "message": "Started container setup-container",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker4"
+      },
+      "firstTimestamp": "2023-11-15T23:56:42Z",
+      "lastTimestamp": "2023-11-15T23:56:42Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f13e0fbef9fb",
+        "namespace": "rabbitmq",
+        "uid": "9af4f727-8f96-4898-b04f-86e345d08b71",
+        "resourceVersion": "1143",
+        "creationTimestamp": "2023-11-15T23:57:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "1034",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"rabbitmq:3.11.10-management\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker4"
+      },
+      "firstTimestamp": "2023-11-15T23:57:13Z",
+      "lastTimestamp": "2023-11-15T23:57:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f13e120806ac",
+        "namespace": "rabbitmq",
+        "uid": "541eded8-82c5-4cf2-bdcd-e143376db8c1",
+        "resourceVersion": "1145",
+        "creationTimestamp": "2023-11-15T23:57:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "1034",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Created",
+      "message": "Created container rabbitmq",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker4"
+      },
+      "firstTimestamp": "2023-11-15T23:57:13Z",
+      "lastTimestamp": "2023-11-15T23:57:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-0.1797f13e24b2b24d",
+        "namespace": "rabbitmq",
+        "uid": "c8491dfd-956c-4754-bc5e-9b080ea90181",
+        "resourceVersion": "1151",
+        "creationTimestamp": "2023-11-15T23:57:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-0",
+        "uid": "06ee868e-47e4-4011-b79e-5b62cbeafb34",
+        "apiVersion": "v1",
+        "resourceVersion": "1034",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Started",
+      "message": "Started container rabbitmq",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker4"
+      },
+      "firstTimestamp": "2023-11-15T23:57:13Z",
+      "lastTimestamp": "2023-11-15T23:57:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1700092680535",
+        "namespace": "rabbitmq",
+        "uid": "b4aac445-186f-4d71-8f82-010359121c67",
+        "resourceVersion": "1240",
+        "creationTimestamp": "2023-11-15T23:58:00Z",
+        "managedFields": [
+          {
+            "manager": "unknown",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:58:00Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "RabbitMQ",
+        "namespace": "rabbitmq",
+        "name": "pod/test-cluster-server-1",
+        "apiVersion": "v1"
+      },
+      "reason": "Created",
+      "message": "Node rabbit@test-cluster-server-1.test-cluster-nodes.rabbitmq is registered",
+      "source": {
+        "component": "test-cluster-server-1/rabbitmq_peer_discovery",
+        "host": "test-cluster-server-1"
+      },
+      "firstTimestamp": null,
+      "lastTimestamp": "2023-11-15T23:58:00Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f136659ec267",
+        "namespace": "rabbitmq",
+        "uid": "6ec95929-7e94-48e0-a650-58b4cdd301ee",
+        "resourceVersion": "1038",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "967"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned rabbitmq/test-cluster-server-1 to acto-0-cluster-5-worker5",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f136811879f8",
+        "namespace": "rabbitmq",
+        "uid": "1f51a482-3cda-4d56-add6-d3236d0354e8",
+        "resourceVersion": "1048",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "1037",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"rabbitmq:3.11.10-management\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker5"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f13681a6f783",
+        "namespace": "rabbitmq",
+        "uid": "2e0a748a-7b34-4800-b7fb-8315a8bf0cd9",
+        "resourceVersion": "1050",
+        "creationTimestamp": "2023-11-15T23:56:40Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:40Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "1037",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Created",
+      "message": "Created container setup-container",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker5"
+      },
+      "firstTimestamp": "2023-11-15T23:56:40Z",
+      "lastTimestamp": "2023-11-15T23:56:40Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f136d3ade3a1",
+        "namespace": "rabbitmq",
+        "uid": "d22d5dc5-77b5-413b-8e39-4acad666b6c9",
+        "resourceVersion": "1062",
+        "creationTimestamp": "2023-11-15T23:56:42Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:42Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "1037",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Started",
+      "message": "Started container setup-container",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker5"
+      },
+      "firstTimestamp": "2023-11-15T23:56:42Z",
+      "lastTimestamp": "2023-11-15T23:56:42Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f13dee87cc44",
+        "namespace": "rabbitmq",
+        "uid": "40a1c72b-455d-45b1-a8bb-c09aa7ced7ec",
+        "resourceVersion": "1137",
+        "creationTimestamp": "2023-11-15T23:57:12Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:12Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "1037",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"rabbitmq:3.11.10-management\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker5"
+      },
+      "firstTimestamp": "2023-11-15T23:57:12Z",
+      "lastTimestamp": "2023-11-15T23:57:12Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f13deffb1999",
+        "namespace": "rabbitmq",
+        "uid": "a008d044-a382-471b-a13f-e5fa4fa92a34",
+        "resourceVersion": "1139",
+        "creationTimestamp": "2023-11-15T23:57:12Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:12Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "1037",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Created",
+      "message": "Created container rabbitmq",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker5"
+      },
+      "firstTimestamp": "2023-11-15T23:57:12Z",
+      "lastTimestamp": "2023-11-15T23:57:12Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-1.1797f13dfe6d1caa",
+        "namespace": "rabbitmq",
+        "uid": "95c47430-d9f3-447f-8f46-4daa09e8068e",
+        "resourceVersion": "1141",
+        "creationTimestamp": "2023-11-15T23:57:12Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:12Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-1",
+        "uid": "4073c928-6cf4-487e-8f4d-a9b021927b54",
+        "apiVersion": "v1",
+        "resourceVersion": "1037",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Started",
+      "message": "Started container rabbitmq",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker5"
+      },
+      "firstTimestamp": "2023-11-15T23:57:12Z",
+      "lastTimestamp": "2023-11-15T23:57:12Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1700092673826",
+        "namespace": "rabbitmq",
+        "uid": "e15ebd65-a158-4d0a-8fcf-605d26d00e83",
+        "resourceVersion": "1227",
+        "creationTimestamp": "2023-11-15T23:57:53Z",
+        "managedFields": [
+          {
+            "manager": "unknown",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:53Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "RabbitMQ",
+        "namespace": "rabbitmq",
+        "name": "pod/test-cluster-server-2",
+        "apiVersion": "v1"
+      },
+      "reason": "Created",
+      "message": "Node rabbit@test-cluster-server-2.test-cluster-nodes.rabbitmq is registered",
+      "source": {
+        "component": "test-cluster-server-2/rabbitmq_peer_discovery",
+        "host": "test-cluster-server-2"
+      },
+      "firstTimestamp": null,
+      "lastTimestamp": "2023-11-15T23:57:53Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f136a217b4e3",
+        "namespace": "rabbitmq",
+        "uid": "3e255f75-45e6-4767-a5a8-23c94d76a015",
+        "resourceVersion": "1052",
+        "creationTimestamp": "2023-11-15T23:56:41Z",
+        "managedFields": [
+          {
+            "manager": "kube-scheduler",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:41Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "977"
+      },
+      "reason": "Scheduled",
+      "message": "Successfully assigned rabbitmq/test-cluster-server-2 to acto-0-cluster-5-worker",
+      "source": {
+        "component": "default-scheduler"
+      },
+      "firstTimestamp": "2023-11-15T23:56:41Z",
+      "lastTimestamp": "2023-11-15T23:56:41Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f136c92cc936",
+        "namespace": "rabbitmq",
+        "uid": "fd074000-2410-4e55-9e64-4f6b92a8ea5b",
+        "resourceVersion": "1060",
+        "creationTimestamp": "2023-11-15T23:56:41Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:41Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "1051",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"rabbitmq:3.11.10-management\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker"
+      },
+      "firstTimestamp": "2023-11-15T23:56:41Z",
+      "lastTimestamp": "2023-11-15T23:56:41Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f136c9faf50c",
+        "namespace": "rabbitmq",
+        "uid": "a2db4744-6f4f-4d90-8fda-921a02b7e252",
+        "resourceVersion": "1061",
+        "creationTimestamp": "2023-11-15T23:56:41Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:41Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "1051",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Created",
+      "message": "Created container setup-container",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker"
+      },
+      "firstTimestamp": "2023-11-15T23:56:41Z",
+      "lastTimestamp": "2023-11-15T23:56:41Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f13700b10fd8",
+        "namespace": "rabbitmq",
+        "uid": "bd09fbd7-53c1-4224-873f-1728af010517",
+        "resourceVersion": "1075",
+        "creationTimestamp": "2023-11-15T23:56:42Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:42Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "1051",
+        "fieldPath": "spec.initContainers{setup-container}"
+      },
+      "reason": "Started",
+      "message": "Started container setup-container",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker"
+      },
+      "firstTimestamp": "2023-11-15T23:56:42Z",
+      "lastTimestamp": "2023-11-15T23:56:42Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f13e1910ae6e",
+        "namespace": "rabbitmq",
+        "uid": "c62865a7-46ba-48bb-b593-5ed2bcf48760",
+        "resourceVersion": "1147",
+        "creationTimestamp": "2023-11-15T23:57:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "1051",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Pulled",
+      "message": "Container image \"rabbitmq:3.11.10-management\" already present on machine",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker"
+      },
+      "firstTimestamp": "2023-11-15T23:57:13Z",
+      "lastTimestamp": "2023-11-15T23:57:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f13e1ac970d4",
+        "namespace": "rabbitmq",
+        "uid": "d192ade9-1c7a-4933-9a5c-2e6c6e7e0e01",
+        "resourceVersion": "1149",
+        "creationTimestamp": "2023-11-15T23:57:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "1051",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Created",
+      "message": "Created container rabbitmq",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker"
+      },
+      "firstTimestamp": "2023-11-15T23:57:13Z",
+      "lastTimestamp": "2023-11-15T23:57:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server-2.1797f13e2701ad83",
+        "namespace": "rabbitmq",
+        "uid": "c9fbce89-33e2-4b2b-89fe-bdce9a6f2969",
+        "resourceVersion": "1152",
+        "creationTimestamp": "2023-11-15T23:57:13Z",
+        "managedFields": [
+          {
+            "manager": "kubelet",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:57:13Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {},
+                "f:host": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "Pod",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server-2",
+        "uid": "b483a15e-2813-4ad0-a4d1-75dae4b310f5",
+        "apiVersion": "v1",
+        "resourceVersion": "1051",
+        "fieldPath": "spec.containers{rabbitmq}"
+      },
+      "reason": "Started",
+      "message": "Started container rabbitmq",
+      "source": {
+        "component": "kubelet",
+        "host": "acto-0-cluster-5-worker"
+      },
+      "firstTimestamp": "2023-11-15T23:57:13Z",
+      "lastTimestamp": "2023-11-15T23:57:13Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server.1797f13539357e7e",
+        "namespace": "rabbitmq",
+        "uid": "6d2c1dfb-f122-4360-88c6-0dfa2364f20b",
+        "resourceVersion": "961",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server",
+        "uid": "1ee06b08-ffb1-4a98-8524-543cdd951f24",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "958"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Claim persistence-test-cluster-server-0 Pod test-cluster-server-0 in StatefulSet test-cluster-server success",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server.1797f1353999c051",
+        "namespace": "rabbitmq",
+        "uid": "02d9aa39-3180-44d8-9c21-08cb5048c09e",
+        "resourceVersion": "964",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server",
+        "uid": "1ee06b08-ffb1-4a98-8524-543cdd951f24",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "958"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Pod test-cluster-server-0 in StatefulSet test-cluster-server successful",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server.1797f13539e63084",
+        "namespace": "rabbitmq",
+        "uid": "856266a7-0ee6-4746-b8be-cdf682ac651c",
+        "resourceVersion": "965",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server",
+        "uid": "1ee06b08-ffb1-4a98-8524-543cdd951f24",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "958"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Claim persistence-test-cluster-server-1 Pod test-cluster-server-1 in StatefulSet test-cluster-server success",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server.1797f1353ad4d4a9",
+        "namespace": "rabbitmq",
+        "uid": "c29b2a15-a6ba-49a1-8050-69c6d7f43e53",
+        "resourceVersion": "971",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server",
+        "uid": "1ee06b08-ffb1-4a98-8524-543cdd951f24",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "958"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Pod test-cluster-server-1 in StatefulSet test-cluster-server successful",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server.1797f1353b563c6b",
+        "namespace": "rabbitmq",
+        "uid": "29c4df5d-3899-4b2b-9411-fe1ca5407f5b",
+        "resourceVersion": "974",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server",
+        "uid": "1ee06b08-ffb1-4a98-8524-543cdd951f24",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "958"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Claim persistence-test-cluster-server-2 Pod test-cluster-server-2 in StatefulSet test-cluster-server success",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    },
+    {
+      "metadata": {
+        "name": "test-cluster-server.1797f1353bcc6d36",
+        "namespace": "rabbitmq",
+        "uid": "d01ca62d-6c03-4141-8e24-065c46ce4810",
+        "resourceVersion": "979",
+        "creationTimestamp": "2023-11-15T23:56:35Z",
+        "managedFields": [
+          {
+            "manager": "kube-controller-manager",
+            "operation": "Update",
+            "apiVersion": "v1",
+            "time": "2023-11-15T23:56:35Z",
+            "fieldsType": "FieldsV1",
+            "fieldsV1": {
+              "f:count": {},
+              "f:firstTimestamp": {},
+              "f:involvedObject": {},
+              "f:lastTimestamp": {},
+              "f:message": {},
+              "f:reason": {},
+              "f:source": {
+                "f:component": {}
+              },
+              "f:type": {}
+            }
+          }
+        ]
+      },
+      "involvedObject": {
+        "kind": "StatefulSet",
+        "namespace": "rabbitmq",
+        "name": "test-cluster-server",
+        "uid": "1ee06b08-ffb1-4a98-8524-543cdd951f24",
+        "apiVersion": "apps/v1",
+        "resourceVersion": "958"
+      },
+      "reason": "SuccessfulCreate",
+      "message": "create Pod test-cluster-server-2 in StatefulSet test-cluster-server successful",
+      "source": {
+        "component": "statefulset-controller"
+      },
+      "firstTimestamp": "2023-11-15T23:56:35Z",
+      "lastTimestamp": "2023-11-15T23:56:35Z",
+      "count": 1,
+      "type": "Normal",
+      "eventTime": null,
+      "reportingComponent": "",
+      "reportingInstance": ""
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+apiVersion: anvil.dev/v1
+kind: FluentBit
+metadata:
+  name: test-cluster
+spec:
+  affinity: {}
+  fluentBitConfigName: fluent-bit-config
+  image: kubesphere/fluent-bit:v2.1.7
+  livenessProbe:
+    initialDelaySeconds: 10
+    tcpSocket:
+      port: 8500
+  tolerations: []

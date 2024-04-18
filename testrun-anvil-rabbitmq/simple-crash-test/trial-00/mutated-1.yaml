@@ -1,0 +1,31 @@
+apiVersion: anvil.dev/v1
+kind: RabbitmqCluster
+metadata:
+  name: test-cluster
+  namespace: rabbitmq
+spec:
+  affinity:
+    podAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+      - labelSelector:
+          matchExpressions:
+          - key: app.kubernetes.io/name
+            operator: In
+            values:
+            - test-cluster
+        topologyKey: kubernetes.io/hostname
+  image: rabbitmq:3.11.10-management
+  labels: {}
+  persistence:
+    storage: 10Gi
+    storageClassName: null
+  rabbitmqConfig:
+    additionalConfig: 'log.console.level = debug
+
+      '
+  replicas: 3
+  tolerations:
+  - effect: NoExecute
+    key: node-role.kubernetes.io/control-plane
+    operator: Exists
+    tolerationSeconds: 3600

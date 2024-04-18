@@ -1,0 +1,19 @@
+Reconciling FluentBitConfig/fluent/fluent-bit-config: Get Secret/fluent/fluent-bit-config done
+Reconciling FluentBitConfig/fluent/fluent-bit-config: Update Secret/fluent/fluent-bit-config done
+Reconciling FluentBitConfig/fluent/fluent-bit-config: done
+reconciled (ObjectRef { dyntype: (), name: "fluent-bit-config", namespace: Some("fluent"), extra: Extra { resource_version: Some("643"), uid: Some("3e188e7e-db30-48de-b42e-b5b2371efcfd") } }, Action { requeue_after: Some(60s) })
+Reconciling FluentBit/fluent/test-cluster: Get cr {"apiVersion":"anvil.dev/v1","kind":"FluentBit","metadata":{"annotations":{"kubectl.kubernetes.io/last-applied-configuration":"{\"apiVersion\":\"anvil.dev/v1\",\"kind\":\"FluentBit\",\"metadata\":{\"annotations\":{},\"name\":\"test-cluster\",\"namespace\":\"fluent\"},\"spec\":{\"fluentBitConfigName\":\"fluent-bit-config\",\"image\":\"kubesphere/fluent-bit:v2.1.7\",\"ports\":[],\"tolerations\":[{\"operator\":\"Exists\"}]}}\n"},"creationTimestamp":"2023-12-01T22:29:04Z","generation":2,"managedFields":[{"apiVersion":"anvil.dev/v1","fieldsType":"FieldsV1","fieldsV1":{"f:metadata":{"f:annotations":{".":{},"f:kubectl.kubernetes.io/last-applied-configuration":{}}},"f:spec":{".":{},"f:annotations":{},"f:disableLogVolumes":{},"f:fluentBitConfigName":{},"f:image":{},"f:labels":{},"f:nodeSelector":{},"f:ports":{},"f:serviceAccountAnnotations":{},"f:serviceAnnotations":{},"f:serviceLabels":{},"f:tolerations":{}}},"manager":"kubectl-client-side-apply","operation":"Update","time":"2023-12-01T22:30:06Z"}],"name":"test-cluster","namespace":"fluent","resourceVersion":"886","uid":"33b2042f-0b22-48ff-82be-ccf35e077c4b"},"spec":{"fluentBitConfigName":"fluent-bit-config","image":"kubesphere/fluent-bit:v2.1.7","args":null,"command":null,"imagePullPolicy":null,"imagePullSecrets":null,"resources":null,"tolerations":[{"operator":"Exists"}],"labels":{},"annotations":{},"serviceAccountAnnotations":{},"serviceLabels":{},"serviceSelector":null,"serviceAnnotations":{},"affinity":null,"disableLogVolumes":false,"nodeSelector":{},"runtimeClassName":null,"dnsPolicy":null,"priorityClassName":null,"volumes":null,"volumeMounts":null,"schedulerName":null,"metricsPort":null,"internalMountPropagation":null,"positionDB":null,"containerLogRealPath":null,"securityContext":null,"containerSecurityContext":null,"hostNetwork":null,"envVars":null,"livenessProbe":null,"readinessProbe":null,"initContainers":null,"ports":[]}}
+Reconciling FluentBit/fluent/test-cluster: Get Secret/fluent/fluent-bit-config done
+Reconciling FluentBit/fluent/test-cluster: Get ServiceAccount/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Update ServiceAccount/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Get Role/fluent/test-cluster-role done
+Reconciling FluentBit/fluent/test-cluster: Update Role/fluent/test-cluster-role done
+Reconciling FluentBit/fluent/test-cluster: Get RoleBinding/fluent/test-cluster-role-binding done
+Reconciling FluentBit/fluent/test-cluster: Update RoleBinding/fluent/test-cluster-role-binding done
+Reconciling FluentBit/fluent/test-cluster: Get Service/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Update Service/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Get DaemonSet/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: Update DaemonSet/fluent/test-cluster done
+Reconciling FluentBit/fluent/test-cluster: done
+reconciled (ObjectRef { dyntype: (), name: "test-cluster", namespace: Some("fluent"), extra: Extra { resource_version: Some("729"), uid: Some("33b2042f-0b22-48ff-82be-ccf35e077c4b") } }, Action { requeue_after: Some(60s) })
+

@@ -1,0 +1,40 @@
+{
+      "trial_num": "05-0000",
+      "duration": "00:07:48",
+      "time_breakdown": {
+            "k8s_bootstrap": 164.55641746520996,
+            "operator_deploy": 24.883322715759277,
+            "trial_run": 278.7657735347748
+      },
+      "num_tests": 3,
+      "error": {
+            "revert": false,
+            "generation": 1,
+            "testcase": {
+                  "field": "[\"spec\", \"resources\"]",
+                  "testcase": "object-deletion"
+            },
+            "crash_result": "Pass",
+            "input_result": "Pass",
+            "health_result": "Pass",
+            "state_result": {
+                  "oracle": "SystemState",
+                  "message": "Found no matching fields for input",
+                  "input_delta": {
+                        "prev": "NotPresent",
+                        "curr": ".700404e-.1953",
+                        "path": [
+                              "spec",
+                              "resources",
+                              "limits",
+                              "ACTOKEY"
+                        ]
+                  },
+                  "matched_system_delta": null
+            },
+            "log_result": "Pass",
+            "custom_result": null,
+            "misc_result": null,
+            "recovery_result": "Pass"
+      }
+}
